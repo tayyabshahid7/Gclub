@@ -1,14 +1,16 @@
 <template>
-  <!-- <signin /> -->
-  <signup />
+  <div>
+    <hero />
+    <nav-bar />
+  </div>
 </template>
 
 <script>
-import signin from "./signin.vue";
-import Signup from "./signup.vue";
-
+import Hero from "~~/components/hero.vue";
+import NavBar from "~~/layouts/nav-bar.vue";
 export default {
-  components: { signin, Signup },
+  components: { NavBar, Hero },
   name: "IndexPage",
 };
+NavBar;
 </script>
