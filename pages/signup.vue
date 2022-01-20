@@ -1,61 +1,87 @@
 <template>
-  <body class="bg-white font-family-karla h-screen">
+  <div class="h-screen">
     <div class="w-full flex flex-wrap">
       <!-- Image Section -->
-      <div class="w-1/2 shadow-2xl relative">
+      <div class="w-1/2 h-full shadow-2xl relative">
         <img
-          class="object-cover w-full h-screen hidden md:block"
+          class="object-fit h-full w-full h-screen hidden md:block"
           src="../assets/images/register-screen.webp"
         />
-        <div class="absolute inset-1/2 text-white">
-          <h3>IN THE CLUB.</h3>
+        <div class="w-full absolute image-text text-white text-center">
+          <h1 class="image-text-size">THE FUTURE IS</h1>
+          <h1 class="image-text-size margin-top">FOR THE THOSE</h1>
+          <h1 class="image-text-size margin-top">IN THE CLUB.</h1>
         </div>
       </div>
       <!-- Login Section -->
-      <div class="w-full md:w-1/2 flex flex-col">
-        <!-- <div
-          class="flex justify-center md:justify-start pt-12 md:pl-12 md:-mb-24"
-        >
-          <NuxtLink class="bg-black text-white font-bold text-xl p-4" to="/"
-            >Logo</NuxtLink
-          >
-        </div> -->
+      <div class="bg-appcolor w-full md:w-1/2 flex flex-col">
+        <div class="flex justify-center pt-3">
+          <NuxtLink class="font-bold text-xl" to="/"
+            ><img src="../assets/images/app-logo.png"
+          /></NuxtLink>
+        </div>
 
         <div
-          class="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32"
+          class="flex flex-col justify-center md:justify-start my-auto md:pt-0 px-8 md:px-12 lg:px-32"
         >
-          <p class="text-center text-3xl">Sign Up</p>
-          <form
-            class="flex flex-col pt-3 md:pt-8"
-            onsubmit="event.preventDefault();"
-          >
-            <div class="flex flex-col pt-4">
-              <label for="email" class="text-lg">Email</label>
+          <form class="flex flex-col" @submit.prevent="submitForm">
+            <div class="flex flex-col">
+              <label for="name" class="text-lg text-white">Name</label>
               <input
-                type="email"
-                id="email"
-                placeholder="your@email.com"
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline"
+                type="text"
+                id="name"
+                v-model="name"
+                class="bg-appcolor border-white border w-full py-2 px-3 text-white mt-1 focus:outline-none focus:shadow-outline"
               />
             </div>
 
-            <div class="flex flex-col pt-4">
-              <label for="password" class="text-lg">Password</label>
+            <div class="flex flex-col pt-2">
+              <label for="email" class="text-lg text-white">Email</label>
+              <input
+                type="email"
+                id="email"
+                v-model="email"
+                class="bg-appcolor border-white border w-full py-2 px-3 text-white mt-1 focus:outline-none focus:shadow-outline"
+              />
+            </div>
+
+            <div class="flex flex-col pt-2">
+              <label for="password" class="text-lg text-white">Password</label>
               <input
                 type="password"
                 id="password"
-                placeholder="Password"
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline"
+                v-model="password"
+                class="bg-appcolor border-white border w-full py-2 px-3 text-white mt-1 focus:outline-none focus:shadow-outline"
+              />
+            </div>
+
+            <div class="flex flex-col pt-2">
+              <label for="city" class="text-lg text-white">City</label>
+              <input
+                type="text"
+                id="city"
+                v-model="city"
+                class="bg-appcolor border-white border w-full py-2 px-3 text-white mt-1 focus:outline-none focus:shadow-outline"
+              />
+            </div>
+
+            <div class="flex flex-col pt-2">
+              <label for="country" class="text-lg text-white">Country</label>
+              <input
+                type="text"
+                id="country"
+                v-model="country"
+                class="bg-appcolor border-white border w-full py-2 px-3 text-white mt-1 focus:outline-none focus:shadow-outline"
               />
             </div>
 
             <input
               type="submit"
-              value="Register"
-              class="bg-black text-white font-bold text-lg hover:bg-gray-700 p-2 mt-8"
+              value="CONTINUE"
+              class="bg-black text-black font-bold text-lg p-2 mt-6 text-appcolor"
             />
           </form>
-          <div class="text-center pt-12 pb-12">
+          <div class="text-center text-white pt-6 pb-12">
             <p>
               Already have an account?
               <NuxtLink class="underline font-semibold" to="/signin"
@@ -66,13 +92,45 @@
         </div>
       </div>
     </div>
-  </body>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "signin",
+  data() {
+    return {
+      name: "",
+      email: "",
+      password: "",
+      city: "",
+      country: "",
+    };
+  },
+  methods: {
+    async submitForm() {
+      // const { data } = await this.$axios.post("/api/users", {
+      //   email: this.email,
+      //   password: this.password,
+      // });
+      this.$nuxt.$loading.start();
+      setTimeout(() => {
+        this.$nuxt.$loading.finish();
+        this.$router.push("/signin");
+      }, 2000);
+    },
+  },
+  name: "signup",
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.image-text {
+  top: 35%;
+}
+.image-text-size {
+  font-size: 65px !important;
+}
+.margin-top {
+  margin-top: -20px;
+}
+</style>
