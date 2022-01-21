@@ -13,7 +13,7 @@
         </div>
       </div>
       <!-- Login Section -->
-      <div class="bg-appcolor w-full md:w-1/2 flex flex-col">
+      <div class="bg-app-color w-full md:w-1/2 flex flex-col">
         <div class="flex justify-center pt-4">
           <NuxtLink class="font-bold text-xl" to="/"
             ><img src="../assets/images/app-logo.png"
@@ -30,7 +30,7 @@
                 type="email"
                 id="email"
                 v-model="email"
-                class="bg-appcolor border-white shadow appearance-none border w-full py-2 px-3 text-white mt-1 focus:outline-none focus:shadow-outline"
+                class="bg-app-color border-white shadow appearance-none border w-full py-2 px-3 text-white mt-1 focus:outline-none focus:shadow-outline"
               />
             </div>
 
@@ -40,14 +40,14 @@
                 type="password"
                 id="password"
                 v-model="password"
-                class="bg-appcolor border-white shadow appearance-none border w-full py-2 px-3 text-white mt-1 focus:outline-none focus:shadow-outline"
+                class="bg-app-color border-white shadow appearance-none border w-full py-2 px-3 text-white mt-1 focus:outline-none focus:shadow-outline"
               />
             </div>
 
             <input
               type="submit"
               value="SUBMIT"
-              class="bg-black font-bold text-lg p-2 mt-12 text-appcolor"
+              class="bg-white font-bold text-lg p-2 mt-12 text-app-color"
             />
           </form>
           <div class="text-center text-white pt-12 pb-12">

@@ -3,8 +3,7 @@ export default {
     colors: {
       transparent: "transparent",
       current: "currentColor",
-      white: "#ffffff",
-      appcolor: "#233328",
+      "app-color": "#233328",
     },
   },
 };

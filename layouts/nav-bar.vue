@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="flex items-center justify-between sticky transition-all duration-500 flex-wrap bg-appcolor p-6"
+    class="flex items-center justify-between sticky transition-all duration-500 flex-wrap bg-app-color p-6"
   >
     <div class="block lg:hidden">
       <button
@@ -35,13 +35,16 @@
           <img src="~/assets/images/app-logo.png" class="h-8" />
         </NuxtLink>
       </div>
-      <NuxtLink to="/" class="flex items-center flex-shrink-0 text-white mr-6">
+      <NuxtLink
+        to="/signin"
+        class="flex items-center flex-shrink-0 text-white mr-6"
+      >
         SIGN IN
       </NuxtLink>
 
       <div>
         <NuxtLink
-          to="/"
+          to="/signup"
           class="inline-block text-sm px-10 py-2 leading-none border text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
           >JOIN THE CLUB</NuxtLink
         >
