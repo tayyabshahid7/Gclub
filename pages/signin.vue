@@ -7,25 +7,30 @@
           class="object-cover w-full h-screen hidden md:block"
           src="../assets/images/login-screen.webp"
         />
-        <div class="w-full absolute image-text text-white text-center">
-          <h1 class="image-text-size">ENTER THE CLUB,</h1>
-          <h1 class="image-text-size margin-top">BE AMAZED.</h1>
+        <div
+          class="lg:w-full absolute lg:top-1/3 lg:mt-12 md:top-1/3 md:mt-12 text-center flex justify-center items-center"
+        >
+          <h1
+            class="xl:text-xl lg:text-xl md:text-lg text-white xl:w-9/12 lg:w-11/12 md:w-9/12 sm:w-9/12"
+          >
+            ENTER THE CLUB, BE AMAZED.
+          </h1>
         </div>
       </div>
       <!-- Login Section -->
-      <div class="bg-app-color w-full md:w-1/2 flex flex-col">
+      <div class="bg-app-color w-full md:w-1/2 flex flex-col sm:w-full">
         <div class="flex justify-center pt-4">
-          <NuxtLink class="font-bold text-xl" to="/"
+          <NuxtLink to="/"
             ><img src="../assets/images/app-logo.png"
           /></NuxtLink>
         </div>
 
-        <div
-          class="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32"
-        >
+        <div class="flex flex-col justify-center my-auto px-8 xl:px-32">
           <form class="flex flex-col" @submit.prevent="submitForm">
             <div class="flex flex-col">
-              <label for="email" class="text-lg text-white">Email</label>
+              <label for="email" class="lg:text-base md:text-md text-white"
+                >Email</label
+              >
               <input
                 type="email"
                 id="email"
@@ -35,7 +40,9 @@
             </div>
 
             <div class="flex flex-col pt-4">
-              <label for="password" class="text-lg text-white">Password</label>
+              <label for="password" class="lg:text-base md:text-md text-white"
+                >Password</label
+              >
               <input
                 type="password"
                 id="password"
@@ -47,10 +54,10 @@
             <input
               type="submit"
               value="SUBMIT"
-              class="bg-white font-bold text-lg p-2 mt-12 text-app-color"
+              class="bg-white font-bold lg:text-base md:text-md p-2 mt-12 text-app-color"
             />
           </form>
-          <div class="text-center text-white pt-12 pb-12">
+          <div class="text-center text-white pt-12">
             <p>
               Don't have an account?
               <NuxtLink class="underline" to="/signup">Register here.</NuxtLink>
