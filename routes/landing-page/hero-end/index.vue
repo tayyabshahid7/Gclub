@@ -5,8 +5,7 @@
       class="object-cover w-full h-full bg-cover bg-center"
       alt="Image alt text"
     />
-    <p class="centered text-white">G <span class="pipe mr-10"></span> CLUBS</p>
-    <div class="w-full container" />
+    <p class="centered text-white">G <span class="pipe mx-5"></span> CLUBS</p>
   </section>
 </template>
 
@@ -17,24 +16,20 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  position: absolute;
-  top: 25px;
-  bottom: 25px;
-  right: 25px;
-  left: 35px;
-  border: solid 1px white;
-  overflow: auto;
-}
 .centered {
   position: absolute;
-  width: 100%;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 10rem;
+  border: 1px solid #fff;
+  left: 48px;
+  top: 40px;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .pipe {
   border-left: 6px solid white;
+  height: 30%;
 }
 </style>
