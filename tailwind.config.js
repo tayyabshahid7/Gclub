@@ -6,6 +6,7 @@ export default {
       white: "#FFFFFF",
       black: "#000000",
       "app-color": "#233328",
+      "brass": "#514829",
     },
     fontSize: {
       xs: ".75rem",
