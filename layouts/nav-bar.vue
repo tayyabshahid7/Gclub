@@ -45,7 +45,7 @@
       <div>
         <NuxtLink
           to="/signup"
-          class="inline-block text-sm px-10 py-2 leading-none border text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+          class="inline-block text-sm px-10 py-2 leading-none border text-white border-white mt-4 lg:mt-0"
           >JOIN THE CLUB</NuxtLink
         >
       </div>
