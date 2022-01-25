@@ -6,6 +6,7 @@
     <panel-section />
     <about-us />
     <app-footer />
+    <hero-end />
   </div>
 </template>
 
@@ -14,10 +15,19 @@ import AboutUs from "~~/routes/landing-page/about-us";
 import Hero from "~~/routes/landing-page/hero";
 import NavBar from "~~/layouts/nav-bar.vue";
 import HeroSection from "~~/routes/landing-page/hero-section";
+import HeroEnd from "~~/routes/landing-page/hero-end";
 import PanelSection from "~~/routes/landing-page/panel-section";
 import AppFooter from "~~/layouts/app-footer.vue";
 export default {
-  components: { AboutUs, NavBar, PanelSection, HeroSection, Hero, AppFooter },
+  components: {
+    AboutUs,
+    NavBar,
+    PanelSection,
+    HeroSection,
+    Hero,
+    HeroEnd,
+    AppFooter,
+  },
   name: "IndexPage",
 };
 NavBar;

@@ -5,7 +5,7 @@
       class="object-cover w-full h-full bg-cover bg-center"
       alt="Image alt text"
     />
-    <p class="centered text-white">G <span class="pipe mr-10"></span> CLUBS</p>
+    <p class="centered text-white">G <span class="pipe mx-5"></span> CLUBS</p>
   </section>
 </template>
 
