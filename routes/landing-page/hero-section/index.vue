@@ -12,7 +12,7 @@
         </h1>
       </div>
       <div class="flex items-center justify-center">
-        <div class="flex items-center justify-center w-7/12 h-3/4 imgTest">
+        <div class="flex items-center justify-center w-7/12 h-3/5 imgTest">
           <img
             class="m-auto max-w-xs max-h-96 h-full w-full object-cover"
             src="https://images.unsplash.com/photo-1507679252487-e3db58b1642e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"

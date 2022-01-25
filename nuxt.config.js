@@ -33,10 +33,11 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
+    "@nuxtjs/svg"
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxtjs/axios", "@nuxtjs/auth-next"],
+  modules: ["@nuxtjs/axios"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

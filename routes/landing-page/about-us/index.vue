@@ -2,7 +2,7 @@
   <div class="bg-app-color h-screen">
     <div class="grid grid-rows-1 grid-cols-2 h-full">
       <div class="flex items-center justify-center">
-        <div class="flex items-center justify-center w-7/12 h-3/4 imgTest">
+        <div class="flex items-center justify-center w-7/12 h-3/5 imgTest">
           <img
             class="m-auto max-w-xs max-h-96 h-full w-full object-cover"
             src="../../../assets/images/about-us-2.png"
