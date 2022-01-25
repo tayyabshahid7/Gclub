@@ -1,11 +1,11 @@
 <template>
   <div>
-    <!-- <hero /> -->
-    <!-- <nav-bar /> -->
-    <!-- <hero-section /> -->
-    <!-- <about-us /> -->
-    <!-- <app-footer /> -->
+    <hero />
+    <nav-bar />
+    <hero-section />
     <panel-section />
+    <about-us />
+    <app-footer />
   </div>
 </template>
 
