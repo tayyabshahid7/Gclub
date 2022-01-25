@@ -4,13 +4,17 @@
       <!-- Image Section -->
       <div class="w-1/2 h-full shadow-2xl relative">
         <img
-          class="object-fit h-full w-full h-screen hidden md:block"
+          class="object-cover w-full h-screen hidden md:block"
           src="../assets/images/register-screen.webp"
         />
-        <div class="w-full absolute image-text text-white text-center">
-          <h1 class="image-text-size">THE FUTURE IS</h1>
-          <h1 class="image-text-size margin-top">FOR THE THOSE</h1>
-          <h1 class="image-text-size margin-top">IN THE CLUB.</h1>
+        <div
+          class="lg:w-full absolute lg:top-1/3 md:top-1/3 text-center flex justify-center items-center"
+        >
+          <h1
+            class="xl:text-xl lg:text-xl md:text-lg text-white uppercase xl:w-9/12 lg:w-11/12 md:w-9/12 sm:w-9/12"
+          >
+            The future is for the those in the club.
+          </h1>
         </div>
       </div>
       <!-- Login Section -->
@@ -26,7 +30,9 @@
         >
           <form class="flex flex-col" @submit.prevent="submitForm">
             <div class="flex flex-col">
-              <label for="name" class="text-lg text-white">Name</label>
+              <label for="name" class="lg:text-base md:text-md text-white"
+                >Name</label
+              >
               <input
                 type="text"
                 id="name"
@@ -36,7 +42,9 @@
             </div>
 
             <div class="flex flex-col pt-2">
-              <label for="email" class="text-lg text-white">Email</label>
+              <label for="email" class="lg:text-base md:text-md text-white"
+                >Email</label
+              >
               <input
                 type="email"
                 id="email"
@@ -46,7 +54,9 @@
             </div>
 
             <div class="flex flex-col pt-2">
-              <label for="password" class="text-lg text-white">Password</label>
+              <label for="password" class="lg:text-base md:text-md text-white"
+                >Password</label
+              >
               <input
                 type="password"
                 id="password"
@@ -56,7 +66,9 @@
             </div>
 
             <div class="flex flex-col pt-2">
-              <label for="city" class="text-lg text-white">City</label>
+              <label for="city" class="lg:text-base md:text-md text-white"
+                >City</label
+              >
               <input
                 type="text"
                 id="city"
@@ -66,7 +78,9 @@
             </div>
 
             <div class="flex flex-col pt-2">
-              <label for="country" class="text-lg text-white">Country</label>
+              <label for="country" class="lg:text-base md:text-md text-white"
+                >Country</label
+              >
               <input
                 type="text"
                 id="country"
@@ -78,7 +92,7 @@
             <input
               type="submit"
               value="CONTINUE"
-              class="bg-white text-black font-bold text-lg p-2 mt-6 text-app-color"
+              class="bg-white text-black font-bold lg:text-base md:text-md p-2 mt-6 text-app-color"
             />
           </form>
           <div class="text-center text-white pt-6 pb-12">
