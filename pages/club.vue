@@ -1,16 +1,19 @@
 <template>
   <div>
-    <nav-bar/>
-    <hero />
+    <NavbarClub />
+     <HeroSection />
+    <PanelSection/>
   </div>
 </template>
 
 <script>
-import Hero from "~~/routes/club-page/hero";
-import NavBar from "~~/layouts/nav-bar-club.vue";
+import HeroSection from "~~/routes/club/hero-section";
+import NavbarClub from "~~/routes/club/nav-bar";
+import PanelSection from "~~/routes/club/panel-section";
 export default {
-  components: { Hero, NavBar },
+  components: { HeroSection, NavbarClub, PanelSection },
   name: "club",
 };
-NavBar;
 </script>
+
+<style lang="scss" scoped></style>
