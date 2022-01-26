@@ -1,67 +1,51 @@
 <template>
-  <div class="bg-app-color">
-    <div class="border-t border-app-gray mx-10" />
-    <div class="px-10 w-full h-24 bg-app-color table">
-      <div class="table-cell align-middle">
-        <p class="text-white ml-auto mr-auto">- 01</p>
-        <h1 class="uppercase text-white ml-auto mr-auto">club</h1>
+  <section class="h-full w-full relative text-center club-panel-section">
+  <div v-for="(item, index) in data" class="bg-white mb-20">
+    <div class="px-10 w-full h-24 bg-white table panel-alternate" v-bind:class = "(index % 2 !=0) ?'flex-row-reverse':''">
+      <div class="table-cell align-middle text-left">
+        <p class="text-green ml-auto mr-auto">- 0{{index + 1}}</p>
+        <h1 class="panel-heading-text uppercase text-green ml-auto mr-auto">{{ item.name }}</h1>
+        <p class="panel-description-text m-0 text-base text-green">{{ item.description }}</p>
       </div>
       <div class="table-cell align-middle">
-        <img class="flex float-right" src="~~/assets/images/panel-arrow.png" />
-      </div>
-    </div>
-    <div class="border-t border-app-gray mx-10" />
-    <div class="px-10 w-full h-24 bg-app-color table">
-      <div class="table-cell align-middle">
-        <p class="text-white ml-auto mr-auto">- 02</p>
-        <h1 class="uppercase text-white ml-auto mr-auto">experience</h1>
-      </div>
-      <div class="table-cell align-middle">
-        <img class="flex float-right" src="~~/assets/images/panel-arrow.png" />
-      </div>
-    </div>
-    <div class="border-t border-app-gray mx-10" />
-    <div class="px-10 w-full h-24 bg-app-color table">
-      <div class="table-cell align-middle">
-        <p class="text-white ml-auto mr-auto">- 03</p>
-        <h1 class="uppercase text-white ml-auto mr-auto">membership</h1>
-      </div>
-      <div class="table-cell align-middle">
-        <img class="flex float-right" src="~~/assets/images/panel-arrow.png" />
-      </div>
-    </div>
-    <div
-      class="grid grid-flow-col grid-cols-3 bg-app-color text-white uppercase mt-24 pb-24"
-    >
-      <div class="items-center justify-center m-auto">
-        <img src="~~/assets/images/panel-1.png" alt="" />
-        <h1 class="text-base break-words leading-none">
-          Dia de los Muertos party
-        </h1>
-        <p class="text-xs text-app-gray">tulum, mexico</p>
-      </div>
-      <div class="items-center justify-center m-auto mt-0">
-        <img src="~~/assets/images/panel-2.png" alt="" />
-        <h1 class="text-base break-words leading-none">
-          G | Club Fashion Week Penthouse
-        </h1>
-        <p class="text-xs text-app-gray">new york, ny</p>
-      </div>
-      <div class="items-center justify-center m-auto">
-        <img src="~~/assets/images/panel-3.png" alt="" />
-        <h1 class="text-base break-words leading-none">
-          Supercar Testing with McLaren
-        </h1>
-        <p class="text-xs text-app-gray">monaco</p>
+        <img class="flex float-right" :src="item.image" />
       </div>
     </div>
   </div>
+  </section>
 </template>
 
 <script>
-export default {
+  import data from "./data";
+  export default {
+  data: function () {
+    return {
+      data,
+    };
+  },
   name: "PanelSection",
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.panel-heading-text{
+  font-size: 56px;
+}
+.panel-description-text{
+  max-width: 400px;
+  font-weight: normal !important;
+}
+
+.club-panel-section{
+  padding: 5.5rem 13rem;
+}
+
+.panel-alternate{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full h-screen relative text-center">
+  <section class="h-full w-full relative text-center">
     <div class="hero-bg">
       <img
         src="../../../assets/images/hero-inner-img.png"

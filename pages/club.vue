@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import HeroSection from "~~/routes/club/hero-section";
-import NavbarClub from "~~/routes/club/nav-bar";
+import HeroSection from "~~/routes/club-page/hero";
+import NavbarClub from "~~/layouts/nav-bar-club";
 import PanelSection from "~~/routes/club/panel-section";
 export default {
   components: { HeroSection, NavbarClub, PanelSection },
