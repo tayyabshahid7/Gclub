@@ -69,7 +69,7 @@ export default {
 .main {
   text-align: center;
 }
-.navbar-club{
+.navbar-club {
   z-index: 1;
   position: absolute;
   width: 100%;

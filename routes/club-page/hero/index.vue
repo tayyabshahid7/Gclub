@@ -6,7 +6,9 @@
         class="inner-img object-cover bg-cover bg-center"
         alt="Image alt text"
       />
-      <p class="centered text-white text-brass image-text-size">At G|Clubs, we write the future</p>
+      <p class="centered text-white text-club-color image-text-size">
+        At G|Clubs, we write the future
+      </p>
     </div>
   </section>
 </template>
@@ -18,13 +20,13 @@ export default {
 </script>
 
 <style scoped>
-.inner-img{
+.inner-img {
   position: absolute;
   top: 30%;
   left: 7.25%;
   width: 84%;
 }
-.hero-bg{
+.hero-bg {
   z-index: -1;
   position: relative;
   background: url("../../../assets/images/club-screen-hero.svg");
@@ -32,7 +34,7 @@ export default {
   height: 1500px;
 }
 .image-text-size {
-  font-size: 72px !important;
+  font-size: 60px !important;
   text-transform: uppercase;
   text-align: left;
   font-weight: 200;
