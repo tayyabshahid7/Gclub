@@ -30,5 +30,4 @@ export default {
   },
   name: "IndexPage",
 };
-NavBar;
 </script>

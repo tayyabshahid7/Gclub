@@ -8,12 +8,12 @@
           src="../assets/images/register-screen.webp"
         />
         <div
-          class="lg:w-full absolute lg:top-1/3 md:top-1/3 text-center flex justify-center items-center"
+          class="lg:w-full absolute top-0 right-0 bottom-0 left-0 text-center flex justify-center items-center"
         >
           <h1
-            class="xl:text-xl lg:text-xl md:text-lg text-white uppercase xl:w-9/12 lg:w-11/12 md:w-9/12 sm:w-9/12"
+            class="centered px-5 xl:text-xl lg:text-xl md:text-lg text-white uppercase"
           >
-            The future is for the those in the club.
+            The future awaits. A place where the future happens now.
           </h1>
         </div>
       </div>
@@ -25,9 +25,7 @@
           /></NuxtLink>
         </div>
 
-        <div
-          class="flex flex-col justify-center md:justify-start my-auto md:pt-0 px-8 md:px-12 lg:px-32"
-        >
+        <div class="flex flex-col justify-center my-auto px-8 xl:px-32">
           <form class="flex flex-col" @submit.prevent="submitForm">
             <div class="flex flex-col">
               <label for="name" class="lg:text-base md:text-md text-white"
@@ -138,6 +136,17 @@ export default {
 </script>
 
 <style scoped>
+.centered {
+  position: absolute;
+  border: 1px solid #fff;
+  left: 40px;
+  top: 40px;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .image-text {
   top: 35%;
 }

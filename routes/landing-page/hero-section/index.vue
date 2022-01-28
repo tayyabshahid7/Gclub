@@ -2,8 +2,8 @@
   <div class="bg-app-color h-screen">
     <div class="grid grid-rows-1 grid-cols-2 h-full">
       <div class="m-auto flex items-center justify-center">
-        <h1 class="text-left text-xl text-white w-7/12 uppercase">
-          An exclusive membership to a new tomorrow.
+        <h1 class="text-left text-xl text-white w-7/12 uppercase leading-none">
+          Forging the thriving future you want to see.
           <button class="uppercase text-sm mt-8 py-1 px-8 bg-white text-black">
             learn more
           </button>

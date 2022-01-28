@@ -7,6 +7,7 @@ export default {
       black: "#000000",
       "app-color": "#233328",
       "app-gray": "#999a9b",
+      "app-rose": "#5C2F42",
       "value-color": "#182637",
       "club-color": "#514829",
     },
@@ -20,10 +21,10 @@ export default {
       xl: "3.5rem",
     },
     extend: {
-      backgroundImage: {
+      backgroundImage: (theme) => ({
         "bg-sign-in": "url('/assets/images/login-screen.webp')",
         "bg-sign-up": "url('/assets/images/login-screen.webp')",
-      },
+      }),
     },
   },
 };
