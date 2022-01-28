@@ -8,12 +8,13 @@
           src="../assets/images/login-screen.webp"
         />
         <div
-          class="lg:w-full absolute lg:top-1/3 lg:mt-12 md:top-1/3 md:mt-12 text-center flex justify-center items-center"
+          class="lg:w-full absolute top-0 right-0 bottom-0 left-0 text-center flex justify-center items-center"
         >
           <h1
-            class="xl:text-xl lg:text-xl md:text-lg text-white xl:w-9/12 lg:w-11/12 md:w-9/12 sm:w-9/12"
+            class="centered xl:text-xl lg:text-xl md:text-lg text-white px-5 uppercase"
           >
-            ENTER THE CLUB, BE AMAZED.
+            A place to connect with the elite. Take the pulse of the world. From
+            here to Exclusivity.
           </h1>
         </div>
       </div>
@@ -95,13 +96,15 @@ export default {
 </script>
 
 <style scoped>
-.image-text {
-  top: 35%;
-}
-.image-text-size {
-  font-size: 70px !important;
-}
-.margin-top {
-  margin-top: -20px;
+.centered {
+  position: absolute;
+  border: 1px solid #fff;
+  left: 40px;
+  top: 40px;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>

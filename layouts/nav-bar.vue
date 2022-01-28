@@ -32,7 +32,7 @@
           to="/"
           class="lg:inline-block mr-auto ml-auto align-middle text-white"
         >
-          <img src="~/assets/images/app-logo.png" class="h-8" />
+          <img src="~/assets/images/app-logo.png" class="h-14" />
         </NuxtLink>
       </div>
       <NuxtLink
@@ -41,7 +41,6 @@
       >
         SIGN IN
       </NuxtLink>
-
       <div>
         <NuxtLink
           to="/signup"

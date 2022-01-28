@@ -1,16 +1,20 @@
 <template>
-  <section class="h-full w-full relative text-center">
-    <div class="hero-bg">
-      <img
-        src="../../../assets/images/hero-inner-img.png"
-        class="inner-img object-cover bg-cover bg-center"
-        alt="Image alt text"
-      />
-      <p class="centered text-white text-club-color image-text-size">
-        At G|Clubs, we write the future
-      </p>
+  <div class="hero-bg h-screen w-full flex flex-col">
+    <div class="container mx-auto pt-20 text-club-color text-lg leading-none">
+      <h3>The future is for the taking.</h3>
+      <h3>The future belongs to those who can.</h3>
+      <h3><strong>One vision. One future. One membership.</strong></h3>
     </div>
-  </section>
+    <div class="relative h-full m-8 overflow-hidden rounded-lg">
+      <div class="absolute top-0 right-0 block w-full h-full">
+        <img
+          alt="Snowy mountain lake"
+          class="object-cover min-w-full h-full"
+          src="../../../assets/images/hero-inner-img.png"
+        />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -27,11 +31,7 @@ export default {
   width: 84%;
 }
 .hero-bg {
-  z-index: -1;
-  position: relative;
   background: url("../../../assets/images/club-screen-hero.svg");
-  width: 100%;
-  height: 1500px;
 }
 .image-text-size {
   font-size: 60px !important;
