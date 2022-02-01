@@ -1,33 +1,54 @@
 <template>
   <div class="bg-app-color">
     <div class="border-t border-app-gray mx-10" />
-    <div class="px-10 w-full h-24 bg-app-color table">
+    <div class="px-10 w-full h-24 bg-app-color table" @click="showPanel1">
       <div class="table-cell align-middle">
         <p class="text-white ml-auto mr-auto">- 01</p>
         <h1 class="uppercase text-white ml-auto mr-auto">club</h1>
       </div>
-      <div class="table-cell align-middle">
+      <div :class="panel1 ? 'block' : 'hidden'" class="table-cell align-middle">
         <img class="flex float-right" src="~~/assets/images/panel-arrow.png" />
+      </div>
+      <div :class="panel1 ? 'hidden' : 'block'" class="table-cell align-middle">
+        <img
+          class="flex float-right"
+          src="~~/assets/images/svg/close-button.svg"
+          width="86"
+        />
       </div>
     </div>
     <div class="border-t border-app-gray mx-10" />
-    <div class="px-10 w-full h-24 bg-app-color table">
+    <div class="px-10 w-full h-24 bg-app-color table" @click="showPanel2">
       <div class="table-cell align-middle">
         <p class="text-white ml-auto mr-auto">- 02</p>
         <h1 class="uppercase text-white ml-auto mr-auto">experience</h1>
       </div>
-      <div class="table-cell align-middle">
+      <div :class="panel2 ? 'block' : 'hidden'" class="table-cell align-middle">
         <img class="flex float-right" src="~~/assets/images/panel-arrow.png" />
+      </div>
+      <div :class="panel2 ? 'hidden' : 'block'" class="table-cell align-middle">
+        <img
+          class="flex float-right"
+          src="~~/assets/images/svg/close-button.svg"
+          width="86"
+        />
       </div>
     </div>
     <div class="border-t border-app-gray mx-10" />
-    <div class="px-10 w-full h-24 bg-app-color table">
+    <div class="px-10 w-full h-24 bg-app-color table" @click="showPanel3">
       <div class="table-cell align-middle">
         <p class="text-white ml-auto mr-auto">- 03</p>
         <h1 class="uppercase text-white ml-auto mr-auto">membership</h1>
       </div>
-      <div class="table-cell align-middle">
+      <div :class="panel3 ? 'block' : 'hidden'" class="table-cell align-middle">
         <img class="flex float-right" src="~~/assets/images/panel-arrow.png" />
+      </div>
+      <div :class="panel3 ? 'hidden' : 'block'" class="table-cell align-middle">
+        <img
+          class="flex float-right"
+          src="~~/assets/images/svg/close-button.svg"
+          width="86"
+        />
       </div>
     </div>
     <div
@@ -61,6 +82,24 @@
 <script>
 export default {
   name: "PanelSection",
+  data() {
+    return {
+      panel1: true,
+      panel2: true,
+      panel3: true,
+    };
+  },
+  methods: {
+    showPanel1() {
+      this.panel1 = !this.panel1;
+    },
+    showPanel2() {
+      this.panel2 = !this.panel2;
+    },
+    showPanel3() {
+      this.panel3 = !this.panel3;
+    },
+  },
 };
 </script>
 

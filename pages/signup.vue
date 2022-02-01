@@ -1,33 +1,35 @@
 <template>
   <div class="h-screen">
+    <app-loader :loadNow="loading" />
     <div class="w-full flex flex-wrap">
       <!-- Image Section -->
-      <div class="w-1/2 h-full shadow-2xl relative">
+      <div class="w-full md:w-1/2 md:h-full shadow-2xl relative">
         <img
-          class="object-cover w-full h-screen hidden md:block"
+          class="object-cover w-full md:h-screen"
           src="../assets/images/register-screen.webp"
         />
         <div
           class="lg:w-full absolute top-0 right-0 bottom-0 left-0 text-center flex justify-center items-center"
         >
-          <h1
-            class="centered px-5 xl:text-xl lg:text-xl md:text-lg text-white uppercase"
-          >
+          <h1 class="box-line text-lg lg:text-h1 text-white px-3">
             The future awaits. A place where the future happens now.
           </h1>
         </div>
       </div>
       <!-- Login Section -->
-      <div class="bg-app-color w-full md:w-1/2 flex flex-col">
-        <div class="flex justify-center pt-3">
-          <NuxtLink class="font-bold text-xl" to="/"
-            ><img src="../assets/images/app-logo.png"
-          /></NuxtLink>
+      <div class="bg-app-color w-full py-4 md:w-1/2 flex flex-col sm:w-full">
+        <div class="flex m-4 justify-between md:justify-center">
+          <NuxtLink to="/">
+            <img src="../assets/images/logo/Symbol.svg" width="36" />
+          </NuxtLink>
+          <NuxtLink to="/" class="md:hidden">
+            <img src="../assets/images/svg/close-button.svg" width="36" />
+          </NuxtLink>
         </div>
 
-        <div class="flex flex-col justify-center my-auto px-8 xl:px-32">
+        <div class="flex flex-col justify-center md:my-auto px-8 mt-4 xl:px-16">
           <form class="flex flex-col" @submit.prevent="submitForm">
-            <div class="flex flex-col">
+            <div class="flex flex-col uppercase">
               <label for="name" class="lg:text-base md:text-md text-white"
                 >Name</label
               >
@@ -90,10 +92,10 @@
             <input
               type="submit"
               value="CONTINUE"
-              class="bg-white text-black font-bold lg:text-base md:text-md p-2 mt-6 text-app-color"
+              class="bg-white text-black font-bold lg:text-base md:text-md p-4 mt-12 text-app-color"
             />
           </form>
-          <div class="text-center text-white pt-6 pb-12">
+          <div class="text-center text-white mt-4 md:pt-12">
             <p>
               Already have an account?
               <NuxtLink class="underline font-semibold" to="/signin"
@@ -108,7 +110,9 @@
 </template>
 
 <script>
+import AppLoader from "~~/components/app-loader.vue";
 export default {
+  components: { AppLoader },
   data() {
     return {
       name: "",
@@ -116,6 +120,7 @@ export default {
       password: "",
       city: "",
       country: "",
+      loading: false,
     };
   },
   methods: {
@@ -124,9 +129,9 @@ export default {
       //   email: this.email,
       //   password: this.password,
       // });
-      this.$nuxt.$loading.start();
+      this.loading = true;
       setTimeout(() => {
-        this.$nuxt.$loading.finish();
+        this.loading = false;
         this.$router.push("/signin");
       }, 2000);
     },
@@ -135,25 +140,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.centered {
-  position: absolute;
-  border: 1px solid #fff;
-  left: 40px;
-  top: 40px;
-  bottom: 40px;
-  right: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.image-text {
-  top: 35%;
-}
-.image-text-size {
-  font-size: 65px !important;
-}
-.margin-top {
-  margin-top: -20px;
-}
-</style>
+<style scoped></style>
