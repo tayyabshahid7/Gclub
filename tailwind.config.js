@@ -10,6 +10,7 @@ export default {
       "app-rose": "#5C2F42",
       "value-color": "#182637",
       "club-color": "#514829",
+      "contact-color": "#E0DEDA",
     },
     fontSize: {
       xs: ".75rem",
@@ -17,8 +18,9 @@ export default {
       tiny: ".875rem",
       base: "1rem",
       lg: "2.125rem",
-      ml: "3.rem",
+      ml: "3rem",
       xl: "3.5rem",
+      xxl: "4.5rem"
     },
     extend: {
       backgroundImage: (theme) => ({
