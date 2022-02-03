@@ -1,6 +1,6 @@
 <template>
   <main
-    class="py-6 px-4 flex align-middle items-center justify-center sm:p-6 md:px-0 bg-app-color h-full md:h-screen"
+    class="py-8 px-4 flex align-middle items-center justify-center sm:p-6 md:px-0 bg-app-color h-full md:h-screen"
   >
     <div
       class="grid grid-cols-1 flex align-middle items-center justify-center md:max-w-5xl md:gap-x-10 md:grid-cols-2"

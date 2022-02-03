@@ -1,76 +1,68 @@
 <template>
-  <div class="bg-app-color">
+  <div class="bg-app-color px-5">
     <div class="border-t border-app-gray mx-10" />
-    <div class="px-10 w-full h-24 bg-app-color table" @click="showPanel1">
-      <div class="table-cell align-middle">
-        <p class="text-white ml-auto mr-auto">- 01</p>
-        <h1 class="uppercase text-white ml-auto mr-auto">club</h1>
+    <div
+      class="md:px-10 w-full bg-app-color border-t border-app-gray cursor-pointer"
+      v-for="(character, index) in panelList"
+      :key="character.panelName"
+    >
+      <div class="w-full h-24 bg-app-color table">
+        <div
+          class="table-cell align-middle uppercase"
+          @click="characterItemClick(index)"
+        >
+          <p class="text-white">{{ character.panelId }}</p>
+          <p class="text-white">
+            {{ character.panelName }}
+          </p>
+        </div>
+        <div class="table-cell align-middle">
+          <img
+            class="flex float-right"
+            src="~~/assets/images/panel-arrow.png"
+          />
+        </div>
       </div>
-      <div :class="panel1 ? 'block' : 'hidden'" class="table-cell align-middle">
-        <img class="flex float-right" src="~~/assets/images/panel-arrow.png" />
-      </div>
-      <div :class="panel1 ? 'hidden' : 'block'" class="table-cell align-middle">
-        <img
-          class="flex float-right"
-          src="~~/assets/images/svg/close-button.svg"
-          width="86"
-        />
-      </div>
-    </div>
-    <div class="border-t border-app-gray mx-10" />
-    <div class="px-10 w-full h-24 bg-app-color table" @click="showPanel2">
-      <div class="table-cell align-middle">
-        <p class="text-white ml-auto mr-auto">- 02</p>
-        <h1 class="uppercase text-white ml-auto mr-auto">experience</h1>
-      </div>
-      <div :class="panel2 ? 'block' : 'hidden'" class="table-cell align-middle">
-        <img class="flex float-right" src="~~/assets/images/panel-arrow.png" />
-      </div>
-      <div :class="panel2 ? 'hidden' : 'block'" class="table-cell align-middle">
-        <img
-          class="flex float-right"
-          src="~~/assets/images/svg/close-button.svg"
-          width="86"
-        />
-      </div>
-    </div>
-    <div class="border-t border-app-gray mx-10" />
-    <div class="px-10 w-full h-24 bg-app-color table" @click="showPanel3">
-      <div class="table-cell align-middle">
-        <p class="text-white ml-auto mr-auto">- 03</p>
-        <h1 class="uppercase text-white ml-auto mr-auto">membership</h1>
-      </div>
-      <div :class="panel3 ? 'block' : 'hidden'" class="table-cell align-middle">
-        <img class="flex float-right" src="~~/assets/images/panel-arrow.png" />
-      </div>
-      <div :class="panel3 ? 'hidden' : 'block'" class="table-cell align-middle">
-        <img
-          class="flex float-right"
-          src="~~/assets/images/svg/close-button.svg"
-          width="86"
-        />
+      <div
+        :data-character-id="index"
+        class="bg-app-color text-white md:p-6 hidden flex"
+      >
+        <div class="md:flex">
+          <div class="flex flex-col items-start justify-center lg:mx-12">
+            <p>{{ character.panelDetails }}</p>
+            <button
+              class="bg-white text-black w-full p-2 my-7 md:w-1/2 md:mt-10"
+            >
+              learn more
+            </button>
+          </div>
+          <img
+            src="~/assets/images/panel/panel-section-1.png"
+            class="w-full md:w-3/6 md:mb-7 md:ml-4 lg:mx-14"
+          />
+        </div>
       </div>
     </div>
     <div
-      class="grid grid-flow-col grid-cols-3 bg-app-color text-white uppercase mt-24 pb-24"
+      class="grid grid-rows-1 md:grid-flow-col gap-4 bg-app-color text-white uppercase md:px-5 md:w-full md:pb-7"
     >
-      <div class="items-center justify-center m-auto">
+      <div class="col-span-1">
         <img src="~~/assets/images/panel-1.png" alt="" />
-        <h1 class="text-base break-words leading-none">
+        <h1 class="text-lg lg:text-h2 break-words leading-none">
           Dia de los Muertos party
         </h1>
         <p class="text-xs text-app-gray">tulum, mexico</p>
       </div>
-      <div class="items-center justify-center m-auto mt-0">
+      <div class="col-span-1">
         <img src="~~/assets/images/panel-2.png" alt="" />
-        <h1 class="text-base break-words leading-none">
+        <h1 class="text-lg lg:text-h2 break-words leading-none">
           G | Club Fashion Week Penthouse
         </h1>
         <p class="text-xs text-app-gray">new york, ny</p>
       </div>
-      <div class="items-center justify-center m-auto">
+      <div class="col-span-1">
         <img src="~~/assets/images/panel-3.png" alt="" />
-        <h1 class="text-base break-words leading-none">
+        <h1 class="text-lg lg:text-h2 break-words leading-none">
           Supercar Testing with McLaren
         </h1>
         <p class="text-xs text-app-gray">monaco</p>
@@ -87,9 +79,41 @@ export default {
       panel1: true,
       panel2: true,
       panel3: true,
+      panelList: [
+        {
+          panelId: "- 01",
+          panelName: "club",
+          panelDetails:
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          panelId: "- 02",
+          panelName: "experience",
+          panelDetails:
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          panelId: "- 03",
+          panelName: "membership",
+          panelDetails:
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+      ],
     };
   },
   methods: {
+    characterItemClick(characterIndex) {
+      const characterInfoElement = document.querySelectorAll(
+        '[data-character-id="' + characterIndex + '"]'
+      )[0];
+      if (characterInfoElement.classList.contains("block")) {
+        characterInfoElement.classList.remove("block");
+        characterInfoElement.classList.add("hidden");
+      } else {
+        characterInfoElement.classList.remove("hidden");
+        characterInfoElement.classList.add("block");
+      }
+    },
     showPanel1() {
       this.panel1 = !this.panel1;
     },

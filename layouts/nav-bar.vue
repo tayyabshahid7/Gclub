@@ -83,17 +83,26 @@
 
         <ul class="divide-y font-sans uppercase">
           <li>
-            <NuxtLink to="/" @click="isOpen = false" class="my-4 inline-block"
+            <NuxtLink
+              to="/club"
+              @click="isOpen = false"
+              class="my-4 inline-block"
               >club</NuxtLink
             >
           </li>
           <li>
-            <NuxtLink to="/" @click="isOpen = false" class="my-4 inline-block"
+            <NuxtLink
+              to="/experience"
+              @click="isOpen = false"
+              class="my-4 inline-block"
               >experience</NuxtLink
             >
           </li>
           <li>
-            <NuxtLink to="/" @click="isOpen = false" class="my-4 inline-block"
+            <NuxtLink
+              to="/membership"
+              @click="isOpen = false"
+              class="my-4 inline-block"
               >membership</NuxtLink
             >
           </li>

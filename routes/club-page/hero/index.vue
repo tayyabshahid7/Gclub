@@ -1,16 +1,18 @@
 <template>
   <div class="hero-bg h-screen w-full flex flex-col">
-    <div class="container mx-auto pt-20 text-club-color text-lg leading-none">
+    <div
+      class="ml-8 pt-20 text-club-color text-sm md:text-lg lg:text-xl leading-none"
+    >
       <h3>The future is for the taking.</h3>
       <h3>The future belongs to those who can.</h3>
       <h3><strong>One vision. One future. One membership.</strong></h3>
     </div>
     <div class="relative h-full m-8 overflow-hidden rounded-lg">
-      <div class="absolute top-0 right-0 block w-full h-full">
+      <div class="absolute top-0 right-0 block">
         <img
           alt="Snowy mountain lake"
-          class="object-cover min-w-full h-full"
-          src="../../../assets/images/hero-inner-img.png"
+          class="object-cover h-full"
+          src="~/assets/images/hero-inner-img.png"
         />
       </div>
     </div>
