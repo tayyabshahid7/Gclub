@@ -41,8 +41,5 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-  loading: {
-    color: "white",
-    height: "3px",
-  },
+  // loading: '~/components/app-loader.vue',
 };

@@ -18,6 +18,7 @@ import HeroSection from "~~/routes/landing-page/hero-section";
 import HeroEnd from "~~/routes/landing-page/hero-end";
 import PanelSection from "~~/routes/landing-page/panel-section";
 import AppFooter from "~~/layouts/app-footer.vue";
+import TopBar from "~~/components/top-bar.vue";
 export default {
   components: {
     AboutUs,
@@ -27,6 +28,7 @@ export default {
     Hero,
     HeroEnd,
     AppFooter,
+    TopBar,
   },
   name: "IndexPage",
 };
