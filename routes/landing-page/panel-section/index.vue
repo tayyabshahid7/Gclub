@@ -1,5 +1,5 @@
 <template>
-  <div class="px-5" >
+  <div class="px-5">
     <div
       class="md:px-10 w-full border-t border-app-gray cursor-pointer"
       v-for="(character, index) in panelList"
@@ -39,36 +39,6 @@
         </div>
       </div>
     </div>
-
-
-    <div
-      class="grid grid-rows-1 md:grid-flow-col gap-4 bg-app-color text-white uppercase md:px-5 md:w-full md:pb-7"
-    >
-      <div class="col-span-1">
-        <img src="~~/assets/images/panel-1.png" alt="" />
-        <h1 class="text-lg lg:text-h2 break-words leading-none">
-          Dia de los Muertos party
-        </h1>
-        <p class="text-xs text-app-gray">tulum, mexico</p>
-      </div>
-      <div class="col-span-1">
-        <img src="~~/assets/images/panel-2.png" alt="" />
-        <h1 class="text-lg lg:text-h2 break-words leading-none">
-          G | Club Fashion Week Penthouse
-        </h1>
-        <p class="text-xs text-app-gray">new york, ny</p>
-      </div>
-      <div class="col-span-1">
-        <img src="~~/assets/images/panel-3.png" alt="" />
-        <h1 class="text-lg lg:text-h2 break-words leading-none">
-          Supercar Testing with McLaren
-        </h1>
-        <p class="text-xs text-app-gray">monaco</p>
-      </div>
-    </div>
-
-
-
   </div>
 </template>
 
