@@ -28,7 +28,7 @@
       </div>
       <div
         :data-character-id="index"
-        class="bg-app-color text-white md:p-6 hidden flex"
+        class="bg-app-color text-white md:p-6 hidden flex mt-12"
       >
         <div class="md:flex justify-center space-x-12">
           <div class="flex flex-col items-start justify-center lg:mx-12">
