@@ -21,13 +21,15 @@
       </div>
 
       <!-- Navbar -->
-      <div class="hidden ld:block flex-grow lg:flex lg:items-center lg:w-auto">
+      <div
+        class="hidden ld:block flex-grow lg:flex lg:items-center lg:w-auto mx-6 mt-6"
+      >
         <div class="text-sm lg:flex-grow">
           <NuxtLink
             v-for="item in data"
             :key="item.id"
             :to="item.to"
-            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 uppercase text-white mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 mr-6 nav-font text-white"
           >
             {{ item.name }}
           </NuxtLink>
@@ -37,19 +39,19 @@
             to="/"
             class="lg:inline-block mr-auto ml-auto align-middle text-white"
           >
-            <img src="~/assets/images/logo/Symbol.svg" width="36" />
+            <img src="~/assets/images/logo/Symbol.svg" width="60" />
           </NuxtLink>
         </div>
         <NuxtLink
           to="/signin"
-          class="flex items-center flex-shrink-0 text-white mr-6"
+          class="flex items-center flex-shrink-0 text-white mr-6 nav-font"
         >
           SIGN IN
         </NuxtLink>
         <div>
           <NuxtLink
             to="/signup"
-            class="inline-block text-sm px-10 py-2 leading-none border text-white border-white mt-4 lg:mt-0"
+            class="inline-block text-sm px-10 py-4 leading-none border-2 text-white border-white mt-4 lg:mt-0 nav-font"
             >JOIN THE CLUB</NuxtLink
           >
         </div>
@@ -81,7 +83,7 @@
           </NuxtLink>
         </span>
 
-        <ul class="divide-y font-sans uppercase">
+        <ul class="divide-y uppercase">
           <li>
             <NuxtLink
               to="/club"
@@ -156,5 +158,14 @@ export default {
 <style scoped>
 .main {
   text-align: center;
+}
+.nav-font {
+  font-family: Acumin Variable Concept;
+  font-style: bold;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 </style>

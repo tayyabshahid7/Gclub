@@ -1,18 +1,14 @@
 <template>
-  <div class="bg-app-color px-5">
-    <div class="border-t border-app-gray mx-10" />
+  <div class="px-5" >
     <div
-      class="md:px-10 w-full bg-app-color border-t border-app-gray cursor-pointer"
+      class="md:px-10 w-full border-t border-app-gray cursor-pointer"
       v-for="(character, index) in panelList"
       :key="character.panelName"
     >
-      <div class="w-full h-24 bg-app-color table">
-        <div
-          class="table-cell align-middle uppercase"
-          @click="characterItemClick(index)"
-        >
-          <p class="text-white">{{ character.panelId }}</p>
-          <p class="text-white">
+      <div class="w-full h-24 table" @click="characterItemClick(index)">
+        <div class="table-cell align-middle uppercase py-20">
+          <p class="heading">{{ character.panelId }}</p>
+          <p class="sub-heading">
             {{ character.panelName }}
           </p>
         </div>
@@ -43,6 +39,8 @@
         </div>
       </div>
     </div>
+
+
     <div
       class="grid grid-rows-1 md:grid-flow-col gap-4 bg-app-color text-white uppercase md:px-5 md:w-full md:pb-7"
     >
@@ -68,6 +66,9 @@
         <p class="text-xs text-app-gray">monaco</p>
       </div>
     </div>
+
+
+
   </div>
 </template>
 
@@ -127,4 +128,26 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.heading {
+  font-family: Acumin Variable Concept;
+  font-style: italic;
+  font-weight: 382;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.sub-heading {
+  font-family: IvyPresto Display;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 56px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+</style>

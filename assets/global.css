@@ -1,17 +1,17 @@
-@import url("https://use.typekit.net/uis5btg.css");
+@import url('https://use.typekit.net/uis5btg.css');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: acumin-pro, sans-serif !important;
+@font-face {
+  font-family: Acumin Variable Concept;
+  src: url('./fonts/Acumin-Variable-Concept.ttf');
 }
+@import url("https://use.typekit.net/muu4fqf.css");
 
-@layer components {
-  .box-line {
-    @apply absolute border border-app-gray border-solid flex items-center justify-center inset-4
-  }
+body {
+  font-family: Acumin Variable Concept !important;
 }
 
 @keyframes arrow-spin {

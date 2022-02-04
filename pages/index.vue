@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-app-color">
     <hero />
     <nav-bar />
     <hero-section />
@@ -33,3 +33,7 @@ export default {
   name: "IndexPage",
 };
 </script>
+
+<style>
+@import url("https://use.typekit.net/muu4fqf.css");
+</style>
