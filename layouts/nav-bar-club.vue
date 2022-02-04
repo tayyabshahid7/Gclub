@@ -22,13 +22,13 @@
       </button>
     </div>
 
-    <div class="flex-grow lg:flex lg:items-center lg:w-auto hidden">
+    <div class="flex-grow lg:flex lg:items-center lg:w-auto hidden ml-4">
       <div class="text-sm flex-grow">
         <NuxtLink
           v-for="item in data"
           :key="item.id"
           :to="item.to"
-          class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 uppercase text-app-color font-bold mr-4"
+          class="block mt-4 lg:inline-block lg:mt-0 mr-4 navbar-text"
         >
           {{ item.name }}
         </NuxtLink>
@@ -43,7 +43,7 @@
       </div>
       <NuxtLink
         to="/signin"
-        class="flex items-center flex-shrink-0 text-app-color mr-6"
+        class="flex items-center flex-shrink-0 text-app-color mr-6 navbar-text"
       >
         SIGN IN
       </NuxtLink>
@@ -51,7 +51,7 @@
       <div>
         <NuxtLink
           to="/signup"
-          class="inline-block text-sm px-10 py-2 leading-none border text-app-color border-green hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+          class="inline-block px-10 py-3 leading-none border-2 hover:bg-white mt-4 lg:mt-0 navbar-text mr-4"
           >JOIN THE CLUB</NuxtLink
         >
       </div>
@@ -126,7 +126,7 @@
           <NuxtLink
             to="/signup"
             @click="isOpen = false"
-            class="inline-block text-sm px-10 py-2 leading-none border text-white border-green mt-4 lg:mt-0"
+            class="inline-block text-sm px-10 py-4 leading-none border-2 text-white border-green mt-4 lg:mt-0"
             >JOIN THE CLUB</NuxtLink
           >
         </li>
@@ -177,5 +177,16 @@ export default {
   z-index: 1;
   position: absolute;
   width: 100%;
+}
+
+.navbar-text {
+  font-family: Acumin Variable Concept;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #233328;
 }
 </style>
