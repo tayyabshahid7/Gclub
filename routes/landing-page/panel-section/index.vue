@@ -1,10 +1,11 @@
 <template>
   <div class="px-5">
     <div
-      class="md:px-10 w-full border-t border-app-gray cursor-pointer"
+      class="md:px-10 w-full cursor-pointer mb-28"
       v-for="(character, index) in panelList"
       :key="character.panelName"
     >
+      <div class="divider px-10 w-full"></div>
       <div class="w-full h-24 table" @click="characterItemClick(index)">
         <div class="table-cell align-middle uppercase py-20">
           <p class="heading">{{ character.panelId }}</p>
@@ -12,10 +13,16 @@
             {{ character.panelName }}
           </p>
         </div>
-        <div class="table-cell align-middle">
+        <div class="table-cell align-middle w-20">
           <img
+            v-show="open"
             class="flex float-right"
-            src="~~/assets/images/panel-arrow.png"
+            src="~/assets/images/close.png"
+          />
+          <img
+            v-show="!open"
+            class="flex float-right"
+            src="~/assets/images/panel-arrow.png"
           />
         </div>
       </div>
@@ -23,19 +30,27 @@
         :data-character-id="index"
         class="bg-app-color text-white md:p-6 hidden flex"
       >
-        <div class="md:flex">
+        <div class="md:flex justify-center space-x-12">
           <div class="flex flex-col items-start justify-center lg:mx-12">
-            <p>{{ character.panelDetails }}</p>
-            <button
-              class="bg-white text-black w-full p-2 my-7 md:w-1/2 md:mt-10"
-            >
-              learn more
+            <div class="panel-div">
+              <p class="panel-text">{{ character.panelDetails }}</p>
+            </div>
+            <button class="panel-button mt-20">
+              <p class="panel-button-text">learn more</p>
             </button>
           </div>
-          <img
-            src="~/assets/images/panel/panel-section-1.png"
-            class="w-full md:w-3/6 md:mb-7 md:ml-4 lg:mx-14"
-          />
+          <div class="relative left-0 top-0">
+            <img
+              class="panel-image-mask object-contain w-full"
+              src="~/assets/images/panel-mask-image.png"
+              alt=""
+            />
+            <img
+              src="~/assets/images/panel-image-1.png"
+              class="panel-image object-contain w-50"
+              alt="panel image"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -50,6 +65,7 @@ export default {
       panel1: true,
       panel2: true,
       panel3: true,
+      open: false,
       panelList: [
         {
           panelId: "- 01",
@@ -80,9 +96,11 @@ export default {
       if (characterInfoElement.classList.contains("block")) {
         characterInfoElement.classList.remove("block");
         characterInfoElement.classList.add("hidden");
+        open = false;
       } else {
         characterInfoElement.classList.remove("hidden");
         characterInfoElement.classList.add("block");
+        open = true;
       }
     },
     showPanel1() {
@@ -99,6 +117,11 @@ export default {
 </script>
 
 <style scoped>
+.divider {
+  height: 1px;
+  background: #ffffff;
+  opacity: 0.6;
+}
 .heading {
   font-family: Acumin Variable Concept;
   font-style: normal;
@@ -119,5 +142,44 @@ export default {
   line-height: 56px;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.panel-text {
+  font-family: Acumin Variable Concept;
+  font-style: normal;
+  font-weight: 382;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.panel-button {
+  background: #fff;
+  width: 337px;
+  height: 64px;
+}
+.panel-button-text {
+  font-family: Acumin Variable Concept;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #233328;
+}
+
+.panel-div {
+  width: 500px;
+}
+
+.panel-image-mask {
+  position: relative;
+}
+
+.panel-image {
+  position: absolute;
+  left: 50px;
+  top: -50px;
 }
 </style>
