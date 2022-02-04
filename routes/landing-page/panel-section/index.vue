@@ -101,7 +101,7 @@ export default {
 <style scoped>
 .heading {
   font-family: Acumin Variable Concept;
-  font-style: italic;
+  font-style: normal;
   font-weight: 382;
   font-size: 14px;
   line-height: 16px;
