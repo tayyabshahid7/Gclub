@@ -1,30 +1,26 @@
 <template>
-  <div class="bg-color h-screen">
-    <div class="grid grid-rows-1 grid-cols-2 h-full">
-      <div class="m-auto block items-center justify-center uppercase w-2/3">
-        <p class="mb-7 text-club-color">join the club</p>
+  <main class="p-6">
+    <div
+      class="w-full flex-col-reverse md:flex-row flex justify-center items-center md:py-7 lg:space-x-24"
+    >
+      <div class="lg:w-forty flex flex-col justify-center md:p-5 md:my-7">
+        <p class="mb-16 text-app-rose">join the club</p>
         <h1
-          class="text-left text-xl text-white overflow-hidden text-club-color leading-none"
+          class="text-xl lg:text-h1 md:max-w-xs lg:max-w-xl text-app-rose uppercase font-ivy-presto"
         >
           a membership like no other
         </h1>
-        <button
-          class="w-full text-sm mt-8 py-1 px-8 bg-transparent border border-inherit text-club-color"
-        >
-          SIGN UP TODAY
+        <button class="w-full md:w-64 btn-experience-primary">
+          sign up today
         </button>
       </div>
-      <div class="flex items-center justify-center">
-        <div class="flex items-center justify-center w-7/12 py-14 imgTest">
-          <img
-            class="m-auto max-w-xs max-h-96 h-full w-full object-cover"
-            src="../../../assets/images/club/club-footer.png"
-            alt=""
-          />
-        </div>
-      </div>
+      <img
+        class="h-full object-cover my-5 md:p-5 md:w-5/12 lg:w-4/12"
+        src="~/assets/images/experience/join-the-club.png"
+        alt=""
+      />
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -39,8 +35,5 @@ export default {
 }
 .img2 {
   max-height: 300px;
-}
-.bg-color {
-  background-color: #e0deda;
 }
 </style>

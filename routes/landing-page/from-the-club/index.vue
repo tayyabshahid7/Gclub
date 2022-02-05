@@ -1,26 +1,34 @@
 <template>
-  <main class="mt-24 mb-24">
-    <div class="mx-16 mb-12 title">FROM THE CLUB</div>
-    <div class="flex space-x-6 mx-16">
-      <div class="flex flex-col space-y-3">
-        <img src="~/assets/images/panel-1.png" alt="" />
-        <h1 class="card-header-text">Dia de los Muertos party</h1>
-        <p class="card-subheader-text">tulum, mexico</p>
+  <main class="lg:my-6 px-5">
+    <div class="md:mx-3 my-5 text-xs uppercase text-white font-acumin">
+      from the club
+    </div>
+    <div class="w-full md:flex md:px-3 md:space-x-6 uppercase">
+      <div class="flex flex-col lg:space-y-3 lg:mx-0">
+        <img src="~/assets/images/home/panel-1.png" alt="" />
+        <h1 class="text-white text-lg lg:text-xl font-ivy-presto">
+          Dia de los Muertos party
+        </h1>
+        <p class="text-app-gray mb-5 font-acumin">tulum, mexico</p>
       </div>
-      <div class="flex flex-col space-y-3">
-        <img src="~/assets/images/panel-2.png" alt="" />
-        <h1 class="card-header-text">G | Club Fashion Week Penthouse</h1>
-        <p class="card-subheader-text">new york, ny</p>
+      <div class="flex flex-col lg:space-y-3 lg:mx-0">
+        <img src="~/assets/images/home/panel-2.png" alt="" />
+        <h1 class="text-white text-lg lg:text-xl font-ivy-presto">
+          G | Club Fashion Week Penthouse
+        </h1>
+        <p class="text-app-gray mb-5 font-acumin">new york, ny</p>
       </div>
-      <div class="flex flex-col space-y-3">
-        <img src="~/assets/images/panel-3.png" alt="" />
-        <h1 class="card-header-text">Supercar Testing with McLaren</h1>
-        <p class="card-subheader-text">monaco</p>
+      <div class="flex flex-col lg:space-y-3 lg:mx-0">
+        <img src="~/assets/images/home/panel-3.png" alt="" />
+        <h1 class="text-white text-lg lg:text-xl font-ivy-presto">
+          Supercar Testing with McLaren
+        </h1>
+        <p class="text-app-gray mb-5 font-acumin">monaco</p>
       </div>
     </div>
-    <div class="flex justify-center">
-      <button class="flex button justify-center items-center mt-20">
-        <div class="button-text">FOLLOW ALONG</div>
+    <div class="flex justify-center items-center">
+      <button class="btn-secondary my-10 lg:my-14">
+        <div class="btn-secondary-text">FOLLOW ALONG</div>
       </button>
     </div>
   </main>
@@ -32,65 +40,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.button {
-  cursor: pointer;
-  width: 337px;
-  height: 64px;
-  left: 552px;
-  top: 3567px;
-  border: 2px solid #ffffff;
-  box-sizing: border-box;
-}
-
-.button-text {
-  font-family: Acumin Variable Concept;
-  color: #fff;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.title {
-  font-family: Acumin Variable Concept;
-  font-style: normal;
-  font-weight: 382;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.card-header-text {
-  font-family: IvyPresto Display;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 56px;
-  line-height: 56px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.card-subheader-text {
-  font-family: Acumin Variable Concept;
-  font-style: normal;
-  font-weight: 382;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #ffffff;
-  opacity: 0.65;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 16px 0px;
-}
-</style>
+<style scoped></style>

@@ -1,28 +1,29 @@
 <template>
-  <div class="flex justify-center space-x-16 mb-24">
+  <div
+    class="w-full flex-col md:flex-row flex justify-center items-center md:py-7 lg:space-x-24"
+  >
     <img
-      src="~/assets/images/about-us-image.png"
+      src="~/assets/images/home/about-us-image.png"
       alt=""
-      class="h-full object-cover"
+      class="p-6 h-full object-cover my-5 md:p-5 md:w-5/12 lg:w-4/12"
       loading="lazy"
     />
-    <div class="flex flex-col justify-center">
-      <div>
-        <p class="mb-7 title">About us</p>
-      </div>
-      <div class="w-96">
-        <h1 class="header-text">
-          Connect with the elite <br />
-          Write the future with those who can <br />
-          Change the world with those who can <br />
-          <strong> invitation to live boldly</strong>
-        </h1>
-      </div>
-      <div class="mt-12">
-        <button class="button">
-          <p class="button-text">learn more</p>
-        </button>
-      </div>
+    <div class="flex flex-col justify-center p-5 md:my-7 md:px-7">
+      <p class="mb-7 text-xs text-white uppercase font-acumin">About us</p>
+      <!-- <div class="lg:w-forty"> -->
+      <h1
+        class="text-xl lg:text-h2 md:max-w-xs lg:max-w-xl text-white uppercase font-ivy-presto"
+      >
+        Connect with the elite Write the future with those who can Change the
+        world with those who can<br />
+        <strong> invitation to live boldly</strong>
+      </h1>
+      <!-- </div> -->
+      <button
+        class="w-full cursor-pointer bg-white py-3 text-sm font-acumin mt-12 md:w-11/12"
+      >
+        LEARN MORE
+      </button>
     </div>
   </div>
 </template>
@@ -33,43 +34,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.title {
-  font-family: Acumin Variable Concept;
-  font-style: normal;
-  font-weight: 382;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.header-text {
-  font-family: IvyPresto Display;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 52px;
-  line-height: 50px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.button-text {
-  font-family: Acumin Variable Concept;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.button {
-  cursor: pointer;
-  background: #fff;
-  width: 328px;
-  height: 48px;
-}
-</style>
+<style scoped></style>
