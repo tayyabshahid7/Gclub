@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="navbar-club flex items-center justify-between sticky transition-all duration-500 flex-wrap bg-transparent p-4"
+    class="w-full fixed flex items-center justify-between sticky transition-all duration-500 flex-wrap p-4 bg-transparent"
   >
     <!-- Mobile toggle -->
     <div class="lg:hidden">
@@ -169,13 +169,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.main {
-  text-align: center;
-}
-.navbar-club {
-  z-index: 1;
-  position: absolute;
-  width: 100%;
-}
-</style>
+<style scoped></style>

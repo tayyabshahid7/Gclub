@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-screen relative text-center">
     <img
-      src="~/assets/images/bg-hero.png"
+      src="~/assets/images/home/bg-hero.png"
       class="object-cover w-full h-full bg-cover bg-center"
       alt="hero-bg"
     />

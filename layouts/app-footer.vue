@@ -1,8 +1,8 @@
 <template>
-  <footer class="w-full h-full bg-app-color mb-20">
-    <div class="flex justify-center pt-4">
+  <footer class="w-full h-full bg-app-color">
+    <NuxtLink to="/" class="flex justify-center pt-12">
       <img src="../assets/images/logo/Symbol.svg" width="56" />
-    </div>
+    </NuxtLink>
     <div
       class="align-middle items-center justify-center mt-36 hidden lg:flex space-x-12"
     >

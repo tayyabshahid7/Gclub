@@ -1,82 +1,62 @@
 <template>
-  <div class="bg-white">
-    <div class="border-t border-app-gray mx-10" />
-    <div class="px-10 w-full h-24 bg-white table">
-      <div class="table-cell align-middle text-app-rose">
-        <p class="ml-auto mr-auto">- 01</p>
-        <h1 class="uppercase ml-auto mr-auto">society</h1>
-      </div>
-      <div class="table-cell align-middle">
-        <img
-          class="flex float-right"
-          src="~~/assets/images/experience/arrow-right.png"
-        />
-      </div>
-    </div>
-    <div class="border-t border-app-gray mx-10" />
-    <div class="px-10 w-full h-24 bg-white table">
-      <div class="table-cell align-middle text-app-rose">
-        <p class="ml-auto mr-auto">- 02</p>
-        <h1 class="uppercase ml-auto mr-auto">travel</h1>
-      </div>
-      <div class="table-cell align-middle">
-        <img
-          class="flex float-right"
-          src="~~/assets/images/experience/arrow-right.png"
-        />
-      </div>
-    </div>
-    <div class="border-t border-app-gray mx-10" />
-    <div class="px-10 w-full h-24 bg-white table">
-      <div class="table-cell align-middle text-app-rose">
-        <p class="ml-auto mr-auto">- 03</p>
-        <h1 class="uppercase ml-auto mr-auto">fashion</h1>
-      </div>
-      <div class="table-cell align-middle">
-        <img
-          class="flex float-right"
-          src="~~/assets/images/experience/arrow-right.png"
-        />
-      </div>
-    </div>
-    <div class="border-t border-app-gray mx-10" />
-    <div class="px-10 w-full h-24 bg-white table">
-      <div class="table-cell align-middle text-app-rose">
-        <p class="ml-auto mr-auto">- 04</p>
-        <h1 class="uppercase ml-auto mr-auto">tech</h1>
-      </div>
-      <div class="table-cell align-middle">
-        <img
-          class="flex float-right"
-          src="~~/assets/images/experience/arrow-right.png"
-        />
-      </div>
-    </div>
+  <div class="px-5">
     <div
-      class="grid grid-flow-col grid-cols-3 text-white uppercase mt-24 p-14 bg-color"
+      class="md:px-2 w-full cursor-pointer"
+      v-for="(character, index) in panelList"
+      :key="character.panelName"
     >
-      <div class="items-center justify-center m-auto">
-        <img src="~~/assets/images/panel-1.png" alt="" />
-        <h1 class="text-base break-words leading-none">
-          Dia de los Muertos party
-        </h1>
-        <p class="text-xs text-app-gray">tulum, mexico</p>
+      <div class="app-experience-divider px-10"></div>
+      <div class="w-full h-24 table" @click="characterItemClick(index)">
+        <div
+          class="table-cell align-middle uppercase py-11 md:py-14 lg:py-20 text-app-rose"
+        >
+          <p class="text-app-rose uppercase items-center flex text-xs">
+            {{ character.panelId }}
+          </p>
+          <p class="text-lg md:text-xl lg:text-h2 font-ivy-presto">
+            {{ character.panelName }}
+          </p>
+        </div>
+        <div class="table-cell align-middle w-20">
+          <img
+            class="flex float-right hidden"
+            src="~/assets/images/experience/close.png"
+            :data-close-id="index"
+          />
+          <img
+            class="flex float-right block"
+            src="~/assets/images/experience/arrow-right.svg"
+            :data-arrow-id="index"
+          />
+        </div>
       </div>
-      <div class="items-center justify-center m-auto mt-0">
-        <img src="~~/assets/images/panel-2.png" alt="" />
-        <h1 class="text-base break-words leading-none">
-          G | Club Fashion Week Penthouse
-        </h1>
-        <p class="text-xs text-app-gray">new york, ny</p>
+      <div
+        :data-character-id="index"
+        class="text-app-rose md:p-6 hidden flex mt-12"
+      >
+        <div class="md:flex justify-center md:space-x-6 lg:space-x-12">
+          <div class="flex flex-col items-start justify-center lg:mx-12">
+            <p class="text-sm text-app-rose font-acumin">
+              {{ character.panelDetails }}
+            </p>
+            <button class="btn-experience-primary mt-20">learn more</button>
+          </div>
+          <div
+            class="relative left-0 top-0 my-16 md:my-0 md:justify-center md:items-center"
+          >
+            <img
+              src="~/assets/images/panel/panel-mask-image.png"
+              class="relative object-contain w-10/12 md:w-full"
+              alt=""
+            />
+            <img
+              src="~/assets/images/panel/panel-image-1.png"
+              class="absolute object-contain w-10/12 -top-6 left-6 md:w-full"
+              alt="panel image"
+            />
+          </div>
+        </div>
       </div>
-      <div class="items-center justify-center m-auto">
-        <img src="~~/assets/images/panel-3.png" alt="" />
-        <h1 class="text-base break-words leading-none">
-          Supercar Testing with McLaren
-        </h1>
-        <p class="text-xs text-app-gray">monaco</p>
-      </div>
-      <!-- <div><button>FOLLOW ALONG</button></div> -->
     </div>
   </div>
 </template>
@@ -84,6 +64,71 @@
 <script>
 export default {
   name: "ExperiencePanelSection",
+  data() {
+    return {
+      open: false,
+      panelList: [
+        {
+          panelId: "- 01",
+          panelName: "society",
+          panelDetails:
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          panelId: "- 02",
+          panelName: "travel",
+          panelDetails:
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          panelId: "- 03",
+          panelName: "fashion",
+          panelDetails:
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          panelId: "- 04",
+          panelName: "tech",
+          panelDetails:
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+      ],
+    };
+  },
+  methods: {
+    characterItemClick(characterIndex) {
+      const characterInfoElement = document.querySelectorAll(
+        '[data-character-id="' + characterIndex + '"]'
+      )[0];
+      const arrowElement = document.querySelectorAll(
+        '[data-arrow-id="' + characterIndex + '"]'
+      )[0];
+      const closeElement = document.querySelectorAll(
+        '[data-close-id="' + characterIndex + '"]'
+      )[0];
+      if (characterInfoElement.classList.contains("block")) {
+        characterInfoElement.classList.remove("block");
+        characterInfoElement.classList.add("hidden");
+      } else {
+        characterInfoElement.classList.remove("hidden");
+        characterInfoElement.classList.add("block");
+      }
+      if (
+        arrowElement.classList.contains("block") &&
+        closeElement.classList.contains("hidden")
+      ) {
+        arrowElement.classList.remove("block");
+        arrowElement.classList.add("hidden");
+        closeElement.classList.remove("hidden");
+        closeElement.classList.add("block");
+      } else {
+        arrowElement.classList.remove("hidden");
+        arrowElement.classList.add("block");
+        closeElement.classList.remove("block");
+        closeElement.classList.add("hidden");
+      }
+    },
+  },
 };
 </script>
 

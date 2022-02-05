@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="w-full fixed flex items-center justify-between sticky transition-all duration-500 flex-wrap bg-app-color p-4"
+    class="w-full fixed flex items-center justify-between sticky transition-all duration-500 flex-wrap"
   >
     <div class="w-full flex items-center justify-between">
       <!-- Header logo -->
@@ -29,7 +29,7 @@
             v-for="item in data"
             :key="item.id"
             :to="item.to"
-            class="block mt-4 lg:inline-block lg:mt-0 mr-6 nav-font text-white"
+            class="block mt-4 lg:inline-block lg:mt-0 mr-6 uppercase text-acumin text-xs text-white"
           >
             {{ item.name }}
           </NuxtLink>
@@ -44,14 +44,14 @@
         </div>
         <NuxtLink
           to="/signin"
-          class="flex items-center flex-shrink-0 text-white mr-6 nav-font"
+          class="flex items-center flex-shrink-0 text-white mr-6 text-acumin text-xs"
         >
           SIGN IN
         </NuxtLink>
         <div>
           <NuxtLink
             to="/signup"
-            class="inline-block text-sm px-10 py-4 leading-none border-2 text-white border-white mt-4 lg:mt-0 nav-font"
+            class="inline-block text-sm px-10 py-4 leading-none border-2 text-white border-white mt-4 lg:mt-0 text-acumin text-xs"
             >JOIN THE CLUB</NuxtLink
           >
         </div>
@@ -155,17 +155,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.main {
-  text-align: center;
-}
-.nav-font {
-  font-family: Acumin Variable Concept;
-  font-style: bold;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-}
-</style>
+<style scoped></style>
