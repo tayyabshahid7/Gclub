@@ -1,27 +1,28 @@
 <template>
-  <div class="bg-color h-screen">
+  <div class="bg-app-secondary-gray h-screen">
     <div class="grid grid-rows-1 grid-cols-2 h-full">
       <div class="m-auto block items-center justify-center uppercase w-2/3">
-        <p class="mb-7 text-club-color">join the club</p>
-        <h1
-          class="text-left text-xl text-white overflow-hidden text-club-color leading-none"
+        <p class="mb-7 text-club-color font-acumin tracking-widest mb-24">
+          join the club
+        </p>
+        <p
+          class="text-left text-2xl font-thin tracking-wider text-white overflow-hidden font-ivy-presto text-club-color leading-none mb-20"
         >
-          a membership like no other
-        </h1>
+          a membership <br />
+          like no other
+        </p>
         <button
-          class="w-full text-sm mt-8 py-1 px-8 bg-transparent border border-inherit text-club-color"
+          class="w-3/4 text-sm mt-8 py-3 px-8 bg-transparent border-2 border-inherit font-acumin font-bold tracking-widest text-club-color"
         >
           SIGN UP TODAY
         </button>
       </div>
-      <div class="flex items-center justify-center">
-        <div class="flex items-center justify-center w-7/12 py-14 imgTest">
-          <img
-            class="m-auto max-w-xs max-h-96 h-full w-full object-cover"
-            src="../../../assets/images/club/club-footer.png"
-            alt=""
-          />
-        </div>
+      <div class="flex items-center justify-center w-3/4">
+        <img
+          class="h-full w-full object-contain"
+          src="~/assets/images/club-footer.png"
+          alt=""
+        />
       </div>
     </div>
   </div>
@@ -33,14 +34,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.imgTest {
-  background: url("../../../assets/images/club/club-footer-outer.png");
-}
-.img2 {
-  max-height: 300px;
-}
-.bg-color {
-  background-color: #e0deda;
-}
-</style>
+<style scoped></style>

@@ -2,12 +2,22 @@
   <div class="bg-value-color text-white h-full w-full">
     <!-- <img class="object-fill" src="../../../assets/images/club/our-value.png" /> -->
     <div
-      class="container flex flex-wrap mx-auto text-center content-center justify-center"
+      class="flex flex-wrap mx-auto text-center content-center justify-center"
     >
-      <h1 class="text-sm uppercase p-9">our values</h1>
+      <h1
+        class="text-sm uppercase font-acumin tracking-widest text-app-wash p-9 mt-20 mb-20"
+      >
+        our values
+      </h1>
       <div class="table text-center content-center justify-center my-9">
-        <h1 class="text-lg uppercase">why g|clubs</h1>
-        <p class="w-9/12 lg:w-2/5 mx-auto text-sm">
+        <p
+          class="text-2xl uppercase font-ivy-presto font-thin tracking-wide text-app-wash mb-9"
+        >
+          why g|clubs
+        </p>
+        <p
+          class="w-9/12 lg:w-2/5 mx-auto text-sm font-acumin tracking-wider text-app-wash mb-20"
+        >
           Amet facilisis magna etiam tempor. Nibh tortor id aliquet lectus proin
           nibh. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor.
           Adipiscing vitae proin sagittis nisl rhoncus mattis. Duis tristique
@@ -15,10 +25,10 @@
           orci eu.
         </p>
       </div>
-      <div class="object-cover overflow-hidden px-10 pb-3">
+      <div class="w-full px-16 mb-24">
         <img
-          class="lg:h-5/6 w-full rounded"
-          src="../../../assets/images/club/our-value.png"
+          class="w-full object-contain"
+          src="~/assets/images/club/our-value.png"
           alt="image"
         />
       </div>
