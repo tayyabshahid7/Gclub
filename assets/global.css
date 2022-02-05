@@ -1,3 +1,4 @@
+@import url('https://use.typekit.net/uis5btg.css');
 @import url('https://use.typekit.net/muu4fqf.css');
 
 @tailwind base;
@@ -10,8 +11,9 @@
 }
 
 body {
-  font-family: 'Acumin Variable Concept' !important;
-}
+
+  font-family: Acumin Variable Concept !important;
+  height: 100vh;
 
 @layer components {
   .btn-primary {

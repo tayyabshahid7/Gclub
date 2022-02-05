@@ -1,6 +1,6 @@
-import img1 from "~~/assets/images/club-panel-image-1.png";
-import img2 from "~~/assets/images/club-panel-image-2.png";
-import img3 from "~~/assets/images/club-panel-image-3.png";
+import img1 from "~/assets/images/club-panel-image-1.png";
+import img2 from "~/assets/images/club-panel-image-2.png";
+import img3 from "~/assets/images/club-panel-image-3.png";
 
 export default [
   {
