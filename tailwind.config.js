@@ -13,7 +13,7 @@ export default {
       "app-rose": "#5C2F42",
       "app-charcoal": "#242625",
       "app-loader": "#222428",
-      "app-secondary-grey": "#E0DEDA",
+      "app-secondary-gray": "#E0DEDA",
       "value-color": "#182637",
       "club-color": "#514829",
     },

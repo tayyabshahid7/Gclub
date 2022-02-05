@@ -1,5 +1,5 @@
 <template>
-  <main class="lg:my-6 px-5 bg-app-secondary-grey">
+  <main class="lg:my-6 px-5 bg-app-secondary-gray">
     <div
       class="pt-14 md:pt-24 md:mx-3 my-5 text-xs uppercase text-app-rose font-acumin"
     >
