@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Acumin Variable Concept';
+  font-family: Acumin Variable Concept;
   src: url('./fonts/Acumin-Variable-Concept.ttf');
 }
 
