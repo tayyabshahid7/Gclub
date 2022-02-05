@@ -2,7 +2,7 @@
   <nav
     class="w-full fixed flex items-center justify-between sticky transition-all duration-500 flex-wrap"
   >
-    <div class="w-full flex items-center justify-between">
+    <div class="w-full flex items-center justify-between py-3 px-7">
       <!-- Header logo -->
       <div class="w-full flex justify-between lg:hidden">
         <NuxtLink to="/">
@@ -22,14 +22,14 @@
 
       <!-- Navbar -->
       <div
-        class="hidden ld:block flex-grow lg:flex lg:items-center lg:w-auto mx-6 mt-6"
+        class="hidden ld:block flex-grow lg:flex lg:items-center lg:w-auto mx-10 mt-6"
       >
         <div class="text-sm lg:flex-grow">
           <NuxtLink
             v-for="item in data"
             :key="item.id"
             :to="item.to"
-            class="block mt-4 lg:inline-block lg:mt-0 mr-6 uppercase text-acumin text-xs text-white"
+            class="block mt-4 lg:inline-block tracking-wide lg:mt-0 mr-6 uppercase text-acumin text-xs font-bold text-white tracking-widest"
           >
             {{ item.name }}
           </NuxtLink>
@@ -44,14 +44,14 @@
         </div>
         <NuxtLink
           to="/signin"
-          class="flex items-center flex-shrink-0 text-white mr-6 text-acumin text-xs"
+          class="flex items-center flex-shrink-0 text-white tracking-widest mr-6 text-acumin font-bold text-xs"
         >
           SIGN IN
         </NuxtLink>
         <div>
           <NuxtLink
             to="/signup"
-            class="inline-block text-sm px-10 py-4 leading-none border-2 text-white border-white mt-4 lg:mt-0 text-acumin text-xs"
+            class="inline-block text-sm px-10 py-4 leading-none border-2 tracking-widest text-white font-bold border-white mt-4 lg:mt-0 text-acumin text-xs"
             >JOIN THE CLUB</NuxtLink
           >
         </div>
