@@ -8,7 +8,7 @@
     <div
       class="flex flex-col justify-center items-center inset-7 absolute image-border"
     >
-      <div class="shrink w-3/5 mt-96">
+      <div class="shrink w-3/5 mt-64">
         <img
           class="w-full object-contain"
           src="~/assets/images/logo/Wordmark.svg"

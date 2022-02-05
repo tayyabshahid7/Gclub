@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="navbar-club flex items-center justify-between sticky transition-all duration-500 flex-wrap bg-transparent p-4"
+    class="navbar-club flex items-center justify-between sticky transition-all duration-500 flex-wrap bg-transparent p-12"
   >
     <!-- Mobile toggle -->
     <div class="lg:hidden">
@@ -38,7 +38,7 @@
           to="/"
           class="lg:inline-block mr-auto ml-auto align-middle text-app-color"
         >
-          <img src="~/assets/images/app-logo-default.svg" class="h-14" />
+          <img src="~/assets/images/app-logo-default.svg" class="h-20" />
         </NuxtLink>
       </div>
       <NuxtLink
@@ -51,7 +51,7 @@
       <div>
         <NuxtLink
           to="/signup"
-          class="inline-block px-10 py-3 leading-none border-2 hover:bg-white mt-4 lg:mt-0 navbar-text mr-4"
+          class="inline-block px-10 py-3 leading-none border-2 hover:bg-white mt-4 lg:mt-0 navbar-text"
           >JOIN THE CLUB</NuxtLink
         >
       </div>
