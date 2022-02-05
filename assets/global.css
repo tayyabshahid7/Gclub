@@ -1,4 +1,5 @@
 @import url('https://use.typekit.net/uis5btg.css');
+@import url('https://use.typekit.net/muu4fqf.css');
 
 @tailwind base;
 @tailwind components;
@@ -8,10 +9,10 @@
   font-family: Acumin Variable Concept;
   src: url('./fonts/Acumin-Variable-Concept.ttf');
 }
-@import url("https://use.typekit.net/muu4fqf.css");
 
 body {
   font-family: Acumin Variable Concept !important;
+  height: 100vh;
 }
 
 @keyframes arrow-spin {
