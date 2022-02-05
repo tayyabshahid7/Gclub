@@ -13,18 +13,26 @@ export default {
       "app-rose": "#5C2F42",
       "app-charcoal": "#242625",
       "app-loader": "#222428",
+      "app-secondary-grey": "#E0DEDA",
       "value-color": "#182637",
       "club-color": "#514829",
     },
     fontSize: {
-      xs: ['16px', { fontWeight: 400, lineHeight: '32px', letterSpacing: '0em' }],
+      xs: ['14px', { fontWeight: 400, fontStyle: 'normal', lineHeight: '16px', letterSpacing: '2px' }],
       sm: ['16px', { fontWeight: 400, lineHeight: '32px', letterSpacing: '0em' }],
       lg: ['24px', { fontWeight: 400, lineHeight: '40px', letterSpacing: '0em' }],
       xl: ['32px', { fontWeight: 400, lineHeight: '40px', letterSpacing: '0em' }],
-      'h1': ['72px', { fontWeight: 100, lineHeight: '72px', letterSpacing: '0em', textTransform: 'uppercase' }],
-      'h2': ['56px', { fontWeight: 100, lineHeight: '56px', letterSpacing: '0em', textTransform: 'uppercase' }],
+      'h1': ['72px', { fontWeight: 100, fontStyle: 'normal', lineHeight: '72px', letterSpacing: '0em', textTransform: 'uppercase' }],
+      'h2': ['56px', { fontWeight: 100, fontStyle: 'normal', lineHeight: '56px', letterSpacing: '0em', textTransform: 'uppercase' }],
     },
     extend: {
+      fontFamily: {
+        acumin: "'Acumin Variable Concept', serif",
+        "ivy-presto": "'IvyPresto Display', serif"
+      },
+      spacing: {
+        'forty': '40rem',
+      },
       backgroundImage: (theme) => ({
         "bg-sign-in": "url('/assets/images/login-screen.webp')",
         "bg-sign-up": "url('/assets/images/login-screen.webp')",

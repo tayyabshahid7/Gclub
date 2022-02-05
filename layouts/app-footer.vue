@@ -1,14 +1,16 @@
 <template>
   <footer class="w-full h-full bg-app-color">
-    <div class="flex justify-center pt-4">
+    <NuxtLink to="/" class="flex justify-center pt-12">
       <img src="../assets/images/logo/Symbol.svg" width="56" />
-    </div>
-    <div class="align-middle items-center justify-center mt-36 hidden lg:flex">
+    </NuxtLink>
+    <div
+      class="align-middle items-center justify-center mt-36 hidden lg:flex space-x-12"
+    >
       <NuxtLink
         v-for="item in data"
         :key="item.id"
         :to="item.to"
-        class="mt-4 inline-block lg:mt-0 text-teal-200 uppercase text-white mr-4"
+        class="mt-4 footer-text inline-block lg:mt-0 mr-4"
       >
         {{ item.name }}
       </NuxtLink>
@@ -22,7 +24,7 @@
           to="/"
           class="group w-full flex flex-col items-center justify-center leading-none py-3"
         >
-          club
+          <p class="footer-text">club</p>
         </NextLink>
         <NextLink
           to="/"
@@ -58,7 +60,7 @@
         </NextLink>
       </li>
     </ul>
-    <div class="border-t border-app-gray mx-12 mt-4 md:mx-24"></div>
+    <div class="border-t border-app-gray mx-12 mt-16 mb-12 md:mx-24"></div>
     <div class="lg:hidden py-4">
       <div class="flex justify-center items-center">
         <img class="mr-7" src="../assets/images/svg/facebook.svg" />
@@ -86,10 +88,10 @@
         </div>
       </div>
       <div class="col-span-1 float-right mx-24">
-        <div class="flex justify-end">
-          <img class="mr-7" src="../assets/images/svg/facebook.svg" />
-          <img class="mr-7" src="../assets/images/svg/instagram.svg" />
+        <div class="flex justify-end space-x-12">
           <img src="../assets/images/svg/twitter.svg" />
+          <img src="../assets/images/svg/facebook.svg" />
+          <img src="../assets/images/svg/instagram.svg" />
         </div>
       </div>
     </div>
@@ -110,4 +112,15 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.footer-text {
+  font-family: Acumin Variable Concept;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+</style>

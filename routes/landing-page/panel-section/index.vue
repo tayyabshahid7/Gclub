@@ -1,71 +1,61 @@
 <template>
-  <div class="bg-app-color px-5">
-    <div class="border-t border-app-gray mx-10" />
+  <div class="px-5">
     <div
-      class="md:px-10 w-full bg-app-color border-t border-app-gray cursor-pointer"
+      class="md:px-2 w-full cursor-pointer"
       v-for="(character, index) in panelList"
       :key="character.panelName"
     >
-      <div class="w-full h-24 bg-app-color table">
+      <div class="app-divider px-10"></div>
+      <div class="w-full h-24 table" @click="characterItemClick(index)">
         <div
-          class="table-cell align-middle uppercase"
-          @click="characterItemClick(index)"
+          class="table-cell align-middle uppercase py-11 md:py-14 lg:py-20 text-white"
         >
-          <p class="text-white">{{ character.panelId }}</p>
-          <p class="text-white">
+          <p class="text-white uppercase items-center flex text-xs">
+            {{ character.panelId }}
+          </p>
+          <p class="text-lg md:text-xl lg:text-h2 font-ivy-presto">
             {{ character.panelName }}
           </p>
         </div>
-        <div class="table-cell align-middle">
+        <div class="table-cell align-middle w-20">
           <img
-            class="flex float-right"
-            src="~~/assets/images/panel-arrow.png"
+            class="flex float-right hidden"
+            src="~/assets/images/panel/close.png"
+            :data-close-id="index"
+          />
+          <img
+            class="flex float-right block"
+            src="~/assets/images/panel/panel-arrow.png"
+            :data-arrow-id="index"
           />
         </div>
       </div>
       <div
         :data-character-id="index"
-        class="bg-app-color text-white md:p-6 hidden flex"
+        class="text-white md:p-6 hidden flex mt-12"
       >
-        <div class="md:flex">
+        <div class="md:flex justify-center md:space-x-6 lg:space-x-12">
           <div class="flex flex-col items-start justify-center lg:mx-12">
-            <p>{{ character.panelDetails }}</p>
-            <button
-              class="bg-white text-black w-full p-2 my-7 md:w-1/2 md:mt-10"
-            >
-              learn more
-            </button>
+            <p class="text-sm text-white font-acumin">
+              {{ character.panelDetails }}
+            </p>
+            <button class="btn-primary mt-20">learn more</button>
           </div>
-          <img
-            src="~/assets/images/panel/panel-section-1.png"
-            class="w-full md:w-3/6 md:mb-7 md:ml-4 lg:mx-14"
-          />
+          <div
+            class="relative left-0 top-0 my-16 md:my-0 md:justify-center md:items-center"
+          >
+            <img
+              src="~/assets/images/panel/panel-mask-image.png"
+              class="relative object-contain w-10/12 md:w-full"
+              alt=""
+            />
+            <img
+              src="~/assets/images/panel/panel-image-1.png"
+              class="absolute object-contain w-10/12 -top-6 left-6 md:w-full"
+              alt="panel image"
+            />
+          </div>
         </div>
-      </div>
-    </div>
-    <div
-      class="grid grid-rows-1 md:grid-flow-col gap-4 bg-app-color text-white uppercase md:px-5 md:w-full md:pb-7"
-    >
-      <div class="col-span-1">
-        <img src="~~/assets/images/panel-1.png" alt="" />
-        <h1 class="text-lg lg:text-h2 break-words leading-none">
-          Dia de los Muertos party
-        </h1>
-        <p class="text-xs text-app-gray">tulum, mexico</p>
-      </div>
-      <div class="col-span-1">
-        <img src="~~/assets/images/panel-2.png" alt="" />
-        <h1 class="text-lg lg:text-h2 break-words leading-none">
-          G | Club Fashion Week Penthouse
-        </h1>
-        <p class="text-xs text-app-gray">new york, ny</p>
-      </div>
-      <div class="col-span-1">
-        <img src="~~/assets/images/panel-3.png" alt="" />
-        <h1 class="text-lg lg:text-h2 break-words leading-none">
-          Supercar Testing with McLaren
-        </h1>
-        <p class="text-xs text-app-gray">monaco</p>
       </div>
     </div>
   </div>
@@ -76,9 +66,7 @@ export default {
   name: "PanelSection",
   data() {
     return {
-      panel1: true,
-      panel2: true,
-      panel3: true,
+      open: false,
       panelList: [
         {
           panelId: "- 01",
@@ -106,6 +94,12 @@ export default {
       const characterInfoElement = document.querySelectorAll(
         '[data-character-id="' + characterIndex + '"]'
       )[0];
+      const arrowElement = document.querySelectorAll(
+        '[data-arrow-id="' + characterIndex + '"]'
+      )[0];
+      const closeElement = document.querySelectorAll(
+        '[data-close-id="' + characterIndex + '"]'
+      )[0];
       if (characterInfoElement.classList.contains("block")) {
         characterInfoElement.classList.remove("block");
         characterInfoElement.classList.add("hidden");
@@ -113,15 +107,20 @@ export default {
         characterInfoElement.classList.remove("hidden");
         characterInfoElement.classList.add("block");
       }
-    },
-    showPanel1() {
-      this.panel1 = !this.panel1;
-    },
-    showPanel2() {
-      this.panel2 = !this.panel2;
-    },
-    showPanel3() {
-      this.panel3 = !this.panel3;
+      if (
+        arrowElement.classList.contains("block") &&
+        closeElement.classList.contains("hidden")
+      ) {
+        arrowElement.classList.remove("block");
+        arrowElement.classList.add("hidden");
+        closeElement.classList.remove("hidden");
+        closeElement.classList.add("block");
+      } else {
+        arrowElement.classList.remove("hidden");
+        arrowElement.classList.add("block");
+        closeElement.classList.remove("block");
+        closeElement.classList.add("hidden");
+      }
     },
   },
 };
