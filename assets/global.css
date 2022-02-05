@@ -6,46 +6,46 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Acumin Variable Concept';
+  font-family: Acumin Variable Concept;
   src: url('./fonts/Acumin-Variable-Concept.ttf');
 }
 
 body {
-
   font-family: Acumin Variable Concept !important;
   height: 100vh;
+}
 
 @layer components {
   .btn-primary {
-    @apply font-acumin text-app-color text-xs uppercase bg-white font-bold mt-12 py-4 px-8
+    @apply font-acumin text-app-color text-xs uppercase bg-white font-bold mt-12 py-4 px-8;
   }
 
   .btn-secondary {
-    @apply cursor-pointer border-2 border-white flex justify-center items-center p-4 w-80
+    @apply cursor-pointer border-2 border-white flex justify-center items-center p-4 w-80;
   }
 
   .btn-secondary-text {
-    @apply font-acumin text-white text-xs flex items-center text-center uppercase
+    @apply font-acumin text-white text-xs flex items-center text-center uppercase;
   }
 
   .btn-experience-secondary {
-    @apply cursor-pointer border-2 border-app-rose flex justify-center items-center p-4 w-80
+    @apply cursor-pointer border-2 border-app-rose flex justify-center items-center p-4 w-80;
   }
 
   .btn-experience-secondary-text {
-    @apply font-acumin text-app-rose text-xs flex items-center text-center uppercase
+    @apply font-acumin text-app-rose text-xs flex items-center text-center uppercase;
   }
 
   .btn-experience-primary {
-    @apply font-acumin text-white text-xs uppercase bg-app-rose font-bold mt-12 py-4 px-8
+    @apply font-acumin text-white text-xs uppercase bg-app-rose font-bold mt-12 py-4 px-8;
   }
 
   .app-divider {
-    @apply w-full h-px bg-white opacity-60
+    @apply w-full h-px bg-white opacity-60;
   }
 
   .app-experience-divider {
-    @apply h-px bg-app-rose opacity-60
+    @apply h-px bg-app-rose opacity-60;
   }
 }
 

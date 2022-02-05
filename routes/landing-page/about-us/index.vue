@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full flex-col md:flex-row flex justify-center items-center md:py-7 lg:space-x-24"
+    class="w-full flex-col md:flex-row flex justify-center items-center px-6 md:py-7 lg:space-x-24"
   >
     <img
       src="~/assets/images/home/about-us-image.png"
@@ -12,7 +12,7 @@
       <p class="mb-7 text-xs text-white uppercase font-acumin">About us</p>
       <!-- <div class="lg:w-forty"> -->
       <h1
-        class="text-xl lg:text-h2 md:max-w-xs lg:max-w-xl text-white uppercase font-ivy-presto"
+        class="text-xl lg:text-h2 md:max-w-xs lg:max-w-xl text-white uppercase font-ivy-presto font-thin tracking-widest"
       >
         Connect with the elite Write the future with those who can Change the
         world with those who can<br />
@@ -20,7 +20,7 @@
       </h1>
       <!-- </div> -->
       <button
-        class="w-full cursor-pointer bg-white py-3 text-sm font-acumin mt-12 md:w-11/12"
+        class="w-full cursor-pointer bg-white py-3 text-sm font-acumin mt-12 md:w-11/12 font-bold tracking-widest"
       >
         LEARN MORE
       </button>

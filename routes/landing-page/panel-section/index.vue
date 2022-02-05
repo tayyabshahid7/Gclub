@@ -1,11 +1,11 @@
 <template>
-  <div class="px-5">
+  <div class="px-12">
     <div
       class="md:px-2 w-full cursor-pointer"
       v-for="(character, index) in panelList"
       :key="character.panelName"
     >
-      <div class="app-divider px-10"></div>
+      <div class="app-divider"></div>
       <div class="w-full h-24 table" @click="characterItemClick(index)">
         <div
           class="table-cell align-middle uppercase py-11 md:py-14 lg:py-20 text-white"
@@ -13,7 +13,7 @@
           <p class="text-white uppercase items-center flex text-xs">
             {{ character.panelId }}
           </p>
-          <p class="text-lg md:text-xl lg:text-h2 font-ivy-presto">
+          <p class="text-lg md:text-xl lg:text-h2 font-ivy-presto font-thin">
             {{ character.panelName }}
           </p>
         </div>
@@ -32,14 +32,14 @@
       </div>
       <div
         :data-character-id="index"
-        class="text-white md:p-6 hidden flex mt-12"
+        class="text-white md:p-6 hidden flex mt-12 mb-20"
       >
         <div class="md:flex justify-center md:space-x-6 lg:space-x-12">
           <div class="flex flex-col items-start justify-center lg:mx-12">
             <p class="text-sm text-white font-acumin">
               {{ character.panelDetails }}
             </p>
-            <button class="btn-primary mt-20">learn more</button>
+            <button class="btn-primary font-acumin w-72 py-6 mt-20">learn more</button>
           </div>
           <div
             class="relative left-0 top-0 my-16 md:my-0 md:justify-center md:items-center"

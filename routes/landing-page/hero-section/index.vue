@@ -1,11 +1,11 @@
 <template>
-  <main class="p-6">
+  <main class="p-10">
     <div
       class="w-full flex-col-reverse md:flex-row flex justify-center items-center md:py-7 lg:space-x-24"
     >
       <div class="lg:w-forty flex flex-col justify-center md:p-5 md:my-7">
         <h1
-          class="text-xl lg:text-h1 md:max-w-xs lg:max-w-xl text-white uppercase font-ivy-presto"
+          class="text-xl lg:text-h1 md:max-w-xs lg:max-w-xl text-white uppercase font-ivy-presto font-thin"
         >
           Forging the thriving future you want to see.
         </h1>

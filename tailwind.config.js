@@ -18,20 +18,59 @@ export default {
       "club-color": "#514829",
     },
     fontSize: {
-      xs: ['14px', { fontWeight: 400, fontStyle: 'normal', lineHeight: '16px', letterSpacing: '2px' }],
-      sm: ['16px', { fontWeight: 400, lineHeight: '32px', letterSpacing: '0em' }],
-      lg: ['24px', { fontWeight: 400, lineHeight: '40px', letterSpacing: '0em' }],
-      xl: ['32px', { fontWeight: 400, lineHeight: '40px', letterSpacing: '0em' }],
-      'h1': ['72px', { fontWeight: 100, fontStyle: 'normal', lineHeight: '72px', letterSpacing: '0em', textTransform: 'uppercase' }],
-      'h2': ['56px', { fontWeight: 100, fontStyle: 'normal', lineHeight: '56px', letterSpacing: '0em', textTransform: 'uppercase' }],
+      xs: [
+        "14px",
+        {
+          fontWeight: 400,
+          fontStyle: "normal",
+          lineHeight: "16px",
+          letterSpacing: "2px",
+        },
+      ],
+      sm: [
+        "16px",
+        { fontWeight: 400, lineHeight: "32px", letterSpacing: "0em" },
+      ],
+      lg: [
+        "24px",
+        { fontWeight: 400, lineHeight: "40px", letterSpacing: "0em" },
+      ],
+      xl: [
+        "32px",
+        { fontWeight: 400, lineHeight: "40px", letterSpacing: "0em" },
+      ],
+      "2xl": [
+        "64px",
+        { fontWeight: 400, lineHeight: "60px", letterSpacing: "0em" },
+      ],
+      h1: [
+        "72px",
+        {
+          fontWeight: 100,
+          fontStyle: "normal",
+          lineHeight: "72px",
+          letterSpacing: "0em",
+          textTransform: "uppercase",
+        },
+      ],
+      h2: [
+        "56px",
+        {
+          fontWeight: 100,
+          fontStyle: "normal",
+          lineHeight: "56px",
+          letterSpacing: "0em",
+          textTransform: "uppercase",
+        },
+      ],
     },
     extend: {
       fontFamily: {
-        acumin: "'Acumin Variable Concept', serif",
-        "ivy-presto": "'IvyPresto Display', serif"
+        acumin: "Acumin Variable Concept, serif",
+        "ivy-presto": "IvyPresto Display, serif",
       },
       spacing: {
-        'forty': '40rem',
+        forty: "40rem",
       },
       backgroundImage: (theme) => ({
         "bg-sign-in": "url('/assets/images/login-screen.webp')",
