@@ -10,17 +10,17 @@
         <div
           class="table-cell align-middle uppercase py-11 md:py-14 lg:py-20 text-app-rose"
         >
-          <p class="text-app-rose uppercase items-center flex text-xs">
+          <p class="text-app-rose uppercase items-center flex text-xs font-thin">
             {{ character.panelId }}
           </p>
-          <p class="text-lg md:text-xl lg:text-h2 font-ivy-presto">
+          <p class="text-lg md:text-xl lg:text-h2 font-ivy-presto font-thin">
             {{ character.panelName }}
           </p>
         </div>
         <div class="table-cell align-middle w-20">
           <img
             class="flex float-right hidden"
-            src="~/assets/images/experience/close.png"
+            src="~/assets/images/experience/close.svg"
             :data-close-id="index"
           />
           <img

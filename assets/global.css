@@ -37,7 +37,7 @@ body {
   }
 
   .btn-experience-primary {
-    @apply font-acumin text-white text-xs uppercase bg-app-rose font-bold mt-12 py-4 px-8;
+    @apply font-acumin text-app-brass text-xs uppercase bg-white font-bold border-2 border-app-brass mt-12 py-4 px-8;
   }
 
   .app-divider {

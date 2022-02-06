@@ -8,24 +8,42 @@
     <div class="w-full md:flex md:px-3 md:space-x-6 uppercase">
       <div class="flex flex-col lg:space-y-3 lg:mx-0">
         <img src="~/assets/images/home/panel-1.png" alt="" />
-        <h1 class="text-app-rose text-lg lg:text-xl font-ivy-presto">
+        <p
+          class="text-app-rose text-lg lg:text-2xl font-ivy-presto font-thin mb-3"
+        >
           Dia de los Muertos party
-        </h1>
-        <p class="text-app-gray mb-5 font-acumin">tulum, mexico</p>
+        </p>
+        <p
+          class="text-app-rose text-opacity-75 mb-5 font-acumin tracking-wider"
+        >
+          tulum, mexico
+        </p>
       </div>
       <div class="flex flex-col lg:space-y-3 lg:mx-0">
         <img src="~/assets/images/home/panel-2.png" alt="" />
-        <h1 class="text-app-rose text-lg lg:text-xl font-ivy-presto">
+        <p
+          class="text-app-rose text-lg lg:text-2xl font-ivy-presto font-thin mb-3"
+        >
           G | Club Fashion Week Penthouse
-        </h1>
-        <p class="text-app-gray mb-5 font-acumin">new york, ny</p>
+        </p>
+        <p
+          class="text-app-rose text-opacity-75 mb-5 font-acumin tracking-wider"
+        >
+          new york, ny
+        </p>
       </div>
       <div class="flex flex-col lg:space-y-3 lg:mx-0">
         <img src="~/assets/images/home/panel-3.png" alt="" />
-        <h1 class="text-app-rose text-lg lg:text-xl font-ivy-presto">
+        <p
+          class="text-app-rose text-lg lg:text-2xl font-ivy-presto font-thin mb-3"
+        >
           Supercar Testing with McLaren
-        </h1>
-        <p class="text-app-gray mb-5 font-acumin">monaco</p>
+        </p>
+        <p
+          class="text-app-rose text-opacity-75 mb-5 font-acumin tracking-wider"
+        >
+          monaco
+        </p>
       </div>
     </div>
     <div class="flex justify-center items-center">
