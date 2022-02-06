@@ -9,12 +9,11 @@
         <h1
           class="text-xl md:max-w-xs lg:max-w-md lg:text-h2 uppercase font-thin font-ivy-presto mb-6"
         >
-          An experience like no other
+          Experience a new level of luxury.
         </h1>
         <p class="mt-5 mb-7 max-w-md tracking-wider leading-9 font-acumin">
-          As part of the G family of brands you’ll be able to access and
-          experience a world that few others can. G|Club members have VIP access
-          to exclusive luxury brands, art, culture and events.
+          At its core, G|Clubs exists to help you thrive. Capture the essence of
+          luxury through the G|Clubs experience and get ready for a new future.
         </p>
         <button class="w-full md:w-64 btn-experience-primary font-acumin">
           learn more

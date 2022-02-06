@@ -3,19 +3,15 @@
     <div class="grid grid-rows-1 grid-cols-2 h-full">
       <div class="m-auto block items-center justify-center uppercase w-2/3">
         <p class="mb-7 text-club-color font-acumin tracking-widest mb-24">
-          join the club
+          Join Today
         </p>
         <p
           class="text-left text-2xl font-thin tracking-wider text-white overflow-hidden font-ivy-presto text-club-color leading-none mb-20"
         >
-          a membership <br />
-          like no other
+          Let's travel <br />
+          to the future.
         </p>
-        <button
-          class="w-3/4 text-sm mt-8 py-3 px-8 bg-transparent border-2 border-inherit font-acumin font-bold tracking-widest text-club-color"
-        >
-          SIGN UP TODAY
-        </button>
+        <button class="btn-join-club-primary">See Memberships</button>
       </div>
       <div class="flex items-center justify-center w-3/4">
         <img
