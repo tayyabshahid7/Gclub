@@ -10,7 +10,9 @@
         <div
           class="table-cell align-middle uppercase py-11 md:py-14 lg:py-20 text-app-rose"
         >
-          <p class="text-app-rose uppercase items-center flex text-xs font-thin">
+          <p
+            class="text-app-rose uppercase items-center flex text-xs font-thin"
+          >
             {{ character.panelId }}
           </p>
           <p class="text-lg md:text-xl lg:text-h2 font-ivy-presto font-thin">
@@ -36,10 +38,10 @@
       >
         <div class="md:flex justify-center md:space-x-6 lg:space-x-12">
           <div class="flex flex-col items-start justify-center lg:mx-12">
-            <p class="text-sm text-app-rose font-acumin">
+            <p class="text-sm lg:text-lg tracking-wider lg:w-sixty text-app-rose font-acumin">
               {{ character.panelDetails }}
             </p>
-            <button class="btn-experience-primary mt-20">learn more</button>
+            <button class="btn-experience-secondary mt-20">learn more</button>
           </div>
           <div
             class="relative left-0 top-0 my-16 md:my-0 md:justify-center md:items-center"
@@ -72,25 +74,25 @@ export default {
           panelId: "- 01",
           panelName: "society",
           panelDetails:
-            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "Being a G|Clubs member is a status symbol, but also a mission statement: it tells the world that you want more out of life and only the very best satisfies you. Wear that like a badge of honor.",
         },
         {
           panelId: "- 02",
           panelName: "travel",
           panelDetails:
-            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "Discover G|Summit, a meeting of social, political, and entrepreneurial ideas and conversations from around the globe, starring our members, distinguished guests, and our spokesperson.",
         },
         {
           panelId: "- 03",
           panelName: "fashion",
           panelDetails:
-            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "Get special access to the latest fashion collecions from our state-of-the-art luxury brand where new emerging designers show off their boldness and talent through expert craftsmanship.",
         },
         {
           panelId: "- 04",
           panelName: "tech",
           panelDetails:
-            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "Receive special member pricing on purchases, extended video blogging time, and early access to select music produced by or on behalf of Mr. Miles Guo.",
         },
       ],
     };
