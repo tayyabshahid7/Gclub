@@ -35,11 +35,13 @@
         class="text-white md:p-6 hidden flex mt-12 mb-20"
       >
         <div class="md:flex justify-center md:space-x-6 lg:space-x-12">
-          <div class="flex flex-col items-start justify-center lg:mx-12">
-            <p class="text-sm text-white font-acumin">
+          <div class="flex flex-col items-start justify-center lg:mx-12 lg:w-sixty">
+            <p class="text-sm lg:text-lg text-white font-acumin tracking-wider">
               {{ character.panelDetails }}
             </p>
-            <button class="btn-primary font-acumin w-72 py-6 mt-20">learn more</button>
+            <button class="btn-primary font-acumin w-72 py-6 mt-20">
+              learn more
+            </button>
           </div>
           <div
             class="relative left-0 top-0 my-16 md:my-0 md:justify-center md:items-center"
@@ -72,19 +74,19 @@ export default {
           panelId: "- 01",
           panelName: "club",
           panelDetails:
-            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "An exclusive, like-minded group of individuals that will challenge you to Make an impact on the world as we know it.",
         },
         {
           panelId: "- 02",
           panelName: "experience",
           panelDetails:
-            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "Enjoy a twenty-four hour concierge service, access to exclusive talks, events, content, and more.  ",
         },
         {
           panelId: "- 03",
           panelName: "membership",
           panelDetails:
-            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "Curate your G|Clubs experience with five membership tiers, each with its own perks and exclusive benefits.",
         },
       ],
     };

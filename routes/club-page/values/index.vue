@@ -2,13 +2,15 @@
   <div class="bg-value-color text-white h-full w-full">
     <!-- <img class="object-fill" src="../../../assets/images/club/our-value.png" /> -->
     <div
-      class="flex flex-wrap mx-auto text-center content-center justify-center"
+      class="flex flex-col mx-auto text-center content-center justify-center"
     >
-      <h1
-        class="text-sm uppercase font-acumin tracking-widest text-app-wash p-9 mt-20 mb-20"
-      >
-        our values
-      </h1>
+      <div>
+        <h1
+          class="text-sm uppercase font-acumin tracking-widest text-app-wash p-9 mt-20 mb-20"
+        >
+          our values
+        </h1>
+      </div>
       <div class="table text-center content-center justify-center my-9">
         <p
           class="text-2xl uppercase font-ivy-presto font-thin tracking-wide text-app-wash mb-9"
@@ -18,11 +20,10 @@
         <p
           class="w-9/12 lg:w-2/5 mx-auto text-sm font-acumin tracking-wider text-app-wash mb-20"
         >
-          Amet facilisis magna etiam tempor. Nibh tortor id aliquet lectus proin
-          nibh. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor.
-          Adipiscing vitae proin sagittis nisl rhoncus mattis. Duis tristique
-          sollicitudin nibh sit amet commodo. Amet facilisis magna etiam tempor
-          orci eu.
+          G|Clubs is born out of the crutial need to unite the elite minds of
+          today’s zeitgeist in one space, <br />
+          offering them a Space to connect, thrive, and have a little fun while
+          doing it.
         </p>
       </div>
       <div class="w-full px-16 mb-24">

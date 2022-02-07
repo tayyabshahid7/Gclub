@@ -72,6 +72,8 @@ export default {
       },
       spacing: {
         forty: "40rem",
+        sixty: "60rem",
+        hundred: "100rem"
       },
       backgroundImage: (theme) => ({
         "bg-sign-in": "url('/assets/images/login-screen.webp')",
