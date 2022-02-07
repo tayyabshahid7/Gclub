@@ -1,18 +1,20 @@
 <template>
-  <div class="hero-bg h-screen w-full flex flex-col">
-    <div class="container mx-auto pt-20 text-club-color text-lg leading-none">
-      <h3>The future is for the taking.</h3>
-      <h3>The future belongs to those who can.</h3>
-      <h3><strong>One vision. One future. One membership.</strong></h3>
+  <div class="hero-bg h-full w-full flex flex-col">
+    <div
+      class="ml-16 pt-20 text-club-color text-sm md:text-lg lg:text-xl leading-none mt-36 mb-16"
+    >
+      <h3 class="hero-text">The future is for the taking.</h3>
+      <h3 class="hero-text">The future belongs to those who can.</h3>
+      <h3 class="hero-text">
+        <strong>One vision. One future. One membership.</strong>
+      </h3>
     </div>
-    <div class="relative h-full m-8 overflow-hidden rounded-lg">
-      <div class="absolute top-0 right-0 block w-full h-full">
-        <img
-          alt="Snowy mountain lake"
-          class="object-cover min-w-full h-full"
-          src="../../../assets/images/hero-inner-img.png"
-        />
-      </div>
+    <div>
+      <img
+        alt="Snowy mountain lake"
+        class="object-contain w-full h-full p-16 mb-12"
+        src="~/assets/images/hero-inner-img.png"
+      />
     </div>
   </div>
 </template>
@@ -24,12 +26,6 @@ export default {
 </script>
 
 <style scoped>
-.inner-img {
-  position: absolute;
-  top: 30%;
-  left: 7.25%;
-  width: 84%;
-}
 .hero-bg {
   background: url("../../../assets/images/club-screen-hero.svg");
 }
@@ -49,5 +45,16 @@ export default {
 }
 .pipe {
   border-left: 6px solid white;
+}
+
+.hero-text {
+  width: 1500px;
+  font-family: IvyPresto Display;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 56px;
+  line-height: 72px;
+  text-transform: uppercase;
+  color: #514829;
 }
 </style>

@@ -1,9 +1,10 @@
 <template>
-  <div>
+  <div class="bg-app-color">
     <hero />
     <nav-bar />
     <hero-section />
     <panel-section />
+    <from-the-club />
     <about-us />
     <app-footer />
     <hero-end />
@@ -17,7 +18,9 @@ import NavBar from "~~/layouts/nav-bar.vue";
 import HeroSection from "~~/routes/landing-page/hero-section";
 import HeroEnd from "~~/routes/landing-page/hero-end";
 import PanelSection from "~~/routes/landing-page/panel-section";
+import FromTheClub from "~~/routes/landing-page/from-the-club";
 import AppFooter from "~~/layouts/app-footer.vue";
+import TopBar from "~~/components/top-bar.vue";
 export default {
   components: {
     AboutUs,
@@ -27,7 +30,13 @@ export default {
     Hero,
     HeroEnd,
     AppFooter,
+    TopBar,
+    FromTheClub,
   },
   name: "IndexPage",
 };
 </script>
+
+<style>
+@import url("https://use.typekit.net/muu4fqf.css");
+</style>

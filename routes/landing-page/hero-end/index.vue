@@ -1,11 +1,13 @@
 <template>
   <section class="w-full h-screen relative text-center">
     <img
-      src="../../../assets/images/hero-end.png"
+      src="~/assets/images/hero-end.png"
       class="object-cover w-full h-full bg-cover bg-center"
-      alt="Image alt text"
+      alt="hero-bg"
     />
-    <p class="centered text-white">G <span class="pipe mx-5"></span> CLUBS</p>
+    <div class="flex justify-center items-center inset-7 absolute image-border">
+      <img class="shrink w-3/5" src="~/assets/images/logo/Wordmark.svg" />
+    </div>
   </section>
 </template>
 
@@ -16,20 +18,8 @@ export default {
 </script>
 
 <style scoped>
-.centered {
-  position: absolute;
-  font-size: 10rem;
-  border: 1px solid #fff;
-  left: 48px;
-  top: 40px;
-  bottom: 40px;
-  right: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pipe {
-  border-left: 6px solid white;
-  height: 30%;
+.image-border {
+  border: 1px solid rgba(250, 250, 250, 0.6);
+  box-sizing: border-box;
 }
 </style>

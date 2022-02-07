@@ -1,58 +1,61 @@
 <template>
-  <div class="bg-app-color">
-    <div class="border-t border-app-gray mx-10" />
-    <div class="px-10 w-full h-24 bg-app-color table">
-      <div class="table-cell align-middle">
-        <p class="text-white ml-auto mr-auto">- 01</p>
-        <h1 class="uppercase text-white ml-auto mr-auto">club</h1>
-      </div>
-      <div class="table-cell align-middle">
-        <img class="flex float-right" src="~~/assets/images/panel-arrow.png" />
-      </div>
-    </div>
-    <div class="border-t border-app-gray mx-10" />
-    <div class="px-10 w-full h-24 bg-app-color table">
-      <div class="table-cell align-middle">
-        <p class="text-white ml-auto mr-auto">- 02</p>
-        <h1 class="uppercase text-white ml-auto mr-auto">experience</h1>
-      </div>
-      <div class="table-cell align-middle">
-        <img class="flex float-right" src="~~/assets/images/panel-arrow.png" />
-      </div>
-    </div>
-    <div class="border-t border-app-gray mx-10" />
-    <div class="px-10 w-full h-24 bg-app-color table">
-      <div class="table-cell align-middle">
-        <p class="text-white ml-auto mr-auto">- 03</p>
-        <h1 class="uppercase text-white ml-auto mr-auto">membership</h1>
-      </div>
-      <div class="table-cell align-middle">
-        <img class="flex float-right" src="~~/assets/images/panel-arrow.png" />
-      </div>
-    </div>
+  <div class="px-12">
     <div
-      class="grid grid-flow-col grid-cols-3 bg-app-color text-white uppercase mt-24 pb-24"
+      class="md:px-2 w-full cursor-pointer"
+      v-for="(character, index) in panelList"
+      :key="character.panelName"
     >
-      <div class="items-center justify-center m-auto">
-        <img src="~~/assets/images/panel-1.png" alt="" />
-        <h1 class="text-base break-words leading-none">
-          Dia de los Muertos party
-        </h1>
-        <p class="text-xs text-app-gray">tulum, mexico</p>
+      <div class="app-divider"></div>
+      <div class="w-full h-24 table" @click="characterItemClick(index)">
+        <div
+          class="table-cell align-middle uppercase py-11 md:py-14 lg:py-20 text-white"
+        >
+          <p class="text-white uppercase items-center flex text-xs">
+            {{ character.panelId }}
+          </p>
+          <p class="text-lg md:text-xl lg:text-h2 font-ivy-presto font-thin">
+            {{ character.panelName }}
+          </p>
+        </div>
+        <div class="table-cell align-middle w-20">
+          <img
+            class="flex float-right hidden"
+            src="~/assets/images/panel/close.png"
+            :data-close-id="index"
+          />
+          <img
+            class="flex float-right block"
+            src="~/assets/images/panel/panel-arrow.png"
+            :data-arrow-id="index"
+          />
+        </div>
       </div>
-      <div class="items-center justify-center m-auto mt-0">
-        <img src="~~/assets/images/panel-2.png" alt="" />
-        <h1 class="text-base break-words leading-none">
-          G | Club Fashion Week Penthouse
-        </h1>
-        <p class="text-xs text-app-gray">new york, ny</p>
-      </div>
-      <div class="items-center justify-center m-auto">
-        <img src="~~/assets/images/panel-3.png" alt="" />
-        <h1 class="text-base break-words leading-none">
-          Supercar Testing with McLaren
-        </h1>
-        <p class="text-xs text-app-gray">monaco</p>
+      <div
+        :data-character-id="index"
+        class="text-white md:p-6 hidden flex mt-12 mb-20"
+      >
+        <div class="md:flex justify-center md:space-x-6 lg:space-x-12">
+          <div class="flex flex-col items-start justify-center lg:mx-12">
+            <p class="text-sm text-white font-acumin">
+              {{ character.panelDetails }}
+            </p>
+            <button class="btn-primary font-acumin w-72 py-6 mt-20">learn more</button>
+          </div>
+          <div
+            class="relative left-0 top-0 my-16 md:my-0 md:justify-center md:items-center"
+          >
+            <img
+              src="~/assets/images/panel/panel-mask-image.png"
+              class="relative object-contain w-10/12 md:w-full"
+              alt=""
+            />
+            <img
+              src="~/assets/images/panel/panel-image-1.png"
+              class="absolute object-contain w-10/12 -top-6 left-6 md:w-full"
+              alt="panel image"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -61,6 +64,65 @@
 <script>
 export default {
   name: "PanelSection",
+  data() {
+    return {
+      open: false,
+      panelList: [
+        {
+          panelId: "- 01",
+          panelName: "club",
+          panelDetails:
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          panelId: "- 02",
+          panelName: "experience",
+          panelDetails:
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          panelId: "- 03",
+          panelName: "membership",
+          panelDetails:
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+      ],
+    };
+  },
+  methods: {
+    characterItemClick(characterIndex) {
+      const characterInfoElement = document.querySelectorAll(
+        '[data-character-id="' + characterIndex + '"]'
+      )[0];
+      const arrowElement = document.querySelectorAll(
+        '[data-arrow-id="' + characterIndex + '"]'
+      )[0];
+      const closeElement = document.querySelectorAll(
+        '[data-close-id="' + characterIndex + '"]'
+      )[0];
+      if (characterInfoElement.classList.contains("block")) {
+        characterInfoElement.classList.remove("block");
+        characterInfoElement.classList.add("hidden");
+      } else {
+        characterInfoElement.classList.remove("hidden");
+        characterInfoElement.classList.add("block");
+      }
+      if (
+        arrowElement.classList.contains("block") &&
+        closeElement.classList.contains("hidden")
+      ) {
+        arrowElement.classList.remove("block");
+        arrowElement.classList.add("hidden");
+        closeElement.classList.remove("hidden");
+        closeElement.classList.add("block");
+      } else {
+        arrowElement.classList.remove("hidden");
+        arrowElement.classList.add("block");
+        closeElement.classList.remove("block");
+        closeElement.classList.add("hidden");
+      }
+    },
+  },
 };
 </script>
 

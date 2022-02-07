@@ -1,12 +1,25 @@
 <template>
-  <section class="w-full h-screen relative text-center">
+  <div class="w-full h-screen relative text-center">
     <img
-      src="../../../assets/images/bg-hero.jpg"
+      src="~/assets/images/home/bg-hero.png"
       class="object-cover w-full h-full bg-cover bg-center"
-      alt="Image alt text"
+      alt="hero-bg"
     />
-    <p class="centered text-white">G <span class="pipe mx-5"></span> CLUBS</p>
-  </section>
+    <div
+      class="flex flex-col justify-center items-center inset-7 absolute image-border"
+    >
+      <div class="shrink w-3/5 mt-64">
+        <img
+          class="w-full object-contain"
+          src="~/assets/images/logo/Wordmark.svg"
+        />
+      </div>
+      <div class="hero-text flex flex-col items-center justify-center">
+        <p>Scroll Down</p>
+        <img class="mt-10" width="70" src="~/assets/images/arrow-down.png" alt="down arrow" />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -16,20 +29,20 @@ export default {
 </script>
 
 <style scoped>
-.centered {
-  position: absolute;
-  font-size: 10rem;
-  border: 1px solid #fff;
-  left: 48px;
-  top: 40px;
-  bottom: 40px;
-  right: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.image-border {
+  border: 1px solid rgba(250, 250, 250, 0.6);
+  box-sizing: border-box;
 }
-.pipe {
-  border-left: 6px solid white;
-  height: 30%;
+
+.hero-text {
+  margin-top: 350px;
+  font-family: Acumin Variable Concept;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 </style>

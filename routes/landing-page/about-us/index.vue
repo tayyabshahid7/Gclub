@@ -1,30 +1,29 @@
 <template>
-  <div class="bg-app-color h-screen">
-    <div class="grid grid-rows-1 grid-cols-2 h-full">
-      <div class="flex items-center justify-center">
-        <div class="flex items-center justify-center w-7/12 py-14 imgTest">
-          <img
-            class="m-auto max-w-xs max-h-96 h-full w-full object-cover"
-            src="../../../assets/images/about-us-2.png"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="m-auto flex items-center justify-center">
-        <div class="block">
-          <p class="mb-7 text-white">About us</p>
-          <h1
-            class="text-left text-lg text-white w-9/12 uppercase leading-none"
-          >
-            Connect with the elite Write the future with those who can Change
-            the world with those who can
-            <strong> invitation to live boldly</strong>
-          </h1>
-          <button class="uppercase text-xs mt-8 py-1 px-8 bg-white text-black">
-            learn more
-          </button>
-        </div>
-      </div>
+  <div
+    class="w-full flex-col md:flex-row flex justify-center items-center px-6 md:py-7 lg:space-x-24"
+  >
+    <img
+      src="~/assets/images/home/about-us-image.png"
+      alt=""
+      class="p-6 h-full object-cover my-5 md:p-5 md:w-5/12 lg:w-4/12"
+      loading="lazy"
+    />
+    <div class="flex flex-col justify-center p-5 md:my-7 md:px-7">
+      <p class="mb-7 text-xs text-white uppercase font-acumin">About us</p>
+      <!-- <div class="lg:w-forty"> -->
+      <h1
+        class="text-xl lg:text-h2 md:max-w-xs lg:max-w-xl text-white uppercase font-ivy-presto font-thin tracking-widest"
+      >
+        Connect with the elite Write the future with those who can Change the
+        world with those who can<br />
+        <strong> invitation to live boldly</strong>
+      </h1>
+      <!-- </div> -->
+      <button
+        class="w-full cursor-pointer bg-white py-3 text-sm font-acumin mt-12 md:w-11/12 font-bold tracking-widest"
+      >
+        LEARN MORE
+      </button>
     </div>
   </div>
 </template>
@@ -35,11 +34,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.imgTest {
-  background: url("../../../assets/images/about-us-1.png");
-}
-.img2 {
-  max-height: 300px;
-}
-</style>
+<style scoped></style>

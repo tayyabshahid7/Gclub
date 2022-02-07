@@ -1,36 +1,40 @@
 <template>
   <div class="h-screen">
+    <app-loader :loadNow="loading" />
     <div class="w-full flex flex-wrap">
       <!-- Image Section -->
-      <div class="w-1/2 h-full shadow-2xl relative">
+      <div class="w-full md:w-1/2 md:h-full shadow-2xl relative">
         <img
-          class="object-cover w-full h-screen hidden md:block"
+          class="object-cover w-full md:h-screen"
           src="../assets/images/login-screen.webp"
         />
         <div
           class="lg:w-full absolute top-0 right-0 bottom-0 left-0 text-center flex justify-center items-center"
         >
-          <h1
-            class="centered xl:text-xl lg:text-xl md:text-lg text-white px-5 uppercase"
-          >
+          <h1 class="box-line text-lg lg:text-h1 text-white px-3">
             A place to connect with the elite. Take the pulse of the world. From
             here to Exclusivity.
           </h1>
         </div>
       </div>
       <!-- Login Section -->
-      <div class="bg-app-color w-full md:w-1/2 flex flex-col sm:w-full">
-        <div class="flex justify-center pt-4">
-          <NuxtLink to="/"
-            ><img src="../assets/images/app-logo.png"
-          /></NuxtLink>
+      <div class="bg-app-color w-full py-4 md:w-1/2 flex flex-col">
+        <div class="flex m-4 justify-between md:justify-center">
+          <NuxtLink to="/">
+            <img src="../assets/images/logo/Symbol.svg" width="36" />
+          </NuxtLink>
+          <NuxtLink to="/" class="md:hidden">
+            <img src="../assets/images/svg/close-button.svg" width="36" />
+          </NuxtLink>
         </div>
 
-        <div class="flex flex-col justify-center my-auto px-8 xl:px-32">
+        <div class="flex flex-col justify-center md:my-auto px-4 mt-2 xl:px-32">
           <form class="flex flex-col" @submit.prevent="submitForm">
             <div class="flex flex-col">
-              <label for="email" class="lg:text-base md:text-md text-white"
-                >Email</label
+              <label
+                for="email"
+                class="lg:text-base md:text-md text-white uppercase"
+                >Email Address</label
               >
               <input
                 type="email"
@@ -41,7 +45,9 @@
             </div>
 
             <div class="flex flex-col pt-4">
-              <label for="password" class="lg:text-base md:text-md text-white"
+              <label
+                for="password"
+                class="lg:text-base md:text-md text-white uppercase"
                 >Password</label
               >
               <input
@@ -54,11 +60,11 @@
 
             <input
               type="submit"
-              value="SUBMIT"
-              class="bg-white font-bold lg:text-base md:text-md p-2 mt-12 text-app-color"
+              value="CONTINUE"
+              class="bg-white font-bold lg:text-base md:text-md p-4 mt-12 text-app-color"
             />
           </form>
-          <div class="text-center text-white pt-12">
+          <div class="text-center text-white mt-4 md:pt-12">
             <p>
               Don't have an account?
               <NuxtLink class="underline" to="/signup">Register here.</NuxtLink>
@@ -76,6 +82,7 @@ export default {
     return {
       email: "",
       password: "",
+      loading: false,
     };
   },
   methods: {
@@ -84,9 +91,9 @@ export default {
       //   email: this.email,
       //   password: this.password,
       // });
-      this.$nuxt.$loading.start();
+      this.loading = true;
       setTimeout(() => {
-        this.$nuxt.$loading.finish();
+        this.loading = false;
         this.$router.push("/");
       }, 2500);
     },
@@ -95,16 +102,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.centered {
-  position: absolute;
-  border: 1px solid #fff;
-  left: 40px;
-  top: 40px;
-  bottom: 40px;
-  right: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-</style>
+<style scoped></style>

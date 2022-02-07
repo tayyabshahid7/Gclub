@@ -1,13 +1,13 @@
 <template>
-  <section class="w-full h-screen relative text-center">
+  <div class="w-full h-screen relative text-center">
     <img
-      src="../../../assets/images/club-screen-hero.svg"
+      src="~/assets/images/club-screen-hero.svg"
       class="object-cover w-full h-full bg-cover bg-center"
       alt="Image alt text"
     />
     <p class="centered text-white">G <span class="pipe mr-10"></span> CLUBS</p>
     <div class="w-full container" />
-  </section>
+  </div>
 </template>
 
 <script>
