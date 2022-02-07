@@ -16,6 +16,7 @@ export default {
       "app-secondary-gray": "#E0DEDA",
       "value-color": "#182637",
       "club-color": "#514829",
+      "contact-color": "#E0DEDA",
     },
     fontSize: {
       xs: [
