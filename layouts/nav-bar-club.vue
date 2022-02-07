@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="navbar-club flex items-center justify-between sticky transition-all duration-500 flex-wrap bg-transparent p-12"
+    class="navbar-club flex items-center justify-between sticky transition-all duration-500 flex-wrap bg-transparent p-3"
   >
     <!-- Mobile toggle -->
     <div class="lg:hidden">
