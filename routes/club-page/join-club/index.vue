@@ -1,27 +1,28 @@
 <template>
-  <div class="bg-app-secondary-gray h-screen">
-    <div class="grid grid-rows-1 grid-cols-2 h-full">
-      <div class="m-auto block items-center justify-center uppercase w-2/3">
-        <p class="mb-7 text-club-color font-acumin tracking-widest mb-24">
-          Join Today
-        </p>
-        <p
-          class="text-left text-2xl font-thin tracking-wider text-white overflow-hidden font-ivy-presto text-club-color leading-none mb-20"
+  <main class="p-6">
+    <div
+      class="w-full flex-col-reverse md:flex-row flex justify-center items-center md:py-7 lg:space-x-24"
+    >
+      <div class="lg:w-forty flex flex-col justify-center md:p-5 md:my-7">
+        <p class="mb-16 text-app-brass uppercase tracking-widest">join today</p>
+        <h1
+          class="text-xl lg:text-h1 md:max-w-xs lg:max-w-xl text-app-brass uppercase font-ivy-presto font-thin mb-6"
         >
-          Let's travel <br />
-          to the future.
-        </p>
-        <button class="btn-join-club-primary">See Memberships</button>
+          let's travel to the future.
+        </h1>
+        <div class="mt-7">
+          <NuxtLink to="/signup" class="btn-join-club-primary"
+            >See Memberships</NuxtLink
+          >
+        </div>
       </div>
-      <div class="flex items-center justify-center w-3/4">
-        <img
-          class="h-full w-full object-contain"
-          src="~/assets/images/club-footer.png"
-          alt=""
-        />
-      </div>
+      <img
+        class="h-full object-cover my-5 md:p-5 md:w-5/12 lg:w-4/12"
+        src="~/assets/images/experience/join-the-club.png"
+        alt=""
+      />
     </div>
-  </div>
+  </main>
 </template>
 
 <script>

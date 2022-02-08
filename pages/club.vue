@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import HeroSection from "~~/routes/club-page/hero";
 import NavbarClub from "~~/layouts/nav-bar-club";
+import HeroSection from "~~/routes/club-page/hero";
 import PanelSection from "~~/routes/club-page/panel-section";
 import Values from "~~/routes/club-page/values";
 import ValuesSection from "~~/routes/club-page/values-section";

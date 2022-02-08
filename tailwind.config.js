@@ -14,8 +14,7 @@ export default {
       "app-charcoal": "#242625",
       "app-loader": "#222428",
       "app-secondary-gray": "#E0DEDA",
-      "value-color": "#182637",
-      "club-color": "#514829",
+      "app-marine": "#182637",
     },
     fontSize: {
       xs: [
@@ -29,7 +28,7 @@ export default {
       ],
       sm: [
         "16px",
-        { fontWeight: 400, lineHeight: "32px", letterSpacing: "0em" },
+        { fontWeight: 400, lineHeight: "28px", letterSpacing: "0em" },
       ],
       lg: [
         "24px",
@@ -72,7 +71,7 @@ export default {
       spacing: {
         forty: "40rem",
         sixty: "60rem",
-        hundred: "100rem"
+        hundred: "100rem",
       },
       backgroundImage: (theme) => ({
         "bg-sign-in": "url('/assets/images/login-screen.webp')",

@@ -8,16 +8,22 @@
     <div
       class="flex flex-col justify-center items-center inset-7 absolute image-border"
     >
-      <div class="shrink w-3/5 mt-64">
+      <div class="shrink w-3/5">
         <img
           class="w-full object-contain"
           src="~/assets/images/logo/Wordmark.svg"
         />
       </div>
-      <div class="hero-text flex flex-col items-center justify-center">
-        <p>Scroll Down</p>
-        <img class="mt-10" width="70" src="~/assets/images/arrow-down.png" alt="down arrow" />
-      </div>
+    </div>
+    <div
+      class="w-full absolute bottom-9 flex flex-col items-center justify-center text-white uppercase"
+    >
+      <p class="mb-3 font-acumin">Scroll Down</p>
+      <img
+        class="w-8 h-4 lg:w-16 lg:h-8 mb-6"
+        src="~/assets/images/arrow-down.png"
+        alt="down arrow"
+      />
     </div>
   </div>
 </template>
@@ -32,17 +38,5 @@ export default {
 .image-border {
   border: 1px solid rgba(250, 250, 250, 0.6);
   box-sizing: border-box;
-}
-
-.hero-text {
-  margin-top: 350px;
-  font-family: Acumin Variable Concept;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 16px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 </style>
