@@ -1,137 +1,124 @@
 <template>
   <nav
-    class="navbar-club flex items-center justify-between sticky transition-all duration-500 flex-wrap bg-transparent p-3"
+    class="navbar-club w-full fixed flex items-center justify-between sticky transition-all duration-500 flex-wrap"
   >
-    <!-- Mobile toggle -->
-    <div class="lg:hidden">
-      <button
-        @click="drawer"
-        class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
-      >
-        <svg
-          class="h-8 w-8 fill-current text-black"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
-    </div>
-
-    <div class="flex-grow lg:flex lg:items-center lg:w-auto hidden ml-4">
-      <div class="text-sm flex-grow">
-        <NuxtLink
-          v-for="item in data"
-          :key="item.id"
-          :to="item.to"
-          class="block mt-4 lg:inline-block lg:mt-0 mr-4 navbar-text"
-        >
-          {{ item.name }}
+    <div class="w-full flex items-center justify-between py-3 px-7">
+      <!-- Header logo -->
+      <div class="w-full flex justify-between lg:hidden">
+        <NuxtLink to="/">
+          <img
+            class="w-auto md:block h-10"
+            src="~/assets/images/logo/Symbol_club.svg"
+            width="36"
+          />
         </NuxtLink>
+        <img
+          @click="drawer"
+          class="lg:hidden"
+          src="~/assets/images/svg/menu-app-button.svg"
+          width="32"
+        />
       </div>
-      <div class="text-sm lg:flex-grow">
-        <NuxtLink
-          to="/"
-          class="lg:inline-block mr-auto ml-auto align-middle text-app-color"
-        >
-          <img src="~/assets/images/app-logo-default.svg" class="h-20" />
-        </NuxtLink>
-      </div>
-      <NuxtLink
-        to="/signin"
-        class="flex items-center flex-shrink-0 text-app-color mr-6 navbar-text"
-      >
-        SIGN IN
-      </NuxtLink>
 
-      <div>
-        <NuxtLink
-          to="/signup"
-          class="inline-block px-10 py-3 leading-none border-2 hover:bg-white mt-4 lg:mt-0 navbar-text"
-          >JOIN THE CLUB</NuxtLink
-        >
-      </div>
-    </div>
-    <!-- Dark Background Transition -->
-    <transition
-      enter-class="opacity-0"
-      enter-active-class="ease-out transition-medium"
-      enter-to-class="opacity-100"
-      leave-class="opacity-100"
-      leave-active-class="ease-out transition-medium"
-      leave-to-class="opacity-0"
-    >
+      <!-- Navbar -->
       <div
-        @keydown.esc="isOpen = false"
-        v-show="isOpen"
-        class="z-10 fixed inset-0 transition-opacity"
+        class="hidden ld:block flex-grow lg:flex lg:items-center lg:w-auto mt-3"
       >
-        <div
-          @click="isOpen = false"
-          class="absolute inset-0 bg-black opacity-50"
-          tabindex="0"
-        ></div>
-      </div>
-    </transition>
-
-    <!-- Drawer Menu -->
-    <aside
-      class="p-5 transform top-0 left-0 w-64 fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 bg-app-color text-white lg:hidden"
-      :class="isOpen ? 'translate-x-0' : '-translate-x-full'"
-    >
-      <div class="close">
-        <button
-          class="absolute top-0 right-0 mt-4 mr-4"
-          @click="isOpen = false"
+        <div class="text-sm lg:flex-grow">
+          <NuxtLink
+            v-for="item in data"
+            :key="item.id"
+            :to="item.to"
+            class="block mt-4 lg:inline-block tracking-wide lg:mt-0 mr-6 uppercase text-acumin text-xs font-bold text-app-color"
+          >
+            {{ item.name }}
+          </NuxtLink>
+        </div>
+        <div class="text-sm lg:flex-grow">
+          <NuxtLink
+            to="/"
+            class="lg:inline-block mr-auto ml-auto align-middle text-app-color"
+          >
+            <img src="~/assets/images/logo/Symbol_club.svg" width="50" />
+          </NuxtLink>
+        </div>
+        <NuxtLink
+          to="/signin"
+          class="flex items-center flex-shrink-0 text-app-color mr-6 text-acumin font-bold text-xs"
         >
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-      </div>
-
-      <span @click="isOpen = false" class="flex w-full p-4">
-        <NuxtLink to="/" class="align-middle text-white">
-          <img src="~/assets/images/logo/Symbol.svg" />
+          SIGN IN
         </NuxtLink>
-      </span>
-
-      <ul class="divide-y font-sans">
-        <li>
-          <a href="#" @click="isOpen = false" class="my-4 inline-block">club</a>
-        </li>
-        <li>
-          <a href="#" @click="isOpen = false" class="my-4 inline-block"
-            >experience</a
-          >
-        </li>
-        <li>
-          <a href="#" @click="isOpen = false" class="my-4 inline-block"
-            >membership</a
-          >
-        </li>
-        <li>
+        <div>
           <NuxtLink
             to="/signup"
-            @click="isOpen = false"
-            class="inline-block text-sm px-10 py-4 leading-none border-2 text-white border-green mt-4 lg:mt-0"
+            class="inline-block text-sm px-10 py-4 leading-none border-2 border-app-color text-app-color font-bold mt-4 lg:mt-0 text-acumin"
             >JOIN THE CLUB</NuxtLink
           >
-        </li>
-      </ul>
-    </aside>
+        </div>
+      </div>
+
+      <!-- Drawer Menu -->
+      <aside
+        class="p-3 transform top-0 left-0 w-64 bg-white text-app-color fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30"
+        :class="isOpen ? 'translate-x-0' : '-translate-x-full'"
+      >
+        <div class="close">
+          <img
+            class="absolute top-0 right-0 mt-4 mr-4"
+            @click="isOpen = false"
+            src="~/assets/images/svg/close-button-black.svg"
+          />
+        </div>
+
+        <span
+          @click="isOpen = false"
+          class="flex w-full items-center p-4 border-b"
+        >
+          <NuxtLink to="/">
+            <img
+              class="w-auto md:block h-10"
+              src="~/assets/images/logo/Symbol_club.svg"
+              width="36"
+            />
+          </NuxtLink>
+        </span>
+
+        <ul class="divide-y uppercase">
+          <li>
+            <NuxtLink
+              to="/club"
+              @click="isOpen = false"
+              class="my-4 inline-block"
+              >club</NuxtLink
+            >
+          </li>
+          <li>
+            <NuxtLink
+              to="/experience"
+              @click="isOpen = false"
+              class="my-4 inline-block"
+              >experience</NuxtLink
+            >
+          </li>
+          <li>
+            <NuxtLink
+              to="/membership"
+              @click="isOpen = false"
+              class="my-4 inline-block"
+              >membership</NuxtLink
+            >
+          </li>
+          <li>
+            <NuxtLink
+              to="/signup"
+              @click="isOpen = false"
+              class="my-10 px-3 w-full text-center font-semibold cta inline-block border border-app-color uppercase"
+              >join the club</NuxtLink
+            >
+          </li>
+        </ul>
+      </aside>
+    </div>
   </nav>
 </template>
 

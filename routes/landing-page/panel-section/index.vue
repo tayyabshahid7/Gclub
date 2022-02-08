@@ -1,5 +1,5 @@
 <template>
-  <div class="px-12">
+  <div class="px-6 md:px-12">
     <div
       class="md:px-2 w-full cursor-pointer"
       v-for="(character, index) in panelList"
@@ -32,14 +32,18 @@
       </div>
       <div
         :data-character-id="index"
-        class="text-white md:p-6 hidden flex mt-12 mb-20"
+        class="text-white md:p-6 hidden flex mt-6 md:mt-12 mb-20"
       >
         <div class="md:flex justify-center md:space-x-6 lg:space-x-12">
-          <div class="flex flex-col items-start justify-center lg:mx-12 lg:w-sixty">
+          <div
+            class="flex flex-col items-start justify-center lg:mx-12 lg:w-sixty"
+          >
             <p class="text-sm lg:text-lg text-white font-acumin tracking-wider">
               {{ character.panelDetails }}
             </p>
-            <button class="btn-primary font-acumin w-72 py-6 mt-20">
+            <button
+              class="btn-primary font-acumin w-full py-6 mt-10 md:w-72 md:mt-20"
+            >
               learn more
             </button>
           </div>
@@ -80,7 +84,7 @@ export default {
           panelId: "- 02",
           panelName: "experience",
           panelDetails:
-            "Enjoy a twenty-four hour concierge service, access to exclusive talks, events, content, and more.  ",
+            "Enjoy a twenty-four hour concierge service, access to exclusive talks, events, content, and more.",
         },
         {
           panelId: "- 03",

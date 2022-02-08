@@ -1,18 +1,15 @@
 <template>
-  <div class="pb-20 bg-contact-color">
-    <div class="w-full flex flex-wrap">
-      <!-- Login Section -->
-      <div class=" w-full flex flex-col px-8 xl:px-32">
-        <div class="text-center text-white xl:w-1/2 pt-20 px-5 xl:px-8 xl:text-left text-center">
-          <h1 class="md:text-xxl text-ml text-value-color leading-none">
-            Privacy policy
-          </h1>
-          <p class="text-value-color xl:pr-44 mt-8">
-            Amet facilisis magna etiam tempor. Nibh tortor id aliquet lectus proin nibh.
-            Egestas tellus rutrum tellus pellentesque eu tincidunt tortor.
-          </p>
-        </div>
-      </div>
+  <div class="py-14 bg-app-secondary-gray">
+    <div class="w-full flex flex-col text-white text-left px-10 md:px-20">
+      <h1
+        class="text-xl md:text-h1 font-ivy-presto text-app-marine uppercase leading-none"
+      >
+        Privacy policy
+      </h1>
+      <p class="text-app-marine font-acumin mt-8 md:max-w-xl">
+        Amet facilisis magna etiam tempor. Nibh tortor id aliquet lectus proin
+        nibh. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor.
+      </p>
     </div>
   </div>
 </template>
@@ -22,4 +19,3 @@ export default {
   name: "HeroSection",
 };
 </script>
-

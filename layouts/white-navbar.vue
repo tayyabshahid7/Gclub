@@ -52,7 +52,7 @@
         <NuxtLink
           to="/signup"
           class="inline-block text-sm px-10 py-2 leading-none border text-app-color border-green hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
-        >JOIN THE CLUB</NuxtLink
+          >JOIN THE CLUB</NuxtLink
         >
       </div>
     </div>
@@ -110,16 +110,24 @@
 
       <ul class="divide-y font-sans">
         <li>
-          <a href="#" @click="isOpen = false" class="my-4 inline-block">club</a>
-        </li>
-        <li>
-          <a href="#" @click="isOpen = false" class="my-4 inline-block"
-          >experience</a
+          <a href="/club" @click="isOpen = false" class="my-4 inline-block"
+            >club</a
           >
         </li>
         <li>
-          <a href="#" @click="isOpen = false" class="my-4 inline-block"
-          >membership</a
+          <a
+            href="/experience"
+            @click="isOpen = false"
+            class="my-4 inline-block"
+            >experience</a
+          >
+        </li>
+        <li>
+          <a
+            href="/membership"
+            @click="isOpen = false"
+            class="my-4 inline-block"
+            >membership</a
           >
         </li>
         <li>
@@ -127,7 +135,7 @@
             to="/signup"
             @click="isOpen = false"
             class="inline-block text-sm px-10 py-2 leading-none border text-white border-green mt-4 lg:mt-0"
-          >JOIN THE CLUB</NuxtLink
+            >JOIN THE CLUB</NuxtLink
           >
         </li>
       </ul>

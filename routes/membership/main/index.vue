@@ -1,7 +1,9 @@
 <template>
-  <div class="h-full">
-    <div class="flex text-center content-center justify-center my-8 text-white">
-      <h1 class="text-h1 md:w-6/12 font-ivy-presto font-thin uppercase">
+  <div class="h-full md:pb-11">
+    <div
+      class="flex text-center content-center justify-center pt-8 my-8 text-white"
+    >
+      <h1 class="text-h1 lg:max-w-3xl font-ivy-presto font-thin uppercase">
         Become a member of G|clubs
       </h1>
     </div>

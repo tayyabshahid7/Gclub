@@ -22,7 +22,7 @@
 
       <!-- Navbar -->
       <div
-        class="hidden ld:block flex-grow lg:flex lg:items-center lg:w-auto mx-10 mt-6"
+        class="hidden ld:block flex-grow lg:flex lg:items-center lg:w-auto mt-6"
       >
         <div class="text-sm lg:flex-grow">
           <NuxtLink

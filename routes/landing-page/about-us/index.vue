@@ -16,7 +16,7 @@
       >
         Connect with the elite Write the future with those who can Change the
         world with those who can<br />
-        <strong> invitation to live boldly</strong>
+        <strong> an invitation to live boldly</strong>
       </h1>
       <!-- </div> -->
       <button
