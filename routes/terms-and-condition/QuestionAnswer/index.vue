@@ -2,7 +2,7 @@
   <section
     class="h-full relative text-center w-full px-10 md:px-20 xl:px-32 pt-10"
   >
-    <div class="bg-white lg:max-w-3xl">
+    <div class="bg-white">
       <div class="bg-white h-24 panel-alternate xl:pr-20 table w-full mb-10">
         <div class="table-cell align-middle text-left xl:pr-96 font-acumin">
           <p class="m-0 text-lg text-app-marine leading-none">1. Who are we?</p>

@@ -20,7 +20,7 @@
             <input
               type="text"
               id="name"
-              class="bg-app-secondary-gray border-app-marine shadow appearance-none border w-full py-3 px-3 text-white"
+              class="bg-app-secondary-gray border-app-marine shadow appearance-none border w-full py-3 px-3 text-black"
             />
           </div>
 
@@ -31,18 +31,18 @@
             <input
               type="email"
               id="email"
-              class="bg-app-secondary-gray border-app-marine shadow appearance-none border w-full py-3 px-3 text-white"
+              class="bg-app-secondary-gray border-app-marine shadow appearance-none border w-full py-3 px-3 text-black"
             />
           </div>
 
           <div class="flex flex-col pt-6">
-            <label for="email2" class="lg:text-base md:text-md text-app-marine"
-              >Email</label
+            <label for="phone" class="lg:text-base md:text-md text-app-marine"
+              >Phone</label
             >
             <input
-              type="email"
-              id="email2"
-              class="bg-app-secondary-gray border-app-marine shadow appearance-none border w-full py-3 px-3 text-white"
+              type="text"
+              id="phone"
+              class="bg-app-secondary-gray border-app-marine shadow appearance-none border w-full py-3 px-3 text-black"
             />
           </div>
 
@@ -53,7 +53,7 @@
             <textarea
               rows="7"
               id="message"
-              class="resize-none bg-app-secondary-gray border-app-marine shadow appearance-none border w-full py-3 px-3 text-white"
+              class="resize-none bg-app-secondary-gray border-app-marine shadow appearance-none border w-full py-3 px-3 text-black"
             />
           </div>
 
