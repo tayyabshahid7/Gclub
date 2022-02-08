@@ -20,7 +20,7 @@
     >
       <p class="mb-3 font-acumin">Scroll Down</p>
       <img
-        class="w-8 h-4 lg:w-16 lg:h-13"
+        class="w-8 h-4 lg:w-16 lg:h-8 mb-6"
         src="~/assets/images/arrow-down.png"
         alt="down arrow"
       />
