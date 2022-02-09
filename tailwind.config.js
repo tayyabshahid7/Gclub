@@ -1,11 +1,11 @@
 export default {
-  content: [
-    `components/**/*.{vue,js}`,
-    `layouts/**/*.vue`,
-    `pages/**/*.vue`,
-    `routes/**/*.vue`,
-    `plugins/**/*.{js,ts}`,
-    `nuxt.config.{js,ts}`,
+  purge: [
+    `./components/**/*.{vue,js}`,
+    `./layouts/**/*.vue`,
+    `./pages/**/*.vue`,
+    `./routes/**/*.vue`,
+    `./plugins/**/*.{js,ts}`,
+    `./nuxt.config.{js,ts}`,
   ],
   theme: {
     colors: {
