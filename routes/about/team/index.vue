@@ -5,7 +5,7 @@
     </div>
     <div class="w-full md:flex md:px-3 md:space-x-6 uppercase">
       <div class="flex flex-col lg:space-y-3 lg:mx-0">
-        <img src="~/assets/images/home/panel-1.png" alt="" />
+        <img src="~/assets/images/home/panel-1.webp" alt="" />
         <p
           class="text-app-rose text-lg lg:text-2xl font-ivy-presto font-thin mb-3"
         >
@@ -18,7 +18,7 @@
         </p>
       </div>
       <div class="flex flex-col lg:space-y-3 lg:mx-0">
-        <img src="~/assets/images/home/panel-2.png" alt="" />
+        <img src="~/assets/images/home/panel-2.webp" alt="" />
         <p
           class="text-app-rose text-lg lg:text-2xl font-ivy-presto font-thin mb-3"
         >
@@ -31,7 +31,7 @@
         </p>
       </div>
       <div class="flex flex-col lg:space-y-3 lg:mx-0">
-        <img src="~/assets/images/home/panel-3.png" alt="" />
+        <img src="~/assets/images/home/panel-3.webp" alt="" />
         <p
           class="text-app-rose text-lg lg:text-2xl font-ivy-presto font-thin mb-3"
         >

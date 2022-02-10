@@ -51,12 +51,12 @@
             class="relative left-0 top-0 my-16 md:my-0 md:justify-center md:items-center"
           >
             <img
-              src="~/assets/images/panel/panel-mask-image.png"
+              src="~/assets/images/panel/panel-mask-image.webp"
               class="relative object-contain w-10/12 md:w-full"
               alt=""
             />
             <img
-              src="~/assets/images/panel/panel-image-1.png"
+              src="~/assets/images/panel/panel-image-1.webp"
               class="absolute object-contain w-10/12 -top-6 left-6 md:w-full"
               alt="panel image"
             />
