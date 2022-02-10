@@ -5,7 +5,7 @@
     >
       <img
         class="h-full object-cover my-5 md:p-5 md:w-5/12 lg:w-4/12"
-        src="~/assets/images/experience/join-the-club.png"
+        src="~/assets/images/experience/join-the-club.webp"
         alt=""
       />
       <div class="lg:w-forty flex flex-col justify-center md:p-5 md:my-7">

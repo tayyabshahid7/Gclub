@@ -22,7 +22,7 @@
       <img
         alt="Snowy"
         class="object-contain w-full h-full p-4 md:p-8 lg:p-11 lg:mb-6"
-        src="~/assets/images/about/hero.png"
+        src="~/assets/images/about/hero.webp"
       />
     </div>
   </div>

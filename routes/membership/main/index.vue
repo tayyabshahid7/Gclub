@@ -3,23 +3,23 @@
     <div
       class="flex text-center content-center justify-center pt-8 my-8 text-white"
     >
-      <h1 class="text-h1 lg:max-w-3xl font-ivy-presto font-thin uppercase">
+      <h1
+        class="text-2xl md:text-h1 lg:max-w-3xl font-ivy-presto font-thin uppercase"
+      >
         Become a member of G|clubs
       </h1>
     </div>
-    <div class="main-container">
-      <div class="parent">
-        <vuescroll :ops="ops" ref="vs">
-          <div class="child-wrap">
-            <template>
-              <img src="~/assets/images/membership/tier-1.png" />
-              <img src="~/assets/images/membership/tier-2.png" />
-              <img src="~/assets/images/membership/tier-3.png" />
-              <img src="~/assets/images/membership/tier-4.png" />
-            </template>
-          </div>
-        </vuescroll>
-      </div>
+    <div class="md:m-10 pb-2">
+      <vuescroll :ops="ops" ref="vs">
+        <div class="flex flex-col md:flex-row my-10">
+          <template>
+            <img class="m-7" src="~/assets/images/membership/tier-1.webp" />
+            <img class="m-7" src="~/assets/images/membership/tier-2.webp" />
+            <img class="m-7" src="~/assets/images/membership/tier-3.webp" />
+            <img class="m-7" src="~/assets/images/membership/tier-4.webp" />
+          </template>
+        </div>
+      </vuescroll>
     </div>
   </div>
 </template>
@@ -69,13 +69,8 @@ export default {
 </script>
 
 <style scoped>
-.main-container {
-  padding-bottom: 5px;
-  margin: 15px;
-}
 .child-wrap {
   display: flex;
-  align-content: center;
   flex-direction: row;
   margin-top: 15px;
   margin-bottom: 15px;

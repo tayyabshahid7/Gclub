@@ -30,7 +30,7 @@
       <div class="w-full px-4 py-16 md:px-16 md:mb-12 lg:mb-24">
         <img
           class="w-full object-contain"
-          src="~/assets/images/club/our-value.png"
+          src="~/assets/images/club/our-value.webp"
           alt="image"
         />
       </div>

@@ -3,7 +3,7 @@
     class="w-full flex-col md:flex-row flex justify-center items-center px-6 md:py-16 lg:space-x-24 bg-app-marine"
   >
     <img
-      src="~/assets/images/about/our-vision.png"
+      src="~/assets/images/about/our-vision.webp"
       alt=""
       class="h-full object-cover py-5 md:p-5 md:w-5/12 lg:w-4/12"
       loading="lazy"

@@ -3,7 +3,7 @@
     class="w-full flex-col md:flex-row flex justify-center items-center px-6 md:py-7 lg:space-x-24"
   >
     <img
-      src="~/assets/images/home/about-us-image.png"
+      src="~/assets/images/home/about-us-image.webp"
       alt=""
       class="p-6 h-full object-cover my-5 md:p-5 md:w-5/12 lg:w-4/12"
       loading="lazy"

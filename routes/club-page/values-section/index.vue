@@ -14,7 +14,7 @@
         class="w-full md:w-1/3 overflow-hidden flex flex-1 flex-col justify-evenly"
       >
         <img
-          src="../../../assets/images/club/value-1.png"
+          src="../../../assets/images/club/value-1.webp"
           alt="image"
           class="lg:mb-10"
         />
@@ -33,7 +33,7 @@
         class="w-full md:w-1/3 overflow-hidden flex flex-1 flex-col justify-evenly"
       >
         <img
-          src="../../../assets/images/club/value-2.png"
+          src="../../../assets/images/club/value-2.webp"
           alt="image"
           class="lg:mb-10"
         />
@@ -54,7 +54,7 @@
         class="w-full md:w-1/3 overflow-hidden flex flex-1 flex-col justify-evenly"
       >
         <img
-          src="../../../assets/images/club/value-3.png"
+          src="../../../assets/images/club/value-3.webp"
           alt="image"
           class="lg:mb-10"
         />
