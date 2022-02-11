@@ -1,13 +1,17 @@
 <template>
   <div class="h-full md:pb-11">
     <div
-      class="flex text-center content-center justify-center pt-8 my-8 text-white"
+      class="flex flex-col items-center text-center content-center justify-center pt-8 my-8 text-white"
     >
       <h1
         class="text-2xl md:text-h1 lg:max-w-3xl font-ivy-presto font-thin uppercase"
       >
         Become a member of G|clubs
       </h1>
+      <p class="mt-7 text-lg font-acumin max-w-sm lg:max-w-3xl">
+        Through 5 membership tiers, G|CLUBS allows members to curate their own
+        unique experience—each designed to ensure a first-class tomorrow.
+      </p>
     </div>
     <div class="md:m-10 pb-2">
       <vuescroll :ops="ops" ref="vs">

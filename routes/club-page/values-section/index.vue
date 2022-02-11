@@ -24,9 +24,11 @@
           Value
         </p>
         <p class="font-acumin text-app-brass tracking-wider mb-9">
-          G|Clubs is born out of the crutial need to unite the elite minds of
-          today’s zeitgeist in one space, offering them a Space to connect,
-          thrive, and have a little fun while doing it.
+          Amet facilisis magna etiam tempor. Nibh tortor id aliquet lectus proin
+          nibh. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor.
+          Adipiscing vitae proin sagittis nisl rhoncus mattis. Duis tristique
+          sollicitudin nibh sit amet commodo. Amet facilisis magna etiam tempor
+          orci eu.
         </p>
       </div>
       <div

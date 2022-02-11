@@ -21,7 +21,7 @@
         <p
           class="md:w-6/12 mx-auto text-sm font-acumin tracking-wider text-app-wash md:mb-20"
         >
-          G|Clubs is born out of the crutial need to unite the elite minds of
+          G|Clubs is born out of the crucial need to unite the elite minds of
           today’s zeitgeist in one space, <br />
           offering them a Space to connect, thrive, and have a little fun while
           doing it.

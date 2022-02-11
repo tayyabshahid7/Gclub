@@ -4,9 +4,9 @@
       class="flex flex-col justify-center items-center text-center mx-4 md:ml-8 mt-20 lg:my-36 lg:mx-16 text-app-marine"
     >
       <h3
-        class="text-xl font-ivy-presto uppercase max-w-xs mb-7 md:max-w-xl md:text-2xl lg:text-h1 lg:max-w-2xl font-thin"
+        class="text-xl font-ivy-presto uppercase max-w-xs mb-7 md:max-w-2xl md:text-2xl lg:text-h1 lg:max-w-3xl font-thin"
       >
-        Not just a club, it’s a movement
+        More than a club; a movement.
       </h3>
       <p
         class="text-sm font-acumin text-justify lg:text-center mx-7 uppercase md:text-lg lg:max-w-2xl font-thin"
