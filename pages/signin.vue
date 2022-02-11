@@ -9,9 +9,11 @@
           src="../assets/images/login-screen.webp"
         />
         <div
-          class="lg:w-full absolute top-0 right-0 bottom-0 left-0 text-center flex justify-center items-center"
+          class="absolute inset-7 text-center flex justify-center items-center image-border"
         >
-          <h1 class="box-line text-lg lg:text-h1 text-white px-3">
+          <h1
+            class="box-line text-lg lg:text-h1 text-white px-3 font-ivy-presto uppercase"
+          >
             A place to connect with the elite. Take the pulse of the world. From
             here to Exclusivity.
           </h1>
@@ -33,41 +35,43 @@
             <div class="flex flex-col">
               <label
                 for="email"
-                class="lg:text-base md:text-md text-white uppercase"
+                class="lg:text-base md:text-md text-white font-acumin uppercase"
                 >Email Address</label
               >
               <input
                 type="email"
                 id="email"
                 v-model="email"
-                class="bg-app-color border-white shadow appearance-none border w-full py-2 px-3 text-white mt-1 focus:outline-none focus:shadow-outline"
+                class="bg-app-color font-acumin border-white shadow appearance-none border w-full py-2 px-3 text-white mt-1 focus:outline-none focus:shadow-outline"
               />
             </div>
 
             <div class="flex flex-col pt-4">
               <label
                 for="password"
-                class="lg:text-base md:text-md text-white uppercase"
+                class="lg:text-base md:text-md text-white font-acumin uppercase"
                 >Password</label
               >
               <input
                 type="password"
                 id="password"
                 v-model="password"
-                class="bg-app-color border-white shadow appearance-none border w-full py-2 px-3 text-white mt-1 focus:outline-none focus:shadow-outline"
+                class="bg-app-color font-acumin border-white shadow appearance-none border w-full py-2 px-3 text-white mt-1 focus:outline-none focus:shadow-outline"
               />
             </div>
 
             <input
               type="submit"
               value="CONTINUE"
-              class="bg-white font-bold lg:text-base md:text-md p-4 mt-12 text-app-color"
+              class="bg-white font-bold lg:text-base md:text-md p-4 mt-12 font-acumin text-app-color"
             />
           </form>
           <div class="text-center text-white mt-4 md:pt-12">
-            <p>
+            <p class="font-acumin">
               Don't have an account?
-              <NuxtLink class="underline" to="/signup">Register here.</NuxtLink>
+              <NuxtLink class="underline font-semibold font-acumin" to="/signup"
+                >Register here.</NuxtLink
+              >
             </p>
           </div>
         </div>
@@ -102,4 +106,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.image-border {
+  border: 1px solid rgba(250, 250, 250, 0.6);
+  box-sizing: border-box;
+}
+</style>

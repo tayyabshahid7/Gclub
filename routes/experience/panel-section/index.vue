@@ -88,7 +88,7 @@ export default {
           panelId: "- 03",
           panelName: "fashion",
           panelDetails:
-            "Get special access to the latest fashion collecions from our state-of-the-art luxury brand where new emerging designers show off their boldness and talent through expert craftsmanship.",
+            "Get special access to the latest fashion collections from our state-of-the-art luxury brand where new emerging designers show off their boldness and talent through expert craftsmanship.",
         },
         {
           panelId: "- 04",
