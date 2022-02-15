@@ -4,10 +4,10 @@
       class="w-full flex-col-reverse md:flex-row flex justify-center items-center lg:py-7 lg:space-x-24 mt-36"
     >
       <div
-        class="lg:w-forty text-app-rose flex flex-col justify-center md:my-7 md:pr-16"
+        class="lg:w-forty text-app-rose flex flex-col justify-center md:my-7"
       >
         <h1
-          class="text-xl md:max-w-xs lg:max-w-md lg:text-h2 uppercase font-thin font-ivy-presto mb-6"
+          class="text-xl md:max-w-xs lg:max-w-xl lg:text-h2 uppercase font-thin font-ivy-presto mb-6"
         >
           Experience a new level of luxury.
         </h1>

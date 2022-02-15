@@ -15,7 +15,7 @@
         <h1
           class="text-xl lg:text-h1 md:max-w-xs lg:max-w-xl text-app-brass uppercase font-ivy-presto font-thin mb-6"
         >
-          a membership like no other
+          Discover the spirit of the future
         </h1>
         <div>
           <button class="btn-join-club-primary">contact us</button>

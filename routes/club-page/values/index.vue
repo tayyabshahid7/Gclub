@@ -22,9 +22,8 @@
           class="md:w-6/12 mx-auto text-sm font-acumin tracking-wider text-app-wash md:mb-20"
         >
           G|Clubs is born out of the crucial need to unite the elite minds of
-          today’s zeitgeist in one space, <br />
-          offering them a Space to connect, thrive, and have a little fun while
-          doing it.
+          today’s zeitgeist in one space, offering them a Space to connect,
+          thrive, and have a little fun while doing it.
         </p>
       </div>
       <div class="w-full px-4 py-16 md:px-16 md:mb-12 lg:mb-24">

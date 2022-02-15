@@ -7,8 +7,8 @@
           get in touch
         </h1>
         <p class="mt-4 md:mt-8 font-acumin">
-          Amet facilisis magna etiam tempor. Nibh tortor id aliquet lectus proin
-          nibh. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor.
+          If you have any questions or comments, just send us a message and a
+          dedicated member of our team will get in touch with you shortly.
         </p>
       </div>
       <div class="flex flex-col justify-center my-auto px-8 pt-8">

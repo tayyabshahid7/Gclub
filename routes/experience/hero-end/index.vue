@@ -5,7 +5,7 @@
     >
       <div class="lg:w-forty flex flex-col justify-center md:p-5 md:my-7">
         <p class="mb-16 text-app-brass uppercase tracking-widest">
-          join the club
+          Find your freedom
         </p>
         <h1
           class="text-xl lg:text-h1 md:max-w-xs lg:max-w-xl text-app-brass uppercase font-ivy-presto font-thin mb-6"
@@ -13,7 +13,7 @@
           a membership like no other
         </h1>
         <div>
-          <button class="btn-join-club-primary">sign up today</button>
+          <button class="btn-join-club-primary">see membership</button>
         </div>
       </div>
       <img
