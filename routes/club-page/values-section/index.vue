@@ -24,11 +24,8 @@
           Value
         </p>
         <p class="font-acumin text-app-brass tracking-wider mb-9">
-          Amet facilisis magna etiam tempor. Nibh tortor id aliquet lectus proin
-          nibh. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor.
-          Adipiscing vitae proin sagittis nisl rhoncus mattis. Duis tristique
-          sollicitudin nibh sit amet commodo. Amet facilisis magna etiam tempor
-          orci eu.
+          Leverage the benefits of innovation, freedom, travel, and fashion to
+          satisfy the exacting luxury standards of our members.
         </p>
       </div>
       <div
@@ -45,11 +42,9 @@
           Value
         </p>
         <p class="font-acumin text-app-brass tracking-wider mb-9">
-          Amet facilisis magna etiam tempor. Nibh tortor id aliquet lectus proin
-          nibh. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor.
-          Adipiscing vitae proin sagittis nisl rhoncus mattis. Duis tristique
-          sollicitudin nibh sit amet commodo. Amet facilisis magna etiam tempor
-          orci eu.
+          To create global luxury experiences so that members may enjoy an
+          extensive, robust and diverse catalogue of benefits provided by an
+          international network oF strategic partners.
         </p>
       </div>
       <div

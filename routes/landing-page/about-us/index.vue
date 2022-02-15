@@ -17,6 +17,9 @@
         Connect with the elite Write the future with those who can Change the
         world with those who can<br />
         <strong> an invitation to live boldly</strong>
+        <strong>
+          Empowering you to make your mark Empowering your lifestyle</strong
+        >
       </h1>
       <!-- </div> -->
       <button

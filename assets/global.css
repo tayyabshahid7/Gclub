@@ -37,7 +37,7 @@ body {
   }
 
   .btn-experience-primary {
-    @apply font-acumin bg-app-rose text-xs text-white tracking-wider uppercase bg-white font-bold mt-12 py-4 px-8;
+    @apply font-acumin bg-app-rose text-xs text-white tracking-wider uppercase font-bold mt-12 py-4 px-8;
   }
 
   .btn-join-club-primary {
