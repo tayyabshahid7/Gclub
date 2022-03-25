@@ -1,5 +1,5 @@
 <template>
-  <main class="px-5 bg-app-secondary-gray">
+  <main class="px-5">
     <div class="pt-14 md:pt-24 md:mx-4">
       <p class="text-xs uppercase text-app-rose font-acumin mb-7">our team</p>
     </div>

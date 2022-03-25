@@ -1,7 +1,8 @@
 <template>
   <div>
     <NavbarWhite />
-    <ContactForm/>
+    <HeroSection/>
+    <QuestionAnswer/>
     <AppFooter />
   </div>
 </template>
@@ -9,15 +10,16 @@
 <script>
 import NavbarWhite from "~~/layouts/white-navbar";
 import AppFooter from "~~/layouts/app-footer.vue";
-import ContactForm from "~~/routes/contact-page/contact-form"
+import HeroSection from "~~/routes/sweep-stakes/HeroSection";
+import QuestionAnswer from "~~/routes/sweep-stakes/PrivacyData";
 export default {
   components: {
     NavbarWhite,
-    ContactForm,
+    HeroSection,
+    QuestionAnswer,
     AppFooter,
   },
-  name: "contact",
-
+  name: "SweepStakes",
 };
 </script>
 

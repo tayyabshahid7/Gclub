@@ -5,15 +5,15 @@
         <button
           @click="isMenuOpen = !isMenuOpen"
           type="button"
-          class="bg-app-color text-black inline-flex items-center justify-between w-full border border-gray-300 h-4 px-3 py-3 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-800 transition ease-in-out duration-150 btn-focus"
+          class="bg-app-color text-black inline-flex items-center justify-between w-full border border-white h-4 px-3 py-3 bg-white text-sm leading-5 font-medium text-white hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-800 transition ease-in-out duration-150 btn-focus"
           id="options-menu"
           aria-haspopup="true"
           aria-expanded="true"
         >
           <span>ENG</span>
           <img
-            src="https://s.svgbox.net/hero-solid.svg?ic=chevron-down&fill=grey-900"
-            class="-mr-1 ml-2 h-5 w-5"
+            src="https://s.svgbox.net/hero-solid.svg?ic=chevron-down&fill=white"
+            class="-mr-1 ml-2 h-5 w-7"
           />
         </button>
       </span>

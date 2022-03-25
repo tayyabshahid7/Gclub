@@ -2,8 +2,8 @@
   <div>
     <nav-bar-club />
     <HeroSection />
-    <ExperiencePanelSection />
-    <events />
+<!--    <ExperiencePanelSection />-->
+<!--    <events />-->
     <HeroEnd />
     <app-footer />
   </div>

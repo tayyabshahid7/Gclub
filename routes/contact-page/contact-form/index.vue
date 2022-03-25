@@ -18,6 +18,7 @@
               >Name</label
             >
             <input
+              v-model="name"
               type="text"
               id="name"
               class="bg-app-secondary-gray border-app-marine shadow appearance-none border w-full py-3 px-3 text-black"
@@ -29,6 +30,7 @@
               >Email</label
             >
             <input
+              v-model="email"
               type="email"
               id="email"
               class="bg-app-secondary-gray border-app-marine shadow appearance-none border w-full py-3 px-3 text-black"
@@ -40,6 +42,7 @@
               >Phone</label
             >
             <input
+              v-model="phone"
               type="text"
               id="phone"
               class="bg-app-secondary-gray border-app-marine shadow appearance-none border w-full py-3 px-3 text-black"
@@ -51,6 +54,7 @@
               >Message</label
             >
             <textarea
+              v-model="message"
               rows="7"
               id="message"
               class="resize-none bg-app-secondary-gray border-app-marine shadow appearance-none border w-full py-3 px-3 text-black"
@@ -58,6 +62,7 @@
           </div>
 
           <input
+            @click.prevent="send"
             type="submit"
             value="Continue"
             class="bg-app-marine mb-10 md:w-1/2 w-full font-bold lg:text-base md:text-md py-3 mx-auto mt-12 text-white"
@@ -71,6 +76,21 @@
 <script>
 export default {
   name: "ContactForm",
+  data: () => ({
+    name: '',
+    email: '',
+    message: '',
+    phone: '',
+  }),
+  methods: {
+    send() {
+      this.$mail.send({
+        from: this.email,
+        subject: 'Contact form message',
+        text: this.name + "\n\n" + this.phone + "\n\n" + this.message
+      })
+    }
+  }
 };
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <main class="p-6">
+  <main class="p-6 bg-app-secondary-gray">
     <div
       class="w-full flex-col-reverse md:flex-row flex justify-center items-center md:py-7 lg:space-x-24"
     >

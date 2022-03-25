@@ -31,7 +31,22 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxtjs/axios"],
+  modules: [
+    '@nuxtjs/axios',
+    ['nuxt-mail', {
+      message: {
+        to: 'info@gclubs.com',
+      },
+      smtp: {
+        host: 'smtp.mailtrap.io',
+        port: 2525,
+        auth: {
+          user: 'd890ffc3a7fc42',
+          pass: '416d8da622e0ab'
+        },
+      },
+    }],
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

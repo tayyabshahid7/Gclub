@@ -4,17 +4,17 @@
       <h3
         class="text-lg font-ivy-presto uppercase md:text-xl lg:text-h2 font-thin"
       >
-        The future is for the taking.
+        One vision.
       </h3>
       <h3
         class="text-lg font-ivy-presto uppercase md:text-xl lg:text-h2 font-thin"
       >
-        The future belongs to those who can.
+        One future
       </h3>
       <h3
         class="text-lg font-ivy-presto uppercase md:text-xl lg:text-h2 font-thin"
       >
-        <strong>One vision. One future. One membership.</strong>
+        <strong>One membership.</strong>
       </h3>
     </div>
     <div>

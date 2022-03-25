@@ -8,7 +8,7 @@
         <NuxtLink to="/">
           <img
             class="w-auto md:block h-10"
-            src="~/assets/images/logo/Symbol.svg"
+            src="~/assets/images/logo/gc-monogram-new.svg"
             width="36"
           />
         </NuxtLink>
@@ -39,7 +39,7 @@
             to="/"
             class="lg:inline-block mr-auto ml-auto align-middle text-white"
           >
-            <img src="~/assets/images/logo/Symbol.svg" width="60" />
+            <img src="~/assets/images/logo/gc-monogram-new.svg" width="70" />
           </NuxtLink>
         </div>
         <NuxtLink

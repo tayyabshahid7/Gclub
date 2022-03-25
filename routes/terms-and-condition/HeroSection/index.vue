@@ -7,8 +7,7 @@
         TERMS & CONDITIONS
       </h1>
       <p class="text-app-marine font-acumin mt-8 md:max-w-xl">
-        Amet facilisis magna etiam tempor. Nibh tortor id aliquet lectus proin
-        nibh. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor.
+        Last modified: October 28, 2021
       </p>
     </div>
   </div>
