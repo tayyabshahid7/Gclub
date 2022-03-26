@@ -6,9 +6,8 @@
       >
         Privacy policy
       </h1>
-      <p class="text-app-marine font-acumin mt-8 md:max-w-xl">
-        Amet facilisis magna etiam tempor. Nibh tortor id aliquet lectus proin
-        nibh. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor.
+      <p class="text-app-marine text-lg font-acumin mt-8 md:max-w-xl">
+        G|CLUBS PRIVACY POLICY
       </p>
     </div>
   </div>

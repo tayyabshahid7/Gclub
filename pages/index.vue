@@ -4,7 +4,7 @@
     <nav-bar />
     <hero-section />
     <panel-section />
-    <from-the-club />
+<!--    <from-the-club />-->
     <about-us />
     <app-footer />
     <hero-end />

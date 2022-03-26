@@ -1,7 +1,7 @@
 <template>
   <footer class="w-full h-full bg-app-color">
     <NuxtLink to="/" class="flex justify-center pt-12">
-      <img src="../assets/images/logo/Symbol.svg" width="56" />
+      <img src="../assets/images/gc-monogram-new.svg" width="100" />
     </NuxtLink>
     <div
       class="align-middle items-center justify-center mt-36 hidden lg:flex space-x-12"
@@ -63,12 +63,13 @@
     <div
       class="border-t border-app-gray mx-12 md:mt-16 md:mb-12 md:mx-24"
     ></div>
+
     <div class="lg:hidden py-4">
-      <div class="flex justify-center items-center">
-        <img class="mr-7" src="../assets/images/svg/facebook.svg" />
-        <img class="mr-7" src="../assets/images/svg/instagram.svg" />
-        <img src="../assets/images/svg/twitter.svg" />
-      </div>
+<!--      <div class="flex justify-center items-center">-->
+<!--        <img class="mr-7" src="../assets/images/svg/facebook.svg" />-->
+<!--        <img class="mr-7" src="../assets/images/svg/instagram.svg" />-->
+<!--        <img src="../assets/images/svg/twitter.svg" />-->
+<!--      </div>-->
       <div
         class="text-white mt-4 mx-16 md:mx-24 flex justify-center items-center"
       >
@@ -97,13 +98,13 @@
           </div>
         </div>
       </div>
-      <div class="col-span-1 float-right mx-24">
-        <div class="flex justify-end space-x-12">
-          <img src="../assets/images/svg/twitter.svg" />
-          <img src="../assets/images/svg/facebook.svg" />
-          <img src="../assets/images/svg/instagram.svg" />
-        </div>
-      </div>
+<!--      <div class="col-span-1 float-right mx-24">-->
+<!--        <div class="flex justify-end space-x-12">-->
+<!--          <img src="../assets/images/svg/twitter.svg" />-->
+<!--          <img src="../assets/images/svg/facebook.svg" />-->
+<!--          <img src="../assets/images/svg/instagram.svg" />-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
   </footer>
 </template>

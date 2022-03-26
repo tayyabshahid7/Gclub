@@ -38,7 +38,7 @@
           to="/"
           class="lg:inline-block mr-auto ml-auto align-middle text-app-color"
         >
-          <img src="~/assets/images/app-logo-default.svg" class="h-14" />
+          <img src="~/assets/images/logo/gc-monogram-new-green.svg" width="80"  />
         </NuxtLink>
       </div>
       <NuxtLink

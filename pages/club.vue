@@ -4,7 +4,7 @@
     <HeroSection />
     <PanelSection />
     <Values />
-    <ValuesSection />
+<!--    <ValuesSection />-->
     <JoinClub />
     <AppFooter />
   </div>
