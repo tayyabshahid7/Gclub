@@ -2,7 +2,7 @@
   <div>
     <nav-bar-club />
     <HeroSection />
-<!--    <ExperiencePanelSection />-->
+    <ExperiencePanelSection />
 <!--    <events />-->
     <HeroEnd />
     <app-footer />
