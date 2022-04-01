@@ -41,18 +41,20 @@
           <img src="~/assets/images/logo/gc-monogram-new-green.svg" width="80"  />
         </NuxtLink>
       </div>
-      <NuxtLink
-        to="/signin"
+      <a
+        target="_blank"
+        href="https://www.gclubs.com/en/login"
         class="flex items-center flex-shrink-0 text-app-color mr-6"
       >
         SIGN IN
-      </NuxtLink>
+      </a>
 
       <div>
-        <NuxtLink
-          to="/signup"
+        <a
+          target="_blank"
+          href="https://www.gclubs.com/en/login"
           class="inline-block text-sm px-10 py-2 leading-none border text-app-color border-green hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
-          >JOIN THE CLUB</NuxtLink
+          >JOIN THE CLUB</a
         >
       </div>
     </div>
