@@ -43,7 +43,7 @@
       </div>
       <a
         target="_blank"
-        href="https://www.gclubs.com/en/login"
+        :href="url"
         class="flex items-center flex-shrink-0 text-app-color mr-6"
       >
         SIGN IN
@@ -52,7 +52,7 @@
       <div>
         <a
           target="_blank"
-          href="https://www.gclubs.com/en/login"
+          :href="url"
           class="inline-block text-sm px-10 py-2 leading-none border text-app-color border-green hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
           >JOIN THE CLUB</a
         >
@@ -135,7 +135,7 @@
         <li>
           <a
             target="_blank"
-            href="https://www.gclubs.com/en/login"
+            :href="url"
             class="inline-block text-sm px-10 py-2 leading-none border text-white border-green mt-4 lg:mt-0"
             >JOIN THE CLUB</a
           >
@@ -158,6 +158,13 @@ export default {
     drawer() {
       this.isOpen = !this.isOpen;
     },
+  },
+  computed: {
+    url () {
+      return process.env.NODE_ENV !== 'production'
+        ? "https://www-dev.gclubdev.net/en/login"
+        : "https://www.gclubs.com/en/login"
+    }
   },
   watch: {
     isOpen: {

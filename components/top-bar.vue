@@ -40,16 +40,16 @@
             <img src="~/assets/images/logo/Symbol.svg" width="36" />
           </NuxtLink>
         </div>
-        <NuxtLink
-          to="/signin"
+        <a
+          :href="url"
           class="flex items-center flex-shrink-0 text-white mr-6"
         >
           SIGN IN
-        </NuxtLink>
+        </a>
         <div>
           <a
             target="_blank"
-            href="https://www.gclubs.com/en/login"
+            :href="url"
             class="inline-block text-sm px-10 py-2 leading-none border text-white border-white mt-4 lg:mt-0"
             >JOIN THE CLUB</a
           >
@@ -101,7 +101,7 @@
           <li>
             <a
               target="_blank"
-              href="https://www.gclubs.com/en/login"
+              :href="url"
               class="my-8 w-full text-center font-semibold cta inline-block border px-3 py-2 rounded uppercase"
               >join the club</a
             >
@@ -120,6 +120,13 @@ export default {
       data,
       isOpen: true,
     };
+  },
+  computed: {
+    url () {
+      return process.env.NODE_ENV !== 'production'
+        ? "https://www-dev.gclubdev.net/en/login"
+        : "https://www.gclubs.com/en/login"
+    }
   },
   methods: {
     drawer() {

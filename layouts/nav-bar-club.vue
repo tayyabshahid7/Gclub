@@ -44,7 +44,7 @@
         </div>
         <a
           target="_blank"
-          href="https://www.gclubs.com/en/login"
+          :href="url"
           class="flex items-center flex-shrink-0 text-app-color mr-6 text-acumin font-bold text-xs"
         >
           SIGN IN
@@ -52,7 +52,7 @@
         <div>
           <a
             target="_blank"
-            href="https://www.gclubs.com/en/login"
+            :href="url"
             class="inline-block text-sm px-10 py-4 leading-none border-2 border-app-color text-app-color font-bold mt-4 lg:mt-0 text-acumin"
             >JOIN THE CLUB</a
           >
@@ -112,9 +112,8 @@
           </li>
           <li>
             <a
-            <a
               target="_blank"
-              href="https://www.gclubs.com/en/login"
+              :href="url"
               class="my-10 px-3 w-full text-center font-semibold cta inline-block border border-app-color uppercase"
               >join the club</a
             >
@@ -149,6 +148,13 @@ export default {
         }
       },
     },
+  },
+  computed: {
+    url () {
+      return process.env.NODE_ENV !== 'production'
+        ? "https://www-dev.gclubdev.net/en/login"
+        : "https://www.gclubs.com/en/login"
+    }
   },
   mounted() {
     document.addEventListener("keydown", (e) => {
