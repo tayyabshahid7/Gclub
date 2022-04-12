@@ -21,6 +21,6 @@ export default {
   name: "about",
 };
 </script>
-q
+
 
 <style scoped></style>

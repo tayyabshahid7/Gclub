@@ -44,7 +44,7 @@
         </div>
         <a
           target="_blank"
-          href="https://www.gclubs.com/en/login"
+          :href="url"
           class="flex items-center flex-shrink-0 text-white tracking-widest mr-6 text-acumin font-bold text-xs"
         >
           SIGN IN
@@ -52,7 +52,7 @@
         <div>
           <a
             target="_blank"
-            href="https://www.gclubs.com/en/login"
+            :href="url"
             class="inline-block text-sm px-10 py-4 leading-none border-2 tracking-widest text-white font-bold border-white mt-4 lg:mt-0 text-acumin text-xs"
             >JOIN THE CLUB</a
           >
@@ -111,11 +111,11 @@
             >
           </li>
           <li>
-            <NuxtLink
-              to="/signup"
-              @click="isOpen = false"
+            <a
+              target="_blank"
+              :href="url"
               class="my-8 w-full text-center font-semibold cta inline-block border px-3 py-2 rounded uppercase"
-              >join the club</NuxtLink
+              >join the club</a
             >
           </li>
         </ul>
@@ -132,6 +132,13 @@ export default {
       data,
       isOpen: false,
     };
+  },
+  computed: {
+    url () {
+      return process.env.NODE_ENV !== 'production'
+        ? "https://www-dev.gclubdev.net/en/login"
+        : "https://www.gclubs.com/en/login"
+    }
   },
   methods: {
     drawer() {
