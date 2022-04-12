@@ -133,11 +133,11 @@
           >
         </li>
         <li>
-          <NuxtLink
-            to="/signup"
-            @click="isOpen = false"
+          <a
+            target="_blank"
+            href="https://www.gclubs.com/en/login"
             class="inline-block text-sm px-10 py-2 leading-none border text-white border-green mt-4 lg:mt-0"
-            >JOIN THE CLUB</NuxtLink
+            >JOIN THE CLUB</a
           >
         </li>
       </ul>
