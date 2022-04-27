@@ -24,7 +24,13 @@ export default {
   css: ["~/assets/global.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    {
+      src: 'node_modules/vue-responsive-video-background-player/dist/index.common.js',
+      ssr: false,
+      mode: 'server'
+    }
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
