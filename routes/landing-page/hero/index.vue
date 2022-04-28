@@ -38,16 +38,18 @@
 <script>
 import Vue from "vue";
 
-const VideoBackground = () => import("vue-responsive-video-background-player");
-const Plugin = () => import("vue-responsive-video-background-player");
 
 import video from "~~/assets/videos/website_hero_video.mp4"
 
-Vue.component('video-background', VideoBackground);
-Vue.use(Plugin);
+// Vue.component('video-background', VideoBackground);
+// Vue.use(Plugin);
 
 export default {
   name: "hero",
+  components: {
+    [process.browser && "VideoBackground"]: () => import("vue-responsive-video-background-player"),
+    [process.browser && "Plugin"]: () => import("vue-responsive-video-background-player"),
+  },
   data() {
     return {
       main: {
