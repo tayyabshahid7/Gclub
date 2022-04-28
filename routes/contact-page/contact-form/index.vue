@@ -42,7 +42,6 @@
               >Phone</label
             >
             <input
-              v-model="phone"
               type="text"
               id="phone"
               class="bg-app-secondary-gray border-app-marine shadow appearance-none border w-full py-3 px-3 text-black"

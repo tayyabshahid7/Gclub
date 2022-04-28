@@ -3,9 +3,9 @@
     class="h-full relative text-center w-full px-10 md:px-20 xl:px-32 pt-10"
   >
     <div class="bg-white">
-      <div class="bg-white h-24 panel-alternate table w-full mb-10">
-        <div class="table-cell align-middle text-left font-acumin">
-          <p class="m-0 text-sm text-app-marine leading-none">TERMS OF USE</p>
+      <div class="bg-white h-24 panel-alternate xl:pr-20 table w-full mb-10">
+        <div class="table-cell align-middle text-left xl:pr-96 font-acumin">
+          <p class="m-0 text-lg text-app-marine leading-none">1. Who are we?</p>
           <p
             class="mr-auto mt-7 text-app-marine text-sm xl:w-11/12 xl:text-base"
           >

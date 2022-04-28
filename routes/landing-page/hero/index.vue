@@ -1,10 +1,17 @@
 <template>
   <div class="w-full h-screen relative text-center">
-    <img
-      src="~/assets/images/home/bg-hero.webp"
-      class="object-cover w-full h-full bg-cover bg-center"
-      alt="hero-bg"
-    />
+    <no-ssr>
+      <video-background
+        :src="main.bgVideo"
+        style=" height: 100vh;"
+      >
+      </video-background>
+    </no-ssr>
+<!--    <img-->
+<!--      src="~/assets/images/home/bg-hero.png"-->
+<!--      class="object-cover w-full h-full bg-cover bg-center"-->
+<!--      alt="hero-bg"-->
+<!--    />-->
     <div
       class="flex flex-col justify-center items-center inset-7 absolute image-border"
     >
@@ -29,8 +36,25 @@
 </template>
 
 <script>
+import Vue from "vue";
+
+const VideoBackground = () => import("vue-responsive-video-background-player");
+const Plugin = () => import("vue-responsive-video-background-player");
+
+import video from "~~/assets/videos/website_hero_video.mp4"
+
+Vue.component('video-background', VideoBackground);
+Vue.use(Plugin);
+
 export default {
   name: "hero",
+  data() {
+    return {
+      main: {
+        bgVideo:video
+      }
+    }
+  }
 };
 </script>
 

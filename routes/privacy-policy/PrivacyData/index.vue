@@ -3,10 +3,18 @@
     class="h-full relative text-center w-full px-10 md:px-20 xl:px-32 pt-10"
   >
     <div class="bg-white">
-      <div class="bg-white h-24 panel-alternate table w-full mb-10">
-        <div class="table-cell align-middle text-left">
-          <p class="m-0 pp-text text-app-marine leading-none">
-            INTRODUCTION
+      <div class="bg-white h-24 panel-alternate xl:pr-20 table w-full mb-10">
+        <div class="table-cell align-middle text-left xl:pr-96">
+          <p class="m-0 text-lg text-app-marine leading-none">
+            Policy item one
+          </p>
+          <p
+            class="mr-auto mt-4 xl:pr-96 text-app-marine text-tiny xl:w-11/12 xl:text-base"
+          >
+            The Digital Properties are operated by Soho House UK Limited a
+            company registered in England and Wales under registration number
+            02864389 and our registered address is 180 Strand, London, WC2R 1EA
+            (VAT number 752624629).
           </p>
           <p class="mr-auto mt-9 text-app-marine pp-text xl:w-11/12 xl:text-base">
             G Club Operations LLC (“G|CLUBS” or “Company” or “We”) respect your privacy an dare committed to protecting it through our compliance with this policy.
