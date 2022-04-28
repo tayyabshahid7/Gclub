@@ -8,7 +8,7 @@
         <NuxtLink to="/">
           <img
             class="w-auto md:block h-10"
-            src="~/assets/images/logo/Symbol.svg"
+            src="~/assets/images/logo/gc-monogram-new.svg"
             width="36"
           />
         </NuxtLink>
@@ -39,20 +39,22 @@
             to="/"
             class="lg:inline-block mr-auto ml-auto align-middle text-white"
           >
-            <img src="~/assets/images/logo/Symbol.svg" width="60" />
+            <img src="~/assets/images/logo/gc-monogram-new.svg" width="70" />
           </NuxtLink>
         </div>
-        <NuxtLink
-          to="/signin"
+        <a
+          target="_blank"
+          :href="url"
           class="flex items-center flex-shrink-0 text-white tracking-widest mr-6 text-acumin font-bold text-xs"
         >
           SIGN IN
-        </NuxtLink>
+        </a>
         <div>
-          <NuxtLink
-            to="/signup"
+          <a
+            target="_blank"
+            :href="url"
             class="inline-block text-sm px-10 py-4 leading-none border-2 tracking-widest text-white font-bold border-white mt-4 lg:mt-0 text-acumin text-xs"
-            >JOIN THE CLUB</NuxtLink
+            >JOIN THE CLUB</a
           >
         </div>
       </div>
@@ -109,11 +111,11 @@
             >
           </li>
           <li>
-            <NuxtLink
-              to="/signup"
-              @click="isOpen = false"
+            <a
+              target="_blank"
+              :href="url"
               class="my-8 w-full text-center font-semibold cta inline-block border px-3 py-2 rounded uppercase"
-              >join the club</NuxtLink
+              >join the club</a
             >
           </li>
         </ul>
@@ -130,6 +132,13 @@ export default {
       data,
       isOpen: false,
     };
+  },
+  computed: {
+    url () {
+      return process.env.NODE_ENV !== 'production'
+        ? "https://www-dev.gclubdev.net/en/login"
+        : "https://www.gclubs.com/en/login"
+    }
   },
   methods: {
     drawer() {

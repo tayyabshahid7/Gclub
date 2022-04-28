@@ -1,5 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  dev: process.env.NODE_ENV !== 'production',
   head: {
     title: "gClub",
     htmlAttrs: {
@@ -11,17 +12,11 @@ export default {
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
     ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      {
-        href: "https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap",
-        rel: "stylesheet",
-      },
-    ],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["~/assets/global.css"],
+  css: ["~/assets/global"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -43,7 +38,22 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxtjs/axios"],
+  modules: [
+    '@nuxtjs/axios',
+    ['nuxt-mail', {
+      message: {
+        to: 'info@gclubs.com',
+      },
+      smtp: {
+        host: 'smtp.mailtrap.io',
+        port: 2525,
+        auth: {
+          user: 'd890ffc3a7fc42',
+          pass: '416d8da622e0ab'
+        },
+      },
+    }],
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

@@ -42,7 +42,7 @@
             <p class="text-xs font-acumin">- 0{{ index + 1 }}</p>
           </div>
           <div>
-            <h1 class="text-xl md:text-xl lg:text-h2 uppercase font-ivy-presto">
+            <h1 class="text-xl md:text-xl lg:text-h2 uppercase font-ivy-presto title">
               {{ item.name }}
             </h1>
           </div>
@@ -69,4 +69,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+  .title{
+    max-width: 537px;
+  }
+</style>

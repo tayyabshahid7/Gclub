@@ -9,9 +9,11 @@
           src="../assets/images/register-screen.webp"
         />
         <div
-          class="lg:w-full absolute top-0 right-0 bottom-0 left-0 text-center flex justify-center items-center"
+          class="absolute inset-7 text-center flex justify-center items-center image-border"
         >
-          <h1 class="box-line text-lg lg:text-h1 text-white px-3">
+          <h1
+            class="box-line text-lg lg:text-h1 text-white px-3 font-ivy-presto uppercase"
+          >
             The future awaits. A place where the future happens now.
           </h1>
         </div>
@@ -28,77 +30,87 @@
         </div>
 
         <div class="flex flex-col justify-center md:my-auto px-8 mt-4 xl:px-16">
-          <form class="flex flex-col" @submit.prevent="submitForm">
-            <div class="flex flex-col uppercase">
-              <label for="name" class="lg:text-base md:text-md text-white"
+          <form class="flex flex-col uppercase" @submit.prevent="submitForm">
+            <div class="flex flex-col">
+              <label
+                for="name"
+                class="lg:text-base md:text-md text-white font-acumin"
                 >Name</label
               >
               <input
                 type="text"
                 id="name"
                 v-model="name"
-                class="bg-app-color border-white border w-full py-2 px-3 text-white mt-1 focus:outline-none focus:shadow-outline"
+                class="bg-app-color border-white border w-full py-2 px-3 text-white font-acumin mt-1 focus:outline-none focus:shadow-outline"
               />
             </div>
 
             <div class="flex flex-col pt-2">
-              <label for="email" class="lg:text-base md:text-md text-white"
+              <label
+                for="email"
+                class="lg:text-base md:text-md text-white font-acumin"
                 >Email</label
               >
               <input
                 type="email"
                 id="email"
                 v-model="email"
-                class="bg-app-color border-white border w-full py-2 px-3 text-white mt-1 focus:outline-none focus:shadow-outline"
+                class="bg-app-color border-white border w-full py-2 px-3 text-white font-acumin mt-1 focus:outline-none focus:shadow-outline"
               />
             </div>
 
             <div class="flex flex-col pt-2">
-              <label for="password" class="lg:text-base md:text-md text-white"
+              <label
+                for="password"
+                class="lg:text-base md:text-md text-white font-acumin"
                 >Password</label
               >
               <input
                 type="password"
                 id="password"
                 v-model="password"
-                class="bg-app-color border-white border w-full py-2 px-3 text-white mt-1 focus:outline-none focus:shadow-outline"
+                class="bg-app-color border-white border w-full py-2 px-3 text-white font-acumin mt-1 focus:outline-none focus:shadow-outline"
               />
             </div>
 
             <div class="flex flex-col pt-2">
-              <label for="city" class="lg:text-base md:text-md text-white"
+              <label
+                for="city"
+                class="lg:text-base md:text-md text-white font-acumin"
                 >City</label
               >
               <input
                 type="text"
                 id="city"
                 v-model="city"
-                class="bg-app-color border-white border w-full py-2 px-3 text-white mt-1 focus:outline-none focus:shadow-outline"
+                class="bg-app-color border-white border w-full py-2 px-3 text-white font-acumin mt-1 focus:outline-none focus:shadow-outline"
               />
             </div>
 
             <div class="flex flex-col pt-2">
-              <label for="country" class="lg:text-base md:text-md text-white"
+              <label
+                for="country"
+                class="lg:text-base md:text-md text-white font-acumin"
                 >Country</label
               >
               <input
                 type="text"
                 id="country"
                 v-model="country"
-                class="bg-app-color border-white border w-full py-2 px-3 text-white mt-1 focus:outline-none focus:shadow-outline"
+                class="bg-app-color border-white border w-full py-2 px-3 text-white font-acumin mt-1 focus:outline-none focus:shadow-outline"
               />
             </div>
 
             <input
               type="submit"
               value="CONTINUE"
-              class="bg-white text-black font-bold lg:text-base md:text-md p-4 mt-12 text-app-color"
+              class="bg-white text-black font-bold lg:text-base md:text-md p-4 mt-6 text-app-color"
             />
           </form>
           <div class="text-center text-white mt-4 md:pt-12">
-            <p>
+            <p class="font-acumin">
               Already have an account?
-              <NuxtLink class="underline font-semibold" to="/signin"
+              <NuxtLink class="underline font-semibold font-acumin" to="/signin"
                 >Login here.</NuxtLink
               >
             </p>
@@ -140,4 +152,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.image-border {
+  border: 1px solid rgba(250, 250, 250, 0.6);
+  box-sizing: border-box;
+}
+</style>

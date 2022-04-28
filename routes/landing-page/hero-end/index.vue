@@ -1,7 +1,7 @@
 <template>
   <section class="w-full h-screen relative text-center">
     <img
-      src="~/assets/images/hero-end.png"
+      src="~/assets/images/hero-end.webp"
       class="object-cover w-full h-full bg-cover bg-center"
       alt="hero-bg"
     />

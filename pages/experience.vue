@@ -3,7 +3,7 @@
     <nav-bar-club />
     <HeroSection />
     <ExperiencePanelSection />
-    <events />
+<!--    <events />-->
     <HeroEnd />
     <app-footer />
   </div>

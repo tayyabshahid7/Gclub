@@ -92,7 +92,6 @@ export default {
   name: "AppLoader",
   props: ["loadNow"],
   data: function () {
-    console.log("first", this.loadNow);
     return {
       loading: this.loadNow,
     };

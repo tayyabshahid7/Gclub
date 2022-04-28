@@ -8,7 +8,7 @@
       <div class="app-experience-divider px-10"></div>
       <div class="w-full h-24 table" @click="characterItemClick(index)">
         <div
-          class="table-cell align-middle uppercase py-11 md:py-14 lg:py-20 text-app-rose"
+          class="table-cell align-middle uppercase pt-11 md:pt-14 lg:pt-20 text-app-rose pb-14"
         >
           <p
             class="text-app-rose uppercase items-center flex text-xs font-thin"
@@ -34,29 +34,31 @@
       </div>
       <div
         :data-character-id="index"
-        class="text-app-rose md:p-6 hidden flex mt-12"
+        class="text-app-rose pb-16 hidden flex"
       >
         <div class="md:flex justify-center md:space-x-6 lg:space-x-12">
-          <div class="flex flex-col items-start justify-center lg:mx-12">
-            <p class="text-sm lg:text-lg tracking-wider lg:w-sixty text-app-rose font-acumin">
+          <div class="flex flex-col items-start justify-center">
+            <p
+              class="text-sm lg:text-lg tracking-wider lg:w-sixty text-app-rose font-acumin"
+            >
               {{ character.panelDetails }}
             </p>
-            <button class="btn-experience-secondary mt-20">learn more</button>
+<!--            <button class="btn-experience-secondary mt-20">learn more</button>-->
           </div>
-          <div
-            class="relative left-0 top-0 my-16 md:my-0 md:justify-center md:items-center"
-          >
-            <img
-              src="~/assets/images/panel/panel-mask-image.png"
-              class="relative object-contain w-10/12 md:w-full"
-              alt=""
-            />
-            <img
-              src="~/assets/images/panel/panel-image-1.png"
-              class="absolute object-contain w-10/12 -top-6 left-6 md:w-full"
-              alt="panel image"
-            />
-          </div>
+<!--          <div-->
+<!--            class="relative left-0 top-0 my-16 md:my-0 md:justify-center md:items-center"-->
+<!--          >-->
+<!--            <img-->
+<!--              src="~/assets/images/panel/panel-mask-image.webp"-->
+<!--              class="relative object-contain w-10/12 md:w-full"-->
+<!--              alt=""-->
+<!--            />-->
+<!--            <img-->
+<!--              src="~/assets/images/panel/panel-image-1.webp"-->
+<!--              class="absolute object-contain w-10/12 -top-6 left-6 md:w-full"-->
+<!--              alt="panel image"-->
+<!--            />-->
+<!--          </div>-->
         </div>
       </div>
     </div>
@@ -86,7 +88,7 @@ export default {
           panelId: "- 03",
           panelName: "fashion",
           panelDetails:
-            "Get special access to the latest fashion collecions from our state-of-the-art luxury brand where new emerging designers show off their boldness and talent through expert craftsmanship.",
+            "Get special access to the latest fashion collections from our state-of-the-art luxury brand where new emerging designers show off their boldness and talent through expert craftsmanship.",
         },
         {
           panelId: "- 04",

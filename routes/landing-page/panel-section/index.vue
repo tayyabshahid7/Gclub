@@ -51,12 +51,12 @@
             class="relative left-0 top-0 my-16 md:my-0 md:justify-center md:items-center"
           >
             <img
-              src="~/assets/images/panel/panel-mask-image.png"
+              src="~/assets/images/panel/panel-mask-image.webp"
               class="relative object-contain w-10/12 md:w-full"
               alt=""
             />
             <img
-              src="~/assets/images/panel/panel-image-1.png"
+              :src="character.image"
               class="absolute object-contain w-10/12 -top-6 left-6 md:w-full"
               alt="panel image"
             />
@@ -68,6 +68,10 @@
 </template>
 
 <script>
+import img1 from "~/assets/images/panel/panel-1.png";
+import img2 from "~/assets/images/panel/panel-2.png";
+import img3 from "~/assets/images/panel/panel-image-1.webp";
+
 export default {
   name: "PanelSection",
   data() {
@@ -75,22 +79,26 @@ export default {
       open: false,
       panelList: [
         {
+          image: img1,
           panelId: "- 01",
           panelName: "club",
           panelDetails:
-            "An exclusive, like-minded group of individuals that will challenge you to Make an impact on the world as we know it.",
+            "An exclusive, like-minded group of individuals that will challenge you to make an impact on\n" +
+            "the world as we know it.",
         },
         {
+          image: img2,
           panelId: "- 02",
           panelName: "experience",
           panelDetails:
-            "Enjoy a twenty-four hour concierge service, access to exclusive talks, events, content, and more.",
+            "Enjoy a 24 hour concierge service, access to exclusive talks, events, content, and more.",
         },
         {
+          image: img3,
           panelId: "- 03",
           panelName: "membership",
           panelDetails:
-            "Curate your G|Clubs experience with five membership tiers, each with its own perks and exclusive benefits.",
+            "Curated you G|CLUBS experience with five membership tiers, each with its own perks and exclusive benefits.",
         },
       ],
     };

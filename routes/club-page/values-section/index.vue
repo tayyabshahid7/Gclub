@@ -14,7 +14,7 @@
         class="w-full md:w-1/3 overflow-hidden flex flex-1 flex-col justify-evenly"
       >
         <img
-          src="../../../assets/images/club/value-1.png"
+          src="../../../assets/images/club/value-1.webp"
           alt="image"
           class="lg:mb-10"
         />
@@ -24,16 +24,15 @@
           Value
         </p>
         <p class="font-acumin text-app-brass tracking-wider mb-9">
-          G|Clubs is born out of the crutial need to unite the elite minds of
-          today’s zeitgeist in one space, offering them a Space to connect,
-          thrive, and have a little fun while doing it.
+          Leverage the benefits of innovation, freedom, travel, and fashion to
+          satisfy the exacting luxury standards of our members.
         </p>
       </div>
       <div
         class="w-full md:w-1/3 overflow-hidden flex flex-1 flex-col justify-evenly"
       >
         <img
-          src="../../../assets/images/club/value-2.png"
+          src="../../../assets/images/club/value-2.webp"
           alt="image"
           class="lg:mb-10"
         />
@@ -43,18 +42,16 @@
           Value
         </p>
         <p class="font-acumin text-app-brass tracking-wider mb-9">
-          Amet facilisis magna etiam tempor. Nibh tortor id aliquet lectus proin
-          nibh. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor.
-          Adipiscing vitae proin sagittis nisl rhoncus mattis. Duis tristique
-          sollicitudin nibh sit amet commodo. Amet facilisis magna etiam tempor
-          orci eu.
+          To create global luxury experiences so that members may enjoy an
+          extensive, robust and diverse catalogue of benefits provided by an
+          international network oF strategic partners.
         </p>
       </div>
       <div
         class="w-full md:w-1/3 overflow-hidden flex flex-1 flex-col justify-evenly"
       >
         <img
-          src="../../../assets/images/club/value-3.png"
+          src="../../../assets/images/club/value-3.webp"
           alt="image"
           class="lg:mb-10"
         />

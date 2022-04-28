@@ -17,6 +17,7 @@ export default {
     AppFooter,
   },
   name: "contact",
+
 };
 </script>
 

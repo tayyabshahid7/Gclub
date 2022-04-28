@@ -38,21 +38,23 @@
           to="/"
           class="lg:inline-block mr-auto ml-auto align-middle text-app-color"
         >
-          <img src="~/assets/images/app-logo-default.svg" class="h-14" />
+          <img src="~/assets/images/logo/gc-monogram-new-green.svg" width="80"  />
         </NuxtLink>
       </div>
-      <NuxtLink
-        to="/signin"
+      <a
+        target="_blank"
+        :href="url"
         class="flex items-center flex-shrink-0 text-app-color mr-6"
       >
         SIGN IN
-      </NuxtLink>
+      </a>
 
       <div>
-        <NuxtLink
-          to="/signup"
+        <a
+          target="_blank"
+          :href="url"
           class="inline-block text-sm px-10 py-2 leading-none border text-app-color border-green hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
-          >JOIN THE CLUB</NuxtLink
+          >JOIN THE CLUB</a
         >
       </div>
     </div>
@@ -131,11 +133,11 @@
           >
         </li>
         <li>
-          <NuxtLink
-            to="/signup"
-            @click="isOpen = false"
+          <a
+            target="_blank"
+            :href="url"
             class="inline-block text-sm px-10 py-2 leading-none border text-white border-green mt-4 lg:mt-0"
-            >JOIN THE CLUB</NuxtLink
+            >JOIN THE CLUB</a
           >
         </li>
       </ul>
@@ -156,6 +158,13 @@ export default {
     drawer() {
       this.isOpen = !this.isOpen;
     },
+  },
+  computed: {
+    url () {
+      return process.env.NODE_ENV !== 'production'
+        ? "https://www-dev.gclubdev.net/en/login"
+        : "https://www.gclubs.com/en/login"
+    }
   },
   watch: {
     isOpen: {
