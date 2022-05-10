@@ -1,5 +1,5 @@
 <template>
-  <div class="px-5">
+  <div class="px-9">
     <div
       class="md:px-2 w-full cursor-pointer"
       v-for="(character, index) in panelList"
@@ -76,26 +76,26 @@ export default {
           panelId: "- 01",
           panelName: "society",
           panelDetails:
-            "Being a G|Clubs member is a status symbol, but also a mission statement: it tells the world that you want more out of life and only the very best satisfies you. Wear that like a badge of honor.",
+            "Being a G|CLUBS member is a status symbol, but also a mission statement: it tells the world that you want more out of life and only the very best satisfies you. Wear that like a badge of honor.",
         },
         {
           panelId: "- 02",
           panelName: "travel",
           panelDetails:
-            "Discover G|Summit, a meeting of social, political, and entrepreneurial ideas and conversations from around the globe, starring our members, distinguished guests, and our spokesperson.",
+            "At G|CLUBS we believe that luxury travel combines the best elements of both the journey and the destination. Our experts create bespoke travel experiences designed to give you access to the most beautiful and enchanting destinations in the world, a chance to not just visit the locale, but live it.",
         },
         {
           panelId: "- 03",
           panelName: "fashion",
           panelDetails:
-            "Get special access to the latest fashion collections from our state-of-the-art luxury brand where new emerging designers show off their boldness and talent through expert craftsmanship.",
+            "Get special access to the latest fashion collections from our state-of-the-art luxury brand where emerging designers show off their boldness and talent through expert craftsmanship.",
         },
-        {
-          panelId: "- 04",
-          panelName: "tech",
-          panelDetails:
-            "Receive special member pricing on purchases, extended video blogging time, and early access to select music produced by or on behalf of Mr. Miles Guo.",
-        },
+        // {
+        //   panelId: "- 04",
+        //   panelName: "tech",
+        //   panelDetails:
+        //     "Receive special member pricing on purchases, extended video blogging time, and early access to select music produced by or on behalf of Mr. Miles Guo.",
+        // },
       ],
     };
   },

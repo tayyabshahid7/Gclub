@@ -3,14 +3,14 @@
     <NavbarClub />
     <hero />
     <Vision />
-    <OurTeam />
+<!--    <OurTeam />-->
     <GetInTouch />
     <app-footer />
   </div>
 </template>
 
 <script>
-import Hero from "~/routes/about/hero";
+import Hero from "~~/routes/about/hero";
 import NavbarClub from "~~/layouts/nav-bar-club";
 import Vision from "~~/routes/about/vision";
 import OurTeam from "~~/routes/about/team";

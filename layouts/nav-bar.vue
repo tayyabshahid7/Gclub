@@ -22,9 +22,9 @@
 
       <!-- Navbar -->
       <div
-        class="hidden ld:block flex-grow lg:flex lg:items-center lg:w-auto mt-6"
+        class="hidden ld:block flex-grow lg:flex lg:items-center lg:w-auto mt-3"
       >
-        <div class="text-sm lg:flex-grow">
+        <div class="text-sm lg:flex-grow" style="width: 15%;">
           <NuxtLink
             v-for="item in data"
             :key="item.id"

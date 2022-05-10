@@ -10,12 +10,12 @@
         <h1
           class="text-xl lg:text-h1 md:max-w-xs lg:max-w-2xl text-app-brass uppercase font-ivy-presto font-thin mb-6"
         >
-          An invitation to live boldly
+          An invitation to live boldly.
         </h1>
         <div class="mt-7">
-          <NuxtLink to="/signup" class="btn-join-club-primary"
-            >See Memberships</NuxtLink
-          >
+          <button v-on:click="memberShipHandler()" class="btn-join-club-primary get-in-touch-btn font-bold font-xs">
+            See Memberships
+          </button>
         </div>
       </div>
       <img
@@ -30,7 +30,16 @@
 <script>
 export default {
   name: "JoinClub",
+  methods: {
+    memberShipHandler() {
+      window.open("https://www-dev.gclubdev.net/en/memberships", '_blank');
+    },
+  },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.get-in-touch-btn{
+  padding: 1.5% 16%;
+}
+</style>

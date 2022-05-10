@@ -2,7 +2,7 @@ export default [
   { to: "/club", name: "club", id: 1 },
   { to: "/experience", name: "experience", id: 2 },
   { to: "/membership", name: "membership", id: 3 },
-  { to: "/sweep-stakes", name: "sweepstakes", id: 4 },
+  // { to: "/sweep-stakes", name: "sweepstakes", id: 4 },
 ];
 
 export const appFooter = [

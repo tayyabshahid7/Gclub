@@ -1,14 +1,14 @@
 <template>
-  <div class="h-full md:pb-11">
+  <div class="h-full" style="padding-bottom: 6%;">
     <div
       class="flex flex-col items-center text-center content-center justify-center pt-8 my-8 text-white"
     >
       <h1
         class="text-2xl md:text-h1 lg:max-w-3xl font-ivy-presto font-thin uppercase"
       >
-        Become a member of G|clubs
+        Become a member of G|CLUBS
       </h1>
-      <p class="mt-7 text-sm text-app-wash font-acumin max-w-sm lg:max-w-3xl">
+      <p class="mt-7 text-sm text-app-wash font-acumin max-w-sm lg:max-w-3xl hero-title">
         Through 5 membership tiers, G|CLUBS allows members to curate their own unique
         experience—each designed to ensure a first-class tomorrow.
       </p>
@@ -17,19 +17,19 @@
       <vuescroll :ops="ops" ref="vs">
         <div class="w-10/12 m-auto flex flex-col md:flex-row my-10 justify-around items-center ">
           <template>
-            <div class="tier-circle mb-14">
+            <div class="tier-circle mb-14 font-thin">
               TIER 1
             </div>
-            <div class="tier-circle mb-14">
+            <div class="tier-circle mb-14 font-thin">
               TIER 2
             </div>
-            <div class="tier-circle mb-14">
+            <div class="tier-circle mb-14 font-thin">
               TIER 3
             </div>
-            <div class="tier-circle mb-14">
+            <div class="tier-circle mb-14 font-thin">
               TIER 4
             </div>
-            <div class="tier-circle mb-14">
+            <div class="tier-circle mb-14 font-thin">
               TIER 5
             </div>
           </template>
@@ -40,14 +40,16 @@
     <div
       class="flex flex-col items-center text-center content-center justify-center pt-8 mb-8 text-white"
     >
-      <p class="text-sm text-app-wash font-acumin max-w-sm lg:max-w-3xl">
+      <p class="text-sm text-app-wash font-acumin max-w-sm lg:max-w-3xl hero-end">
         G|CLUBS members enjoy unprecedented access to the world-class products and services we provide, as well as services provided by third-party strategic partners, clubs, and institutions. Each experience stems from our worldwide network of resources.
 
       </p>
-      <p class="mt-7 text-sm text-app-wash font-acumin max-w-sm lg:max-w-3xl">
+      <p class="mt-7 text-sm text-app-wash font-acumin max-w-sm lg:max-w-3xl mb-8">
         Become a member today!
       </p>
     </div>
+
+    <div class="gray-line"></div>
 
   </div>
 </template>
@@ -97,6 +99,23 @@ export default {
 </script>
 
 <style scoped>
+
+.gray-line{
+  width: 95%;
+  height: 3px;
+  background: #4f5c53;
+  margin: auto;
+  margin-bottom: 2px;
+}
+
+.hero-title{
+  padding: 0 5%;
+}
+
+.hero-end{
+  padding: 0 3%;
+}
+
 .child-wrap {
   display: flex;
   flex-direction: row;
@@ -117,7 +136,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 200;
   font-size: 46px;
   line-height: 56px;
   text-transform: uppercase;

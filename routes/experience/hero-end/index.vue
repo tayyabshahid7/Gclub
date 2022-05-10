@@ -8,12 +8,12 @@
           JOIN THE CLUB
         </p>
         <h1
-          class="text-xl lg:text-h1 md:max-w-xs lg:max-w-xl text-app-brass uppercase font-ivy-presto font-thin mb-6"
+          class="text-xl lg:text-h1 text-app-brass uppercase font-ivy-presto font-thin mb-6"
         >
           An Invitation to live boldly.
         </h1>
         <div>
-          <button class="btn-join-club-primary">SEE MEMBERSHIPS</button>
+          <button v-on:click="memberShipHandler()" class="btn-join-club-primary membership-btn text-xs">SEE MEMBERSHIPS</button>
         </div>
       </div>
       <img
@@ -28,7 +28,16 @@
 <script>
 export default {
   name: "HeroEnd",
+  methods: {
+    memberShipHandler() {
+      window.open("https://www-dev.gclubdev.net/en/memberships", '_blank');
+    },
+  },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.membership-btn{
+  padding: 1% 16%;
+}
+</style>

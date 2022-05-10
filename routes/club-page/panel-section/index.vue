@@ -2,7 +2,7 @@
   <section
     class="h-full w-full relative flex flex-col content-center text-center"
   >
-    <div v-for="(item, index) in data" :key="item.id" class="bg-white lg:my-10">
+    <div v-for="(item, index) in data" :key="item.id" class="bg-white lg:my-20">
       <div
         v-show="index % 2 === 0"
         class="w-full p-5 md:p-10 bg-white flex flex-col md:flex-row justify-center items-center md:space-x-4 lg:space-x-48"
@@ -19,7 +19,7 @@
             </h1>
           </div>
           <div>
-            <p class="text-sm font-acumin max-w-sm">
+            <p class="text-sm font-acumin max-w-md">
               {{ item.description }}
             </p>
           </div>

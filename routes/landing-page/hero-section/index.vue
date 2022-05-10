@@ -9,7 +9,7 @@
         >
           Forging the thriving future you want to see.
         </h1>
-        <button class="w-full md:w-64 btn-primary">learn more</button>
+        <button v-on:click="handler()"  class="w-full md:w-64 btn-primary">learn more</button>
       </div>
       <img
         class="h-full object-cover my-5 md:p-5 md:w-5/12 lg:w-4/12"
@@ -23,6 +23,11 @@
 <script>
 export default {
   name: "HeroSection",
+  methods: {
+    handler() {
+      window.open("https://www-dev.gclubdev.net/club", '_blank');
+    },
+  },
 };
 </script>
 

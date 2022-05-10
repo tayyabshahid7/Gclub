@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="navbar-white flex items-center justify-between sticky transition-all duration-500 flex-wrap bg-transparent"
+    class="w-full flex items-center justify-between py-3 px-7"
   >
     <!-- Mobile toggle -->
     <div class="lg:hidden">
@@ -23,12 +23,12 @@
     </div>
 
     <div class="flex-grow lg:flex lg:items-center lg:w-auto hidden">
-      <div class="text-sm flex-grow">
+      <div class="text-sm flex-grow" style="width: 15%;">
         <NuxtLink
           v-for="item in data"
           :key="item.id"
           :to="item.to"
-          class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 uppercase text-app-color font-bold mr-4"
+          class="block mt-4 lg:inline-block tracking-wide lg:mt-0 mr-6 uppercase text-acumin text-xs font-bold text-app-color"
         >
           {{ item.name }}
         </NuxtLink>

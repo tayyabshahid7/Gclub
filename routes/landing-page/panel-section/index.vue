@@ -42,6 +42,7 @@
               {{ character.panelDetails }}
             </p>
             <button
+              v-on:click="handler(character.link)"
               class="btn-primary font-acumin w-full py-6 mt-10 md:w-72 md:mt-20"
             >
               learn more
@@ -68,9 +69,9 @@
 </template>
 
 <script>
-import img1 from "~/assets/images/panel/panel-1.png";
-import img2 from "~/assets/images/panel/panel-2.png";
-import img3 from "~/assets/images/panel/panel-image-1.webp";
+import img1 from "~/assets/images/panel/panel-image-1.webp";
+import img2 from "~/assets/images/home/boat.png";
+import img3 from "~/assets/images/panel/panel-3-updated.png";
 
 export default {
   name: "PanelSection",
@@ -82,28 +83,37 @@ export default {
           image: img1,
           panelId: "- 01",
           panelName: "club",
+          link:"https://www-dev.gclubdev.net/en/",
           panelDetails:
-            "An exclusive, like-minded group of individuals that will challenge you to make an impact on\n" +
-            "the world as we know it.",
+            "Join an exclusive, like-minded group of individuals that will " +
+            "challenge you to make an impact on the world. With utmost luxury " +
+            "in its DNA, G|CLUBS upholds the bespoke tastes and lifestyle of its members."
         },
         {
           image: img2,
           panelId: "- 02",
           panelName: "experience",
+          link:"https://www-dev.gclubdev.net/en/",
           panelDetails:
-            "Enjoy a 24 hour concierge service, access to exclusive talks, events, content, and more.",
+            "Enjoy curated luxury experiences around the world provided by an " +
+            "international network of strategic partners. 24-hour concierge service, " +
+            "access to exclusive talks, events, content, and more are at your disposal.",
         },
         {
           image: img3,
           panelId: "- 03",
           panelName: "membership",
+          link:"https://www-dev.gclubdev.net/en/",
           panelDetails:
-            "Curated you G|CLUBS experience with five membership tiers, each with its own perks and exclusive benefits.",
+            "Curate your G|CLUBS experience with five membership tiers, each with its own perks and exclusive benefits.",
         },
       ],
     };
   },
   methods: {
+    handler(link) {
+      window.open(link, '_blank');
+    },
     characterItemClick(characterIndex) {
       const characterInfoElement = document.querySelectorAll(
         '[data-character-id="' + characterIndex + '"]'

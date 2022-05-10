@@ -12,14 +12,20 @@ export default {
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/gc-monogram-new.svg" }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["~/assets/global"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    {
+      src: 'node_modules/vue-responsive-video-background-player/dist/index.common.js',
+      ssr: false,
+      mode: 'server'
+    }
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
