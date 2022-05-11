@@ -14,15 +14,16 @@
       <h1
         class="text-xl lg:text-h2 md:max-w-xs lg:max-w-xl text-white uppercase font-ivy-presto font-thin tracking-widest"
       >
-        Connect with the elite Write the future with those who can Change the
-        world with those who can<br />
-        <strong> an invitation to live boldly</strong>
+<!--        Connect with the elite Write the future with those who can Change the-->
+<!--        world with those who can<br />-->
+<!--        <strong> an invitation to live boldly</strong>-->
         <strong>
-          Empowering you to make your mark Empowering your lifestyle</strong
+          Empowering your lifestyle</strong
         >
       </h1>
       <!-- </div> -->
       <button
+        v-on:click="handler()"
         class="w-full cursor-pointer bg-white py-3 text-sm font-acumin mt-12 md:w-11/12 font-bold tracking-widest"
       >
         LEARN MORE
@@ -33,8 +34,12 @@
 
 <script>
 export default {
-
   name: "AboutUs",
+  methods: {
+    handler() {
+      window.open("https://www-dev.gclubdev.net/about", '_blank');
+    },
+  },
 };
 </script>
 
