@@ -9,7 +9,9 @@
       loading="lazy"
     />
     <div class="flex flex-col justify-center p-5 md:my-7 md:px-7">
-      <p class="mb-7 text-xs text-white uppercase font-acumin">About us</p>
+      <p class="mb-7 text-xs text-white uppercase font-acumin">
+        {{ $t('aboutUs') }}
+      </p>
       <!-- <div class="lg:w-forty"> -->
       <h1
         class="text-xl lg:text-h2 md:max-w-xs lg:max-w-xl text-white uppercase font-ivy-presto font-thin tracking-widest"
@@ -18,15 +20,15 @@
 <!--        world with those who can<br />-->
 <!--        <strong> an invitation to live boldly</strong>-->
         <strong>
-          Empowering your lifestyle</strong
-        >
+          {{ $t('empowering') }}
+        </strong>
       </h1>
       <!-- </div> -->
       <button
         v-on:click="handler()"
         class="w-full cursor-pointer bg-white py-3 text-sm font-acumin mt-12 md:w-11/12 font-bold tracking-widest"
       >
-        LEARN MORE
+        {{ $t('learnMore') }}
       </button>
     </div>
   </div>

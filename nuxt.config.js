@@ -24,8 +24,34 @@ export default {
       src: 'node_modules/vue-responsive-video-background-player/dist/index.common.js',
       ssr: false,
       mode: 'server'
-    }
+    },
   ],
+
+  i18n: {
+    seo: false,
+    locales: [
+      {
+        code: "en",
+        name: "English"
+      },
+      {
+        code: "cn",
+        name: "Chinese"
+      }
+    ],
+    defaultLocale: "en",
+    vueI18n: {
+      fallbackLocale: "en",
+      messages: {
+        en: {
+          welcome: "Hello"
+        },
+        cn: {
+          welcome: "Bonjour"
+        }
+      }
+    }
+  },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -39,6 +65,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/i18n',
     '@nuxtjs/axios',
     ['nuxt-mail', {
       message: {

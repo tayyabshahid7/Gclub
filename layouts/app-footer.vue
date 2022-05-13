@@ -87,13 +87,13 @@
     <div class="grid-cols-2 gap-4 mt-4 hidden lg:grid">
       <div class="col-span-1 mb-7">
         <div class="text-white mx-12 md:mx-24">
-          <h3>{{ new Date().getFullYear() }} G Clubs. All Rights Reserved.</h3>
+          <h3>{{ new Date().getFullYear() }} G Clubs. {{ $t('allRightsReserved') }}</h3>
           <div class="flex text-app-gray">
             <NuxtLink class="mr-3 underline" to="/terms-and-condition"
-              >Terms of Service</NuxtLink
+              >{{ $t('termsOfService') }}</NuxtLink
             >
             <NuxtLink class="underline" to="/privacy-policy"
-              >Privacy Policy</NuxtLink
+              >{{ $t('privacyPolicy') }}</NuxtLink
             >
           </div>
         </div>
@@ -110,13 +110,29 @@
 </template>
 
 <script>
-import { appFooter } from "./data";
+import { appFooter, appFooterChinese } from "./data";
 import dropdown from "~~/components/dropdown.vue";
 export default {
   components: { dropdown },
+  created() {
+    this.init();
+  },
+  methods: {
+    async init() {
+      const currentLocale = this.$i18n.locale;
+      try {
+        const result = await this.$axios.get('locales/footer/' + currentLocale + '.json')
+        if (result.status === 200) {
+          this.$i18n.mergeLocaleMessage(currentLocale, result.data)
+        }
+      } catch (error) {
+        console.error(error)
+      }
+    },
+  },
   data: function () {
     return {
-      data: appFooter,
+      data: this.$i18n.locale === 'en' ? appFooter: appFooterChinese,
     };
   },
   name: "AppFooter",

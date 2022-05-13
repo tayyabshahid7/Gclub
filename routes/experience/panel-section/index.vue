@@ -66,6 +66,9 @@
 </template>
 
 <script>
+import enData from '../../../static/locales/experience/en.json';
+import cnData from '../../../static/locales/experience/cn.json';
+
 export default {
   name: "ExperiencePanelSection",
   data() {
@@ -74,21 +77,18 @@ export default {
       panelList: [
         {
           panelId: "- 01",
-          panelName: "society",
-          panelDetails:
-            "Being a G|CLUBS member is a status symbol, but also a mission statement: it tells the world that you want more out of life and only the very best satisfies you. Wear that like a badge of honor.",
+          panelName:  this.getInfo('society'),
+          panelDetails:  this.getInfo('societyPanel'),
         },
         {
           panelId: "- 02",
-          panelName: "travel",
-          panelDetails:
-            "At G|CLUBS we believe that luxury travel combines the best elements of both the journey and the destination. Our experts create bespoke travel experiences designed to give you access to the most beautiful and enchanting destinations in the world, a chance to not just visit the locale, but live it.",
+          panelName:  this.getInfo('travel'),
+          panelDetails:  this.getInfo('travelPanel'),
         },
         {
           panelId: "- 03",
-          panelName: "fashion",
-          panelDetails:
-            "Get special access to the latest fashion collections from our state-of-the-art luxury brand where emerging designers show off their boldness and talent through expert craftsmanship.",
+          panelName:  this.getInfo('fashion'),
+          panelDetails:  this.getInfo('fashionPanel'),
         },
         // {
         //   panelId: "- 04",
@@ -100,6 +100,9 @@ export default {
     };
   },
   methods: {
+    getInfo(name){
+      return this.$i18n.locale === 'en'? enData[name]: cnData[name];
+    },
     characterItemClick(characterIndex) {
       const characterInfoElement = document.querySelectorAll(
         '[data-character-id="' + characterIndex + '"]'

@@ -7,9 +7,11 @@
         <h1
           class="text-xl lg:text-h1 md:max-w-xs lg:max-w-xl text-white uppercase font-ivy-presto font-thin"
         >
-          Forging the thriving future you want to see.
+          {{ $t('heroHeading') }}
         </h1>
-        <button v-on:click="handler()"  class="w-full md:w-64 btn-primary">learn more</button>
+        <button v-on:click="handler()"  class="w-full md:w-64 btn-primary">
+          {{ $t('learnMore') }}
+        </button>
       </div>
       <img
         class="h-full object-cover my-5 md:p-5 md:w-5/12 lg:w-4/12"

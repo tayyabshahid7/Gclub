@@ -46,7 +46,7 @@
         :href="url"
         class="flex items-center flex-shrink-0 text-app-color mr-6"
       >
-        SIGN IN
+        {{ $t('signIn') }}
       </a>
 
       <div>
@@ -54,8 +54,9 @@
           target="_blank"
           :href="url"
           class="inline-block text-sm px-10 py-2 leading-none border text-app-color border-green hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
-          >JOIN THE CLUB</a
-        >
+          >
+          {{ $t('joinTheClub') }}
+        </a>
       </div>
     </div>
     <!-- Dark Background Transition -->
@@ -113,7 +114,7 @@
       <ul class="divide-y font-sans">
         <li>
           <a href="/club" @click="isOpen = false" class="my-4 inline-block"
-            >club</a
+            > {{ $t('club') }}</a
           >
         </li>
         <li>
@@ -121,24 +122,22 @@
             href="/experience"
             @click="isOpen = false"
             class="my-4 inline-block"
-            >experience</a
-          >
+            > {{ $t('experience') }}
+          </a>
         </li>
         <li>
           <a
             href="/membership"
             @click="isOpen = false"
             class="my-4 inline-block"
-            >membership</a
-          >
+            >{{ $t('membership') }}</a>
         </li>
         <li>
           <a
             target="_blank"
             :href="url"
             class="inline-block text-sm px-10 py-2 leading-none border text-white border-green mt-4 lg:mt-0"
-            >JOIN THE CLUB</a
-          >
+            >{{ $t('joinTheClub') }}</a>
         </li>
       </ul>
     </aside>
@@ -146,18 +145,32 @@
 </template>
 
 <script>
-import data from "./data";
+import data, {navbarChinese} from "./data";
 export default {
   data() {
     return {
       isOpen: false,
-      data,
+      data: this.$i18n.locale === 'en' ? data: navbarChinese,
     };
   },
   methods: {
     drawer() {
       this.isOpen = !this.isOpen;
     },
+    async init() {
+      const currentLocale = this.$i18n.locale;
+      try {
+        const result = await this.$axios.get('locales/navbar/' + currentLocale + '.json')
+        if (result.status === 200) {
+          this.$i18n.mergeLocaleMessage(currentLocale, result.data)
+        }
+      } catch (error) {
+        console.error(error)
+      }
+    },
+  },
+  created() {
+    this.init();
   },
   computed: {
     url () {

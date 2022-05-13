@@ -6,14 +6,12 @@
       <h3
         class="text-xl font-ivy-presto uppercase max-w-xs mb-7 md:max-w-2xl md:text-2xl lg:text-h1 lg:max-w-3xl font-thin"
       >
-        More than a club, a movement.
+        {{ $t('heading') }}
       </h3>
       <p
         class="text-sm font-acumin text-justify lg:text-center mx-7 md:text-sm lg:max-w-2xl font-thin hero"
       >
-        G|CLUBS is all about its members.
-        That’s why we’ve assembled an elite team of hospitality professionals
-        from all over the world to serve your every need. Anywhere, anytime.
+        {{ $t('description') }}
       </p>
     </div>
     <div>

@@ -10,7 +10,8 @@
           aria-haspopup="true"
           aria-expanded="true"
         >
-          <span>ENG</span>
+          <span v-if="$i18n.locale == 'en'">ENG</span>
+          <span v-if="$i18n.locale == 'cn'">CN</span>
           <img
             src="https://s.svgbox.net/hero-solid.svg?ic=chevron-down&fill=white"
             class="-mr-1 ml-2 h-5 w-7"
@@ -37,13 +38,17 @@
           aria-labelledby="options-menu"
         >
           <div class="border-t border-gray-100"></div>
-          <nuxt-link to="/" class="p-4 flex items-center space-x-2">
-            <span>French</span>
+<!--          <nuxt-link to="/" class="p-4 flex items-center space-x-2">-->
+<!--            <span>CN</span>-->
+<!--          </nuxt-link>-->
+          <nuxt-link
+            class="p-4 flex items-center space-x-2"
+            v-for="locale in $i18n.locales"
+            v-if="locale.code !== $i18n.locale"
+            :key="locale.code"
+            :to="switchLocalePath(locale.code)">{{ locale.name }}
           </nuxt-link>
-          <div class="border-t border-gray-100"></div>
-          <nuxt-link to="/" class="p-4 flex items-center space-x-2">
-            <span>Arabic</span>
-          </nuxt-link>
+
           <!-- <div class="border-t border-gray-100"></div>
           <div class="py-1">
             <nuxt-link

@@ -6,11 +6,10 @@
       <h1
         class="text-2xl md:text-h1 lg:max-w-3xl font-ivy-presto font-thin uppercase"
       >
-        Become a member of G|CLUBS
+        {{ $t('heading') }}
       </h1>
       <p class="mt-7 text-sm text-app-wash font-acumin max-w-sm lg:max-w-3xl hero-title">
-        Through 5 membership tiers, G|CLUBS allows members to curate their own unique
-        experience—each designed to ensure a first-class tomorrow.
+        {{ $t('description') }}
       </p>
     </div>
     <div class="md:m-10 pb-2">
@@ -18,19 +17,19 @@
         <div class="w-10/12 m-auto flex flex-col md:flex-row my-10 justify-around items-center ">
           <template>
             <div class="tier-circle mb-14 font-thin">
-              TIER 1
+              {{ $t('tier1') }}
             </div>
             <div class="tier-circle mb-14 font-thin">
-              TIER 2
+              {{ $t('tier2') }}
             </div>
             <div class="tier-circle mb-14 font-thin">
-              TIER 3
+              {{ $t('tier3') }}
             </div>
             <div class="tier-circle mb-14 font-thin">
-              TIER 4
+              {{ $t('tier4') }}
             </div>
             <div class="tier-circle mb-14 font-thin">
-              TIER 5
+              {{ $t('tier5') }}
             </div>
           </template>
         </div>

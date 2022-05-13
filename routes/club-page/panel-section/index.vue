@@ -58,11 +58,11 @@
 </template>
 
 <script>
-import data from "./data";
+import data, {PanelSectionChinese} from "./data";
 export default {
-  data: function () {
+  data() {
     return {
-      data,
+      data: this.$i18n.locale === 'en' ? data: PanelSectionChinese,
     };
   },
   name: "PanelSection",

@@ -4,17 +4,19 @@
       <h3
         class="text-lg font-ivy-presto uppercase md:text-xl lg:text-h1 font-thin"
       >
-        One vision.
+        {{ $t('oneVision') }}
       </h3>
       <h3
         class="text-lg font-ivy-presto uppercase md:text-xl lg:text-h1 font-thin"
       >
-        One future
+        {{ $t('oneFuture') }}
       </h3>
       <h3
         class="text-lg font-ivy-presto uppercase md:text-xl lg:text-h1 font-thin"
       >
-        <strong>One membership.</strong>
+        <strong>
+          {{ $t('oneMembership') }}
+        </strong>
       </h3>
     </div>
 

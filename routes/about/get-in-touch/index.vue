@@ -10,15 +10,15 @@
       />
       <div class="lg:w-forty flex flex-col justify-center md:p-5 md:my-7">
         <p class="mb-16 text-app-brass uppercase tracking-widest">
-          JOIN THE CLUB
+          {{ $t('joinTheClub') }}
         </p>
         <h1
           class="text-xl lg:text-h1 text-app-brass uppercase font-ivy-presto font-thin mb-6"
         >
-          An Invitation to live boldly.
+          {{ $t('anInvitation') }}
         </h1>
         <div>
-          <button v-on:click="memberShipHandler()" class="btn-join-club-primary get-in-touch-btn">SEE MEMBERSHIPS</button>
+          <button v-on:click="memberShipHandler()" class="btn-join-club-primary get-in-touch-btn"> {{ $t('seeMemberships') }}</button>
         </div>
       </div>
     </div>

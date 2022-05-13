@@ -45,7 +45,7 @@
               v-on:click="handler(character.link)"
               class="btn-primary font-acumin w-full py-6 mt-10 md:w-72 md:mt-20"
             >
-              learn more
+              {{ $t('learnMore') }}
             </button>
           </div>
           <div
@@ -72,6 +72,8 @@
 import img1 from "~/assets/images/panel/panel-image-1.webp";
 import img2 from "~/assets/images/home/boat.png";
 import img3 from "~/assets/images/panel/panel-3-updated.png";
+import enData from "~~/static/locales/home/en.json";
+import cnData from "~~/static/locales/home/cn.json";
 
 export default {
   name: "PanelSection",
@@ -82,35 +84,31 @@ export default {
         {
           image: img1,
           panelId: "- 01",
-          panelName: "club",
           link:"https://www-dev.gclubdev.net/en/",
-          panelDetails:
-            "Join an exclusive, like-minded group of individuals that will " +
-            "challenge you to make an impact on the world. With utmost luxury " +
-            "in its DNA, G|CLUBS upholds the bespoke tastes and lifestyle of its members."
+          panelName:  this.getInfo('clubHeading'),
+          panelDetails: this.getInfo('clubDescription'),
         },
         {
           image: img2,
           panelId: "- 02",
-          panelName: "experience",
           link:"https://www-dev.gclubdev.net/en/",
-          panelDetails:
-            "Enjoy curated luxury experiences around the world provided by an " +
-            "international network of strategic partners. 24-hour concierge service, " +
-            "access to exclusive talks, events, content, and more are at your disposal.",
+          panelName:  this.getInfo('experienceHeading'),
+          panelDetails: this.getInfo('experienceDescription'),
         },
         {
           image: img3,
           panelId: "- 03",
-          panelName: "membership",
           link:"https://www-dev.gclubdev.net/en/",
-          panelDetails:
-            "Curate your G|CLUBS experience with five membership tiers, each with its own perks and exclusive benefits.",
+          panelName:  this.getInfo('membershipHeading'),
+          panelDetails: this.getInfo('membershipDescription'),
         },
       ],
     };
   },
   methods: {
+    getInfo(name){
+      return this.$i18n.locale === 'en'? enData[name]: cnData[name];
+    },
     handler(link) {
       window.open(link, '_blank');
     },

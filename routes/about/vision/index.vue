@@ -2,7 +2,7 @@
   <div
     class="w-full flex-col flex justify-center md:items-center items-start px-6 lg:space-x-24 bg-app-marine md:mt-4 md:pt-0 pt-4 vision-section">
     <p class="my-7 text-sm text-white uppercase font-acumin max-w-sm md:py-12">
-     Our Values
+      {{ $t('valuesHeading') }}
     </p>
     <div class="flex md:flex-row flex-col mb-4 mx-0" style="margin: 0;">
       <div class="w-full md:w-1/2 h-1/2 md:mx-24">
@@ -16,12 +16,10 @@
           <h1
             class="text-xl lg:text-h2 md:max-w-xs lg:max-w-xl text-white uppercase font-ivy-presto font-thin tracking-widest"
           >
-           MISSION
+            {{ $t('missionHeading') }}
           </h1>
           <p class="my-7 text-sm text-white font-acumin max-w-sm">
-            Leverage the benefits of innovation,
-            freedom, travel, and fashion to satisfy
-            the exacting luxury standards of our members.
+            {{ $t('missionDescription') }}
           </p>
         </div>
       </div>
@@ -38,12 +36,10 @@
           <h1
             class="text-xl lg:text-h2 md:max-w-xs lg:max-w-xl text-white uppercase font-ivy-presto font-thin tracking-widest"
           >
-            VISION
+            {{ $t('visionHeading') }}
           </h1>
           <p class="my-7 text-sm text-white font-acumin max-w-sm">
-            To create global luxury experiences so that members may enjoy an
-            extensive, robust, and diverse catalog of benefits provided by an
-            international network of strategic partners.
+            {{ $t('visionDescription') }}
           </p>
         </div>
       </div>

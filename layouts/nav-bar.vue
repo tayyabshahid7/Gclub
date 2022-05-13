@@ -47,14 +47,14 @@
           :href="url"
           class="flex items-center flex-shrink-0 text-white tracking-widest mr-6 text-acumin font-bold text-xs"
         >
-          SIGN IN
+          {{$t('signIn') }}
         </a>
         <div>
           <a
             target="_blank"
             :href="url"
             class="inline-block text-sm px-10 py-4 leading-none border-2 tracking-widest text-white font-bold border-white mt-4 lg:mt-0 text-acumin text-xs"
-            >JOIN THE CLUB</a
+            >{{$t('joinTheClub') }}</a
           >
         </div>
       </div>
@@ -91,7 +91,7 @@
               to="/club"
               @click="isOpen = false"
               class="my-4 inline-block"
-              >club</NuxtLink
+              >{{$t('club') }}</NuxtLink
             >
           </li>
           <li>
@@ -99,7 +99,7 @@
               to="/experience"
               @click="isOpen = false"
               class="my-4 inline-block"
-              >experience</NuxtLink
+              >{{$t('experience') }}</NuxtLink
             >
           </li>
           <li>
@@ -107,7 +107,7 @@
               to="/membership"
               @click="isOpen = false"
               class="my-4 inline-block"
-              >membership</NuxtLink
+              >{{$t('membership') }}</NuxtLink
             >
           </li>
           <li>
@@ -115,7 +115,7 @@
               target="_blank"
               :href="url"
               class="my-8 w-full text-center font-semibold cta inline-block border px-3 py-2 rounded uppercase"
-              >join the club</a
+              >{{$t('joinTheClub') }}</a
             >
           </li>
         </ul>
@@ -125,13 +125,16 @@
 </template>
 
 <script>
-import data from "./data";
+import data, {navbarChinese} from "./data";
 export default {
   data() {
     return {
-      data,
       isOpen: false,
+      data: this.$i18n.locale === 'en' ? data: navbarChinese,
     };
+  },
+  created() {
+    this.init();
   },
   computed: {
     url () {
@@ -143,6 +146,17 @@ export default {
   methods: {
     drawer() {
       this.isOpen = !this.isOpen;
+    },
+    async init() {
+      const currentLocale = this.$i18n.locale;
+      try {
+        const result = await this.$axios.get('locales/navbar/' + currentLocale + '.json')
+        if (result.status === 200) {
+          this.$i18n.mergeLocaleMessage(currentLocale, result.data)
+        }
+      } catch (error) {
+        console.error(error)
+      }
     },
   },
   watch: {

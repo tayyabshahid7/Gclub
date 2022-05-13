@@ -9,14 +9,13 @@
         <h1
           class="text-xl md:max-w-sm lg:max-w-sm lg:text-h2 uppercase font-thin font-ivy-presto mb-6"
         >
-          Experience a new level of luxury.
+         {{ $t('heading') }}
         </h1>
         <p class="mt-5 mb-7 max-w-md tracking-wider leading-9 font-acumin px-3" style="padding-left: 0;">
-          At its core, G|Clubs exists to help you thrive. Capture the essence of luxury through the
-          G|Clubs experience and get ready for a first-class tomorrow.
+          {{ $t('description') }}
         </p>
         <button @click="goToGClub()" class="w-full md:w-64 btn-experience-primary font-acumin">
-          learn more
+          {{ $t('learnMore') }}
         </button>
       </div>
       <img
