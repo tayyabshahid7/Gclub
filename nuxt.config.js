@@ -1,6 +1,9 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   dev: process.env.NODE_ENV !== 'production',
+  axios: {
+    baseURL: process.env.BASE_URL,
+  },
   head: {
     title: "gClub",
     htmlAttrs: {
