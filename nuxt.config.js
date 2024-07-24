@@ -1,8 +1,15 @@
+// let appEnv = process.env.NODE_ENV || 'development';
+// import { MasterKeys } from './config.js'
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   dev: process.env.NODE_ENV !== 'production',
+  // env: {
+  //   apiEndPoint: MasterKeys[appEnv].apiEndPoint,
+  //   clientId: MasterKeys[appEnv].clientId
+  // },
   axios: {
-    baseURL: process.env.BASE_URL,
+    baseURL: process.env.VUE_APP_MY_BASE_URL,
   },
   head: {
     title: "gClub",
