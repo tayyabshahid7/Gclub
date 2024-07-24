@@ -1,3 +1,7 @@
+# Getting Started with Vue.js App
+
+![Project Image](assets/images/gclub.png)
+
 # gClub
 
 ## Build Setup
