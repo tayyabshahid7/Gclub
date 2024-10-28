@@ -2,6 +2,33 @@
 // import { MasterKeys } from './config.js'
 
 export default {
+   // Add target for static deployment
+  target: 'static',  // Add this line
+
+  // Your existing config...
+  head: {
+    title: "gClub",
+    // ... rest of your head config
+  },
+
+  // Add ssr configuration
+  ssr: false,  // Add this if it's a SPA
+
+  // Add generate configuration
+  generate: {
+    fallback: true
+  },
+
+  // Your other existing config...
+  css: ["~/assets/global"],
+  plugins: [
+    {
+      src: 'node_modules/vue-responsive-video-background-player/dist/index.common.js',
+      ssr: false,
+      mode: 'client'  // Change 'server' to 'client'
+    },
+  ],
+  
   // Global page headers: https://go.nuxtjs.dev/config-head
   dev: process.env.NODE_ENV !== 'production',
   // env: {
